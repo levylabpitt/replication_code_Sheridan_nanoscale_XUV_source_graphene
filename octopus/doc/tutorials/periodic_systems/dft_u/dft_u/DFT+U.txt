@@ -1,0 +1,23 @@
+******************************* DFT+U ********************************
+Input: [DFTUDoubleCounting = dft_u_fll]
+Input: [DFTUPoissonSolver = dft_u_poisson_fft]
+
+Method:
+  [1] Dudarev et al., Phys. Rev. B 57, 1505 (1998)
+Implementation:
+  [1] Tancogne-Dejean, Oliveira, and Rubio, Phys. Rev. B 69, 245133 (2017)
+
+Input: [AOTruncation = ao_full]
+Input: [AOThreshold = 0.1000E-01]
+Input: [AONormalize = yes]
+Input: [AOSubmesh = no]
+Input: [AOLoewdin = no]
+Building the LDA+U localized orbital basis.
+Found   2 orbital sets.
+Orbital set  1 has a value of U of  0.18375 Ha.
+It contains  5 orbitals.
+The radius is  4.40000 Bohr,  with   8007 grid points.
+Orbital set  2 has a value of U of  0.18375 Ha.
+It contains  5 orbitals.
+The radius is  4.40000 Bohr,  with   8007 grid points.
+**********************************************************************

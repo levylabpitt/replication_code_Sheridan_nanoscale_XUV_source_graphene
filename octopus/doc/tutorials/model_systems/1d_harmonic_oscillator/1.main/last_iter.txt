@@ -1,0 +1,11 @@
+*********************** SCF CYCLE ITER #   28 ************************
+ etot  =  1.00000000E+00 abs_ev   =  4.41E-11 rel_ev   =  4.41E-11
+ ediff =        4.41E-11 abs_dens =  9.19E-07 rel_dens =  4.60E-07
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 8.7E-05)
+
+Elapsed time for SCF step    28:          0.00
+**********************************************************************

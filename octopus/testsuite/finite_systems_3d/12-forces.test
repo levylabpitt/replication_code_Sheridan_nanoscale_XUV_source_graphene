@@ -1,0 +1,62 @@
+# -*- coding: utf-8 mode: shell-script -*-
+Test       : Forces
+Program    : octopus
+TestGroups : short-run, finite_systems_3d
+Enabled    : Yes
+
+# This is a calculation of the ground-state of a Nitrogen at different
+# configurations. The parameters of the calculation are not optimal
+# (grid spacings, etc), but this way the test runs faster, and may be
+# tagged as "short-run".  The purpose is to test the calculation of
+# the force on the atoms.
+
+Input: 12-forces.01-N2_gs.inp
+
+match ; SCF convergence ; GREPCOUNT(static/info, 'SCF converged') ; 1
+
+Precision: 9.92e-08
+match ;  Total energy  ; GREPFIELD(static/info, 'Total       =', 3) ; -19.83274968
+Precision: 1.59e-08
+match ;  Force         ; GREPFIELD(static/info, 'Forces on the ions', 3, 2) ; 0.318636719
+Precision: 1.71e-07
+match ;  Force Ion-ion ; LINEFIELD(static/forces, 2, 6) ; -3.42935528
+Precision: 1.61e-07
+match ;  Force Local   ; LINEFIELD(static/forces, 2, 12) ; 3.22426308
+Precision: 2.62e-09
+match ;  Force NL      ; LINEFIELD(static/forces, 2, 15) ; 0.523728907
+Precision: 4.3e-14
+match ;  Force SCF     ; LINEFIELD(static/forces, 2, 24) ; 1.10305652e-08
+
+Input: 12-forces.02-N2_gs.inp
+
+match ; SCF convergence ; GREPCOUNT(static/info, 'SCF converged') ; 1
+
+Precision: 1.00e-08
+match ;  Total energy  ; GREPFIELD(static/info, 'Total       =', 3) ; -19.99888519
+Precision: 1.88e-09
+match ;  Force         ; GREPFIELD(static/info, 'Forces on the ions', 3, 2) ; 0.0376205677
+Precision: 2.90e-07
+match ;  Force Ion-ion ; LINEFIELD(static/forces, 2, 6) ; -5.80971731
+Precision: 2.35e-07
+match ;  Force Local   ; LINEFIELD(static/forces, 2, 12) ; 4.69163058
+Precision: 5.78e-08
+match ;  Force NL      ; LINEFIELD(static/forces, 2, 15) ; 1.15570727
+Precision: 1.01e-14
+match ;  Force SCF     ; LINEFIELD(static/forces, 2, 24) ; 3.2848792599999995e-08
+
+Input: 12-forces.03-N2_gs.inp
+
+match ; SCF convergence ; GREPCOUNT(static/info, 'SCF converged') ; 1
+
+Precision: 9.75e-08
+match ;  Total energy  ; GREPFIELD(static/info, 'Total       =', 3) ; -19.49778694
+Precision: 1.32e-14
+match ;  Force         ; GREPFIELD(static/info, 'Forces on the ions', 3, 2) ; -2.63221334
+Precision: 5.56e-07
+match ;  Force Ion-ion ; LINEFIELD(static/forces, 2, 6) ; -11.1111111
+Precision: 2.75e-07
+match ;  Force Local   ; LINEFIELD(static/forces, 2, 12) ; 5.501625519999999
+Precision: 1.49e-07
+match ;  Force NL      ; LINEFIELD(static/forces, 2, 15) ; 2.97727227
+Precision: 2.78e-14
+match ;  Force SCF     ; LINEFIELD(static/forces, 2, 24) ; -2.018376e-08

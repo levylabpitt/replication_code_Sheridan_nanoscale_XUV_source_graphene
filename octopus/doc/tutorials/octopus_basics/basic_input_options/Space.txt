@@ -1,0 +1,4 @@
+******************************* Space ********************************
+Octopus will run in 3 dimension(s).
+Octopus will treat the system as periodic in 0 dimension(s).
+**********************************************************************

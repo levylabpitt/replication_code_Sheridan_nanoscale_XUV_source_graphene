@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: davismw(84556)
+Job name:  td-gr-1e9-004
+Node list: dra[0888-0895]
+Job start: Thu Apr  7 12:32:35 CEST 2022
+Job end:   Thu Apr  7 19:52:35 CEST 2022
+Work dir:  /u/davismw/2D-materials/01.graphene/01.intact-symmetry/01.scan-inten-1e+09/004.inten-I0-100/./
+Command:   /draco/u/davismw/2D-materials/01.graphene/01.intact-symmetry/01.scan-inten-1e+09/004.inten-I0-100/octopus.sbatch
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+25029981     td-gr-1e9+      8           640                             07:20:00      0:0 
+25029981.0      octopus      8    256    256      321.08M      300.14M   07:19:59      0:0 
+  
+Maximum memory per node: 10.5212 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 95.7 %
+     

@@ -1,0 +1,2 @@
+Input: [MixField = potential] (what to mix during SCF cycles)
+Input: [MixingScheme = broyden]

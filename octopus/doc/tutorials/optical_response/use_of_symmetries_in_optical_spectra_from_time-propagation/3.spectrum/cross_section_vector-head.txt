@@ -1,0 +1,30 @@
+# nspin         1
+# kick mode    0
+# kick strength    0.005291772086
+# dim           3
+# pol(1)           1.000000000000    0.000000000000    0.000000000000
+# pol(2)           0.000000000000    1.000000000000    0.000000000000
+# pol(3)           0.000000000000    0.000000000000    1.000000000000
+# direction    1
+# Equiv. axes  3
+# wprime           0.000000000000    0.000000000000    1.000000000000
+# kick time        0.000000000000
+#%
+# Number of time steps =     2500
+# PropagationSpectrumDampMode   =    2
+# PropagationSpectrumDampFactor =   -27.2114
+# PropagationSpectrumStartTime  =     0.0000
+# PropagationSpectrumEndTime    =    10.0000
+# PropagationSpectrumMinEnergy  =     0.0000
+# PropagationSpectrumMaxEnergy  =    20.0000
+# PropagationSpectrumEnergyStep =     0.0100
+#%
+# Electronic sum rule       =         3.758450
+# Static polarizability (from sum rule) =         2.134954 A
+#%
+#       Energy        sigma(1, nspin=1)   sigma(2, nspin=1)   sigma(3, nspin=1)   StrengthFunction(1)
+#        [eV]               [A^2]               [A^2]               [A^2]               [1/eV]       
+      0.00000000E+00     -0.00000000E+00     -0.00000000E+00     -0.00000000E+00     -0.00000000E+00
+      0.10000000E-01     -0.29707573E-09      0.81447686E-15     -0.76858518E-15     -0.27065697E-09
+      0.20000000E-01     -0.11751152E-08      0.32540405E-14     -0.30706711E-14     -0.10706129E-08
+      0.30000000E-01     -0.25945242E-08      0.73071126E-14     -0.68952706E-14     -0.23637947E-08

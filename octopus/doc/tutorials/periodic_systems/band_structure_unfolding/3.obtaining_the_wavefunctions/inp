@@ -1,0 +1,50 @@
+# snippet_start calcmode
+CalculationMode = unocc
+# snippet_end
+
+PeriodicDimensions = 3
+
+Spacing = 0.5
+
+a = 10.18
+%LatticeParameters
+ a | a  | a
+90 | 90 |90
+%
+
+%ReducedCoordinates
+ "Si" | 0.0         | 0.0       | 0.0 
+ "Si" |   1/2       | 1/2       | 0.0
+ "Si" |   1/2       | 0.0       | 1/2
+ "Si" |   0.0       | 1/2       | 1/2
+ "Si" |   1/4       | 1/4       | 1/4
+ "Si" |   1/4 + 1/2 | 1/4 + 1/2 | 1/4
+ "Si" |   1/4 + 1/2 | 1/4       | 1/4 + 1/2
+ "Si" |   1/4       | 1/4 + 1/2 | 1/4 + 1/2
+%
+
+ExperimentalFeatures = yes
+UnfoldMode = unfold_setup
+%UnfoldLatticeParameters
+  a | a | a
+%
+%UnfoldLatticeVectors
+ 0.  | 0.5 | 0.5
+ 0.5 | 0.  | 0.5
+ 0.5 | 0.5 | 0.0  
+%
+%UnfoldKPointsPath
+ 4 | 4 | 8
+ 0.5 | 0.0 | 0.0 # L point
+ 0.0 | 0.0 | 0.0 # Gamma point
+ 0.0 | 0.5 | 0.5 # X point
+ 1.0 | 1.0 | 1.0 # Another Gamma point
+%
+
+include unfold_kpt.dat
+
+# snippet_start extra
+ExtraStates = 6
+ExtraStatesToConverge = 4
+# snippet_end
+

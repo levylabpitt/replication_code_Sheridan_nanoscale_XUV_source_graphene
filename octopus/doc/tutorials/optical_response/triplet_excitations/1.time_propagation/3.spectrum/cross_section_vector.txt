@@ -1,0 +1,27 @@
+# nspin         2
+# kick mode    1
+# kick strength    0.005291772086
+# dim           3
+# pol(1)           1.000000000000    0.000000000000    0.000000000000
+# pol(2)           0.000000000000    1.000000000000    0.000000000000
+# pol(3)           0.000000000000    0.000000000000    1.000000000000
+# direction    1
+# Equiv. axes  0
+# wprime           0.000000000000    0.000000000000    1.000000000000
+# kick time        0.000000000000
+#%
+# Number of time steps =     2500
+# PropagationSpectrumDampMode   =    2
+# PropagationSpectrumDampFactor =   -27.2114
+# PropagationSpectrumStartTime  =     0.0000
+# PropagationSpectrumEndTime    =    10.0000
+# PropagationSpectrumMinEnergy  =     0.0000
+# PropagationSpectrumMaxEnergy  =    20.0000
+# PropagationSpectrumEnergyStep =     0.0100
+#%
+#       Energy        sigma(1, nspin=1)   sigma(2, nspin=1)   sigma(3, nspin=1)   sigma(1, nspin=2)   sigma(2, nspin=2)   sigma(3, nspin=2)   StrengthFunction(1) StrengthFunction(2)
+#        [eV]               [A^2]               [A^2]               [A^2]               [A^2]               [A^2]               [A^2]               [1/eV]              [1/eV]       
+      0.00000000E+00     -0.00000000E+00     -0.00000000E+00     -0.00000000E+00     -0.00000000E+00     -0.00000000E+00     -0.00000000E+00     -0.00000000E+00     -0.00000000E+00
+      0.10000000E-01     -0.40350416E-08      0.68182439E-17      0.22266720E-14      0.40114790E-08      0.56477303E-16      0.10866349E-13     -0.36762079E-08      0.36547407E-08
+      0.20000000E-01     -0.16083017E-07      0.27299328E-16      0.88960945E-14      0.15988835E-07      0.22562831E-15      0.43413694E-13     -0.14652764E-07      0.14566957E-07
+      0.30000000E-01     -0.35973282E-07      0.61522049E-16      0.19976549E-13      0.35761628E-07      0.50661184E-15      0.97487228E-13     -0.32774200E-07      0.32581368E-07

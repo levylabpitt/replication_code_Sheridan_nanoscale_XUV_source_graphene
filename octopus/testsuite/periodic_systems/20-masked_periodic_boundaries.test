@@ -1,0 +1,32 @@
+# -*- coding: utf-8 mode: shell-script -*-
+
+Test       : Masked boundary conditions
+Program    : octopus
+TestGroups : long-run, periodic_systems
+Enabled    : Yes
+
+Processors : 4
+
+Input      : 20-masked_periodic_boundaries.01-graphene.inp
+if(available cuda); then
+  match ; Error match ; GREPCOUNT(err, 'Calculation will not be continued.') ; 1
+else
+  match ; SCF convergence ; GREPCOUNT(static/info, 'SCF converged') ; 1
+  
+  Precision: 5.15e-08
+  match ;  Total energy        ; GREPFIELD(static/info, 'Total       =', 3) ; -10.30023342
+  Precision: 9.90e-08
+  match ;  Ion-ion energy      ; GREPFIELD(static/info, 'Ion-ion     =', 3) ; -19.800128519999998
+  Precision: 6.54e-08
+  match ;  Eigenvalues sum     ; GREPFIELD(static/info, 'Eigenvalues =', 3) ; -1.30766309
+  Precision: 4.83e-07
+  match ;  Hartree energy      ; GREPFIELD(static/info, 'Hartree     =', 3) ; -9.65512132
+  Precision: 1.64e-07
+  match ;  Exchange energy     ; GREPFIELD(static/info, 'Exchange    =', 3) ; -3.2858673300000003
+  Precision: 2.26e-07
+  match ;  Correlation energy  ; GREPFIELD(static/info, 'Correlation =', 3) ; -0.45180017
+  Precision: 5.65e-08
+  match ;  Kinetic energy      ; GREPFIELD(static/info, 'Kinetic     =', 3) ; 11.30262628
+  Precision: 5.80e-08
+  match ;  External energy     ; GREPFIELD(static/info, 'External    =', 3) ; 11.59005278
+endif

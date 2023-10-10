@@ -1,0 +1,50 @@
+******************************* DFT+U ********************************
+Input: [DFTUDoubleCounting = dft_u_fll]
+Input: [DFTUPoissonSolver = dft_u_poisson_fft]
+Input: [ACBN0Screening = 1.000]
+Input: [ACBN0RotationallyInvariant = yes]
+Input: [ACBN0IntersiteInteraction = yes]
+
+Method:
+  [1] Tancogne-Dejean, and Rubio, Phys. Rev. B 102, 155117 (2020)
+Implementation:
+  [1] Tancogne-Dejean, Oliveira, and Rubio, Phys. Rev. B 69, 245133 (2017)
+
+Input: [AOTruncation = ao_full]
+Input: [AOThreshold = 0.1000E-01]
+Input: [AONormalize = yes]
+Input: [AOSubmesh = no]
+Input: [AOLoewdin = yes]
+Building the LDA+U localized orbital basis.
+Found   4 orbital sets.
+Orbital set  1 has a value of U of  0.00000 Ha.
+It contains  1 orbitals.
+The radius is  5.78000 Bohr,  with   8391 grid points.
+Orbital set  2 has a value of U of  0.00000 Ha.
+It contains  3 orbitals.
+The radius is  7.34000 Bohr,  with  17309 grid points.
+Orbital set  3 has a value of U of  0.00000 Ha.
+It contains  1 orbitals.
+The radius is  5.78000 Bohr,  with   8440 grid points.
+Orbital set  4 has a value of U of  0.00000 Ha.
+It contains  3 orbitals.
+The radius is  7.34000 Bohr,  with  17148 grid points.
+Computing the Coulomb integrals of the localized basis.
+ETA: .Info: FFT grid dimensions       = 57 x 57 x 57
+      Total grid size           = 185193 (      1.4 MiB )
+      Inefficient FFT grid. A better grid would be: 60 60 60
+Info: Poisson Cutoff Radius     =  17.9 b
+Info: FFT grid dimensions       = 73 x 73 x 73
+      Total grid size           = 389017 (      3.0 MiB )
+      Inefficient FFT grid. A better grid would be: 78 78 78
+Info: Poisson Cutoff Radius     =  23.0 b
+......1......2.......3......4......Info: FFT grid dimensions       = 57 x 57 x 57
+      Total grid size           = 185193 (      1.4 MiB )
+      Inefficient FFT grid. A better grid would be: 60 60 60
+Info: Poisson Cutoff Radius     =  17.9 b
+5.Info: FFT grid dimensions       = 69 x 69 x 69
+      Total grid size           = 328509 (      2.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 70 70
+Info: Poisson Cutoff Radius     =  21.7 b
+......6......7.......8......9......0
+**********************************************************************

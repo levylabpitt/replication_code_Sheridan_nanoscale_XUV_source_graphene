@@ -1,0 +1,43 @@
+**************************** Theory Level ****************************
+Input: [TheoryLevel = independent_particles]
+**********************************************************************
+
+SCF converged in   19 iterations
+
+Some of the states are not fully converged!
+Eigenvalues [H]
+ #st  Spin   Eigenvalue      Occupation
+   1   --    -2.238257       1.000000
+
+Energy [H]:
+      Total       =        -2.23825730
+      Free        =        -2.23825730
+      -----------
+      Ion-ion     =         0.00000000
+      Eigenvalues =        -2.23825730
+      Hartree     =         0.00000000
+      Int[n*v_xc] =         0.00000000
+      Exchange    =         0.00000000
+      Correlation =         0.00000000
+      vanderWaals =         0.00000000
+      Delta XC    =         0.00000000
+      Entropy     =         1.38629436
+      -TS         =        -0.00000000
+      Photon ex.  =         0.00000000
+      Kinetic     =         0.28972534
+      External    =        -2.52798263
+      Non-local   =         0.00000000
+      Int[n*v_E]  =         0.00000000
+
+Dipole:                 [b]          [Debye]
+      <x> =    7.96347E-09      2.02411E-08
+      <y> =    5.29240E-09      1.34519E-08
+
+Convergence:
+      abs_energy =  1.18571819E-13 ( 0.00000000E+00) [H]
+      rel_energy =  5.29750620E-14 ( 0.00000000E+00)
+      abs_dens =  4.73568290E-08 ( 0.00000000E+00)
+      rel_dens =  4.73568290E-08 ( 1.00000000E-06)
+      abs_evsum =  1.18571819E-13 ( 0.00000000E+00) [H]
+      rel_evsum =  5.29750620E-14 ( 0.00000000E+00)
+

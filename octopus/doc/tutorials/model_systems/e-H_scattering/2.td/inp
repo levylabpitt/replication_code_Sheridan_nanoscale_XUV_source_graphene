@@ -1,0 +1,41 @@
+FromScratch = yes
+CalculationMode = td
+
+Dimensions = 1 
+
+Radius = 50
+Spacing = 0.15
+ 
+%Species
+"H" | species_soft_coulomb | softening | 1 | valence | 1
+%
+ 
+%Coordinates
+"H" | -10
+%
+ 
+SpinComponents = polarized
+
+ExtraStates = 1
+
+ExcessCharge = -1
+%Occupations
+ 1 | 1
+ 0 | 0
+%
+RestartFixedOccupations = no
+
+a = 0.1
+x0 = 10.0
+p = -1.5
+%UserDefinedStates 
+  1 | 2 | 1 | formula | "exp(-a*(x-x0)^2+i*p*(x-x0))"
+%
+
+%Output
+ density 
+ potential
+%
+OutputFormat = axis_x
+
+TDPropagationTime = 0.8 * femtosecond

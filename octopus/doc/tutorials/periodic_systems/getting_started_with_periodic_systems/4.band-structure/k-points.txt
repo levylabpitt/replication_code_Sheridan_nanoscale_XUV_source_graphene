@@ -1,0 +1,18 @@
+Checking if the generated full k-point grid is symmetric
+
+     2 k-points generated from parameters :
+ ---------------------------------------------------
+    n =    2    2    2
+
+    s1  =  0.50  0.50  0.50
+
+    s2  =  0.50  0.00  0.00
+
+    s3  =  0.00  0.50  0.00
+
+    s4  =  0.00  0.00  0.50
+
+ index |    weight    |             coordinates              |
+       1 |     0.250000 |    0.250000    0.000000    0.000000  |
+       2 |     0.750000 |   -0.250000    0.250000    0.250000  |
+

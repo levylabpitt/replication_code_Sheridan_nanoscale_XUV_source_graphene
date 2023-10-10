@@ -1,0 +1,26 @@
+CalculationMode = gs
+FromScratch = yes
+Dimensions = 2
+
+%Species
+"null" | species_user_defined | potential_formula | "0" | valence | 1
+%
+
+%Coordinates
+"null" | 0 | 0
+%
+
+BoxShape = box_image
+BoxShapeImage = "gdlib.png"
+
+ff = 20
+%Lsize
+ 135 / ff | 95 / ff
+%
+
+TheoryLevel = independent_particles
+ConvEigenError = yes
+
+%Output
+  wfs | plane_z
+%

@@ -1,0 +1,15 @@
+             Info: Writing states. 2022/09/12 at 11:34:55
+
+
+        Info: Finished writing states. 2022/09/12 at 11:34:55
+
+Info: SCF converged in   21 iterations
+
+Info: Number of matrix-vector products:      47700
+Info: Finished writing information to 'restart/gs'.
+
+             Calculation ended on 2022/09/12 at 11:34:55
+
+                          Walltime:  52.184s
+
+Octopus emitted 49 warnings.

@@ -1,0 +1,53 @@
+CalculationMode = td
+FromScratch = yes
+PeriodicDimensions = 3
+
+Spacing = 0.5
+
+%LatticeVectors
+  0.0 | 0.5 | 0.5 
+  0.5 | 0.0 | 0.5
+  0.5 | 0.5 | 0.0
+%
+
+a = 10.18
+%LatticeParameters
+ a | a | a
+%
+
+%ReducedCoordinates
+ "Si" | 0.0 | 0.0 | 0.0 
+ "Si" | 1/4 | 1/4 | 1/4 
+%
+
+nk = 2
+%KPointsGrid
+  nk |  nk |  nk
+ 0.5 | 0.5 | 0.5
+ 0.5 | 0.0 | 0.0
+ 0.0 | 0.5 | 0.0
+ 0.0 | 0.0 | 0.5
+%
+KPointsUseSymmetries = yes
+%SymmetryBreakDir
+  1 | 0 | 0
+%
+
+ExperimentalFeatures = yes
+
+%TDExternalFields
+ vector_potential | 1.0 | 0.0 | 0.0 | 0.0 | "envelope_step"
+%
+
+%TDFunctions
+ "envelope_step" | tdf_from_expr | "0.01*step(t)"
+%
+
+%TDOutput
+ total_current
+%
+
+TDTimeStep = 0.3
+TDPropagationTime = 1500
+TDExponentialMethod = lanczos
+TDExpOrder = 16

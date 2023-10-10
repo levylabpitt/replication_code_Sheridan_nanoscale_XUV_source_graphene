@@ -1,0 +1,79 @@
+# -*- coding: utf-8 mode: shell-script -*-
+
+Test       : Propagators (requiring SPARSKIT)
+Program    : octopus
+TestGroups : short-run, real_time
+Enabled    : Yes
+
+#This test checks the time propagation, for various propagators
+
+# ground state
+Processors : 1
+Input      : 02-propagators.01-gs.inp
+Precision  : 2.0e-8
+match ; SCF convergence ; GREPCOUNT(static/info, 'SCF converged') ; 1
+Precision: 5.30e-07
+match ;   Initial energy   ; GREPFIELD(static/info, 'Total       =', 3) ; -10.6068424
+
+Processors : 4
+Input      : 02-propagators.02-cnsparskit.inp
+if(available sparskit); then
+  Precision: 6.11e-15
+  match ;   Forces [step  1]   ; LINEFIELD(td.general/coordinates, -21, 15) ; 0.08537491810747815
+  Precision: 3.98e-15
+  match ;   Forces [step 20]   ; LINEFIELD(td.general/coordinates, -1, 15) ; 0.079648181494941
+  Precision: 1.00e-01
+  match ;  Error missing SPARSKIT  ; GREPCOUNT(err, 'recompile with SPARSKIT support') ; 1.0
+  Precision: 5.30e-14
+  match ;  Energy [step  1]  ; LINEFIELD(td.general/energy, -21, 3) ; -10.6068424020538
+  Precision: 5.30e-12
+  match ;  Energy [step 20]  ; LINEFIELD(td.general/energy, -1, 3) ; -10.606348902112
+  Precision: 3.95e-15
+  match ;  Multipoles [step  1]  ; LINEFIELD(td.general/multipoles, -21, 4) ; -1.25452138911505e-16
+  Precision: 6.33e-15
+  match ;  Multipoles [step 20]  ; LINEFIELD(td.general/multipoles, -1, 4) ; -0.126530869581164
+else
+  match ; Error ; GREPCOUNT(err, 'recompile with SPARSKIT support') ; 1
+endif
+
+Processors : 4
+Input      : 02-propagators.03-rungekutta2.inp
+if(available sparskit); then
+  Precision: 6.11e-15
+  match ;   Forces [step  1]   ; LINEFIELD(td.general/coordinates, -21, 15) ; 0.08537491810747815
+  Precision: 3.98e-15
+  match ;   Forces [step 20]   ; LINEFIELD(td.general/coordinates, -1, 15) ; 0.07964951323737271
+  Precision: 1.00e-01
+  match ;  Error missing SPARSKIT  ; GREPCOUNT(err, 'recompile with SPARSKIT support') ; 1.0
+  Precision: 5.30e-14
+  match ;  Energy [step  1]  ; LINEFIELD(td.general/energy, -21, 3) ; -10.6068424020538
+  Precision: 5.30e-13
+  match ;  Energy [step 20]  ; LINEFIELD(td.general/energy, -1, 3) ; -10.6063171487543
+  Precision: 3.95e-15
+  match ;  Multipoles [step  1]  ; LINEFIELD(td.general/multipoles, -21, 4) ; -1.25452138911505e-16
+  Precision: 6.33e-14
+  match ;  Multipoles [step 20]  ; LINEFIELD(td.general/multipoles, -1, 4) ; -0.12663353323538
+else
+  match ; Error ; GREPCOUNT(err, 'recompile with SPARSKIT support') ; 1
+endif
+
+Processors : 4
+Input      : 02-propagators.04-rungekutta4.inp
+if(available sparskit); then
+  Precision: 6.11e-15
+  match ;   Forces [step  1]   ; LINEFIELD(td.general/coordinates, -21, 15) ; 0.08537491810747815
+  Precision: 2.97e-15
+  match ;   Forces [step 20]   ; LINEFIELD(td.general/coordinates, -1, 15) ; 0.0796585669152492
+  Precision: 1.00e-01
+  match ;  Error missing SPARSKIT ; GREPCOUNT(err, 'recompile with SPARSKIT support') ; 1.0
+  Precision: 5.30e-14
+  match ;  Energy [step  1]  ; LINEFIELD(td.general/energy, -21, 3) ; -10.6068424020538
+  Precision: 5.30e-14
+  match ;  Energy [step 20]  ; LINEFIELD(td.general/energy, -1, 3) ; -10.6063481002209
+  Precision: 3.95e-15
+  match ;  Multipoles [step  1]  ; LINEFIELD(td.general/multipoles, -21, 4) ; -1.25452138911505e-16
+  Precision: 6.33e-15
+  match ;  Multipoles [step 20]  ; LINEFIELD(td.general/multipoles, -1, 4) ; -0.126542825760172
+else
+  match ; Error ; GREPCOUNT(err, 'recompile with SPARSKIT support') ; 1
+endif

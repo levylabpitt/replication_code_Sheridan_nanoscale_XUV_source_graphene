@@ -1,0 +1,27 @@
+CalculationMode = gs
+FromScratch = yes
+ExperimentalFeatures = yes
+
+%Species
+ "F" | species_pseudo | file | "03-nlcc.F.UPF"
+%
+
+%Coordinates
+"F" | 0 | 0 | 0
+%
+
+Spacing = 0.22
+Radius = 5.0
+
+SpinComponents = polarized
+
+%Occupations
+  1  |  1  |  1
+ 2/3 | 2/3 | 2/3
+%
+
+FilterPotentials = filter_none
+
+MixField = density
+
+PoissonSolver = isf

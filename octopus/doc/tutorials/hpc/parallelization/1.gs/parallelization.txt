@@ -1,0 +1,9 @@
+************************** Parallelization ***************************
+Info: Octopus will run in *parallel*
+
+      Number of processes           :       2
+      Number of threads per process :       1
+
+Info: Number of nodes in ParDomains  group:     2 (       55241)
+Info: Octopus will waste at least  0.00% of computer time.
+**********************************************************************

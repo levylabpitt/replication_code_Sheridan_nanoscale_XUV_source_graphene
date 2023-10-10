@@ -1,0 +1,9 @@
+Info: Parallelization in atoms
+Info: Node in group    0 will manage      3 atoms:     1 -      3
+Info: Node in group    1 will manage      2 atoms:     4 -      5
+Info: Parallelization in Ions
+Info: Node in group    0 will manage      3 Ions:     1 -      3
+Info: Node in group    1 will manage      2 Ions:     4 -      5
+Info: Parallelization in states
+Info: Node in group    0 will manage      2 states:     1 -      2
+Info: Node in group    1 will manage      2 states:     3 -      4

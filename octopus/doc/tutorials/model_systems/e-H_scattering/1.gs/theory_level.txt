@@ -1,0 +1,13 @@
+**************************** Theory Level ****************************
+Input: [TheoryLevel = kohn_sham]
+
+Exchange-correlation:
+  Exchange
+    Exchange in 1D (LDA)
+    [1] N. Helbig, J. I. Fuks, M. Casula, M. J. Verstraete, M. A. L. Marques, I. V. Tokatly, and A. Rubio, Phys. Rev. A 83, 0325
+  Correlation
+    Casula, Sorella & Senatore (LDA)
+    [1] M. Casula, S. Sorella, and G. Senatore, Phys. Rev. B 74, 245427 (2006)
+
+Input: [SICCorrection = sic_none]
+**********************************************************************

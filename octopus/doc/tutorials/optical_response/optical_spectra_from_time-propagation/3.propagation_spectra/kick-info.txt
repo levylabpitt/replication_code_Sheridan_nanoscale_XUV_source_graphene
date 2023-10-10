@@ -1,0 +1,3 @@
+Info: Applying delta kick: k =    0.005292
+Info: kick function: dipole.
+Info: Delta kick mode: Density mode

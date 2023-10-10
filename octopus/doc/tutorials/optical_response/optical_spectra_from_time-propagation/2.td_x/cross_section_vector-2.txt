@@ -1,0 +1,9 @@
+# Number of time steps =     4350
+# PropagationSpectrumDampMode   =    2
+# PropagationSpectrumDampFactor =   -27.2114
+# PropagationSpectrumStartTime  =     0.0000
+# PropagationSpectrumEndTime    =    10.0050
+# PropagationSpectrumMinEnergy  =     0.0000
+# PropagationSpectrumMaxEnergy  =    20.0000
+# PropagationSpectrumEnergyStep =     0.0100
+#%

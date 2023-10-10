@@ -1,0 +1,8 @@
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.501271
+   2       Ni2      -1.501272
+   3         O       0.000001
+   4         O       0.000001

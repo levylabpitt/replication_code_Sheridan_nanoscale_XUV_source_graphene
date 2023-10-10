@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: davismw(84556)
+Job name:  td-gr-GWcm2-702
+Node list: dra[0833-0835,0839-0840,0860-0862]
+Job start: Fri Apr 15 17:29:05 CEST 2022
+Job end:   Sat Apr 16 03:29:15 CEST 2022
+Work dir:  /u/davismw/2D-materials/01.graphene/02.broken-symmetry/01.scan-inten-1e+09/702.I0-100-drive+ramp-A0-01.00/./
+Command:   /draco/u/davismw/2D-materials/01.graphene/02.broken-symmetry/01.scan-inten-1e+09/702.I0-100-drive+ramp-A0-01.00/octopus.sbatch
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+25119378     td-gr-GWc+      8           640                             10:00:10      0:0 
+25119378.0      octopus      8    256    256      338.47M      310.39M   10:00:18     0:15 
+  
+Maximum memory per node: 11.0911 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 93.3 %
+     

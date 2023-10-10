@@ -1,0 +1,95 @@
+# snippet_start calc_mode
+CalculationMode = td
+ExperimentalFeatures = yes
+# snippet_end
+
+# snippet_start systems
+%Systems
+ 'Maxwell' | maxwell
+ 'Medium'  | linear_medium
+%
+# snippet_end
+
+Maxwell.ParDomains = auto
+Maxwell.ParStates  = no
+
+# snippet_start box
+# free maxwell box limit of 13.0 plus 2.0 for the incident wave boundaries with
+# der_order times dx_mx (here: der_order = 4) plus 5.0 for absorbing boundary conditions
+
+lsize_mx = 20.0
+dx_mx    = 0.5
+
+BoxShape = parallelepiped
+
+%Lsize
+ lsize_mx | lsize_mx | lsize_mx
+%
+
+%Spacing
+ dx_mx | dx_mx | dx_mx
+%
+# snippet_end
+
+# snippet_start medium_box
+LinearMediumBoxShape = medium_box_file
+LinearMediumBoxFile = "lens.off"
+%LinearMediumProperties
+ 5.0 | 1.0 | 0.0 | 0.0
+%
+# snippet_end
+
+# snippet_start calculation
+MaxwellHamiltonianOperator = faraday_ampere_medium
+# snippet_end
+
+%MaxwellBoundaryConditions
+ plane_waves | plane_waves | plane_waves
+%
+
+# snippet_start boundaries
+%MaxwellAbsorbingBoundaries
+ mask | mask | mask
+%
+
+MaxwellABWidth = 5.0
+# snippet_end
+
+# snippet_start timestep
+Maxwell.TDSystemPropagator = exp_mid
+
+timestep = 1 / ( sqrt(c^2/dx_mx^2 + c^2/dx_mx^2 + c^2/dx_mx^2) )
+Maxwell.TDTimeStep = timestep
+Medium.TDTimeStep = timestep/2
+TDPropagationTime = 150*timestep
+# snippet_end
+
+# snippet_start_output
+OutputFormat = plane_x + plane_y + plane_z + axis_x + axis_y + axis_z
+
+%MaxwellOutput
+ electric_field
+%
+
+MaxwellOutputInterval = 25
+MaxwellTDOutput = maxwell_energy + maxwell_total_e_field + maxwell_total_b_field
+# snippet_end
+
+# snippet_start field
+
+lambda1 = 10.0
+omega1  = 2 * pi * c / lambda1
+k1_x    = omega1 / c
+E1_z    = 0.05
+pw1     = 10.0
+ps1_x   = - 25.0
+
+# laser propagates in x direction
+%MaxwellIncidentWaves
+  plane_wave_mx_function | 0 | 0 | E1_z | "plane_waves_function_1"
+%
+
+%MaxwellFunctions
+  "plane_waves_function_1" | mxf_cosinoidal_wave | k1_x | 0    | 0 | ps1_x | 0     | 0 | pw1
+%
+# snippet_end

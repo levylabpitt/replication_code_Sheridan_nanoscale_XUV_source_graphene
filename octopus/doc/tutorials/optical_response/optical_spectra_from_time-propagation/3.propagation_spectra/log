@@ -1,0 +1,26 @@
+
+************************** Spectrum Options **************************
+Input: [PropagationSpectrumType = AbsorptionSpectrum]
+Input: [SpectrumMethod = fourier]
+Input: [PropagationSpectrumDampMode = polynomial]
+Input: [PropagationSpectrumTransform = sine]
+Input: [PropagationSpectrumStartTime = 0.000 hbar/eV]
+Input: [PropagationSpectrumEndTime = -0.3675E-01 hbar/eV]
+Input: [PropagationSpectrumEnergyStep = 0.1000E-01 eV]
+Input: [PropagationSpectrumMinEnergy = 0.000 eV]
+Input: [PropagationSpectrumMaxEnergy = 20.00 eV]
+Input: [PropagationSpectrumDampFactor = -27.21 hbar/eV^-1]
+Input: [PropagationSpectrumSigmaDiagonalization = no]
+**********************************************************************
+
+File "multipoles" found. This will be the only file to be processed.
+(If more than one file is to be used, the files should be called
+"multipoles.1", "multipoles.2", etc.)
+
+
+******************************** PCM *********************************
+Input: [PCMLocalField = no]
+Input: [PCMTDLevel = 0]
+Input: [PCMStaticEpsilon = 1.000]
+
+Octopus emitted 1 warning.

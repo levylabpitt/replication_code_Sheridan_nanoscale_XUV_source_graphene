@@ -1,0 +1,71 @@
+CalculationMode   = td
+ExperimentalFeatures = yes
+FromScratch = yes
+
+%Systems
+  'Maxwell' | maxwell
+%
+# snippet_start box
+lsize_mx = 10.0
+dx_mx    = 0.5
+
+%Maxwell.Lsize
+ lsize_mx | lsize_mx | lsize_mx
+%
+
+%Maxwell.Spacing
+ dx_mx | dx_mx | dx_mx
+%
+# snippet_end
+
+# snippet_start boundaries
+%MaxwellBoundaryConditions
+ zero | zero | zero
+%
+
+%MaxwellAbsorbingBoundaries
+ not_absorbing | not_absorbing | not_absorbing
+%
+# snippet_end
+
+# snippet_start output
+OutputFormat = axis_x + plane_x + plane_y + plane_z
+MaxwellOutputInterval = 10
+MaxwellTDOutput       = maxwell_energy + maxwell_total_e_field
+
+%MaxwellOutput
+ electric_field
+ magnetic_field
+ maxwell_energy_density
+ external_current | "output_format" | plane_z | "output_interval" | 2
+%
+# snippet_end
+
+%MaxwellFieldsCoordinate
+ 0.00 | 0.00 | 0.00
+%
+
+TDSystemPropagator = exp_mid
+timestep           = 1 / ( sqrt(c^2/dx_mx^2 + c^2/dx_mx^2 + c^2/dx_mx^2) )
+TDTimeStep         = timestep
+TDPropagationTime  = 180 * timestep
+
+# snippet_start current
+ExternalCurrent = yes
+t1 = (180 * timestep) / 2
+tw = (180 * timestep) / 6
+j = 1.0000
+sigma = 0.5
+lambda = 5.0
+omega = 2 * pi * c / lambda
+
+%UserDefinedMaxwellExternalCurrent
+ current_td_function | "0" | "0" | "j*exp(-(x+8)^2/2/sigma^2)*exp(-(y-5)^2/2/sigma^2)*exp(-z^2/2/sigma^2)" | omega | "env_func_1"
+ current_td_function | "0" |" 0" | "j*exp(-(x+8)^2/2/sigma^2)*exp(-y^2/2/sigma^2)*exp(-z^2/2/sigma^2)"     | omega | "env_func_1"
+ current_td_function | "0" | "0" | "j*exp(-(x+8)^2/2/sigma^2)*exp(-(y+5)^2/2/sigma^2)*exp(-z^2/2/sigma^2)" | omega | "env_func_1"
+%
+
+%TDFunctions
+ "env_func_1" | tdf_gaussian | 1.0 | tw | t1
+%
+# snippet_end

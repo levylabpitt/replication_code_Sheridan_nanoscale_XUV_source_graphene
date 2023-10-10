@@ -1,0 +1,17 @@
+codecov:
+  strict_yaml_branch: develop
+  require_ci_to_pass: false
+  notify:
+    wait_for_ci: false
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 0.1%
+    patch:
+      default:
+        target: auto
+        threshold: 0%
+ignore:
+  - "external_libs"

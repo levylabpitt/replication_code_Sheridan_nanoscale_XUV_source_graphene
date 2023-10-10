@@ -1,0 +1,31 @@
+************************** Spectrum Options **************************
+Input: [PropagationSpectrumType = AbsorptionSpectrum]
+Input: [SpectrumMethod = fourier]
+Input: [PropagationSpectrumDampMode = polynomial]
+Input: [PropagationSpectrumTransform = sine]
+Input: [PropagationSpectrumStartTime = 0.000 hbar/eV]
+Input: [PropagationSpectrumEndTime = -0.3675E-01 hbar/eV]
+Input: [PropagationSpectrumEnergyStep = 0.1000E-01 eV]
+Input: [PropagationSpectrumMinEnergy = 0.000 eV]
+Input: [PropagationSpectrumMaxEnergy = 20.00 eV]
+Input: [PropagationSpectrumDampFactor = -27.21 hbar/eV^-1]
+Input: [PropagationSpectrumSigmaDiagonalization = no]
+**********************************************************************
+
+Found three files, "multipoles.1", "multipoles.2" and "multipoles.3".
+No symmetry information will be used.
+
+******************************** PCM *********************************
+Input: [PCMLocalField = no]
+Input: [PCMTDLevel = 0]
+Input: [PCMStaticEpsilon = 1.000]
+
+******************************** PCM *********************************
+Input: [PCMLocalField = no]
+Input: [PCMTDLevel = 0]
+Input: [PCMStaticEpsilon = 1.000]
+
+******************************** PCM *********************************
+Input: [PCMLocalField = no]
+Input: [PCMTDLevel = 0]
+Input: [PCMStaticEpsilon = 1.000]

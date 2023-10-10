@@ -1,0 +1,37 @@
+# -*- coding: utf-8 mode: shell-script -*-
+
+Test       : Helmholtz Decomposition
+Program    : octopus
+TestGroups : short-run, components
+Enabled    : Yes
+
+Input      : 35-helmholtz_decom.01-der_order_4.inp
+
+Precision: 3.16e-12
+match ;  Hertzian dipole transverse field test (rel.) ; LINEFIELD(hertz_helmholtz_decomposition, 3, 8) ; 0.6311696489013
+Precision: 5.50e-14
+match ;  Hertzian dipole longitudinal field test (rel.)  ; LINEFIELD(hertz_helmholtz_decomposition, 5, 8) ; 0.75593779992165
+Precision: 2.20e-12
+match ;  Hertzian dipole: self consistency of computed fields (rel.)  ; LINEFIELD(hertz_helmholtz_decomposition, 7, 13) ; 0.4398548888818
+Precision: 1.09e-12
+match ;  Gaussian transverse field test (rel.)  ; LINEFIELD(gauss_helmholtz_decomposition, 3, 8) ; 0.2187779692617
+Precision: 1.69e-12
+match ;  Gaussian longitudinal field test (rel.)  ; LINEFIELD(gauss_helmholtz_decomposition, 5, 8) ; 0.0003385971045
+Precision: 8.20e-13
+match ;  Gaussian: self consistency of computed fields  (rel.)  ; LINEFIELD(gauss_helmholtz_decomposition, 7, 13) ; 0.1640433949393
+
+# derivatives order 8
+Input      : 35-helmholtz_decom.02-der_order_8.inp
+
+Precision: 3.57e-12
+match ;  Hertzian dipole transverse field test (rel.) ; LINEFIELD(hertz_helmholtz_decomposition, 3, 8) ; 0.7132411456494
+Precision: 3.58e-08
+match ;  Hertzian dipole longitudinal field test (rel.) ; LINEFIELD(hertz_helmholtz_decomposition, 5, 8) ; 0.7162363470048
+Precision: 1.86e-12
+match ;  Hertzian dipole: self consistency of computed fields (rel.) ; LINEFIELD(hertz_helmholtz_decomposition, 7, 13) ; 0.3714544979061
+Precision: 1.19e-12
+match ;  Gaussian transverse field test (rel.) ; LINEFIELD(gauss_helmholtz_decomposition, 3, 8) ; 0.2385109575159
+Precision: 1.82e-12
+match ;  Gaussian longitudinal field test (rel.) ; LINEFIELD(gauss_helmholtz_decomposition, 5, 8) ; 0.0003639818647
+Precision: 8.94e-11
+match ;  Gaussian: self consistency of computed fields  (rel.) ; LINEFIELD(gauss_helmholtz_decomposition, 7, 13) ; 0.17883929767

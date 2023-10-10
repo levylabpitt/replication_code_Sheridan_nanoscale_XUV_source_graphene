@@ -1,0 +1,39 @@
+# -*- coding: utf-8 mode: shell-script -*-
+
+Test       : Crank-Nicolson (SPARSKIT)
+Program    : octopus
+TestGroups : short-run, real_time
+Enabled    : Yes
+
+Processors : 1
+Input      : 16-sparskit.01-gs.inp
+match ; SCF convergence ; GREPCOUNT(static/info, 'SCF converged') ; 1
+Precision: 5.30e-08
+match ;  Initial energy  ; GREPFIELD(static/info, 'Total       =', 3) ; -10.60684395
+
+Processors : 4
+Input      : 16-sparskit.02-kick.inp
+if (available sparskit); then
+  Precision: 5.29e-14
+  match ;  Energy [step  1]  ; LINEFIELD(td.general/energy, -21, 3) ; -10.584950240567
+  Precision: 5.21e-14
+  match ;  Energy [step  5]  ; LINEFIELD(td.general/energy, -16, 3) ; -10.429500488063601
+  Precision: 5.47e-14
+  match ;  Energy [step 10]  ; LINEFIELD(td.general/energy, -11, 3) ; -10.429494588909751
+  Precision: 5.21e-13
+  match ;  Energy [step 15]  ; LINEFIELD(td.general/energy, -6, 3) ; -10.4294928637371
+  Precision: 5.21e-13
+  match ;  Energy [step 20]  ; LINEFIELD(td.general/energy, -1, 3) ; -10.4294929056956
+  Precision: 3.47e-15
+  match ;  Dipole [step  1]  ; LINEFIELD(td.general/multipoles, -21, 4) ; 1.7806381166101503e-16
+  Precision: 3.65e-14
+  match ;  Dipole [step  5]  ; LINEFIELD(td.general/multipoles, -16, 4) ; -0.729537830060858
+  Precision: 1e-10
+  match ;  Dipole [step 10]  ; LINEFIELD(td.general/multipoles, -11, 4) ; -1.33926573879678
+  Precision: 1.10e-14
+  match ;  Dipole [step 15]  ; LINEFIELD(td.general/multipoles, -6, 4) ; -1.833833130199305
+  Precision: 1.11e-13
+  match ;  Dipole [step 20]  ; LINEFIELD(td.general/multipoles, -1, 4) ; -2.21530618411112
+else
+    match; Error missing SPARSKIT; GREPCOUNT(err, 'recompile with SPARSKIT support') ; 1
+endif

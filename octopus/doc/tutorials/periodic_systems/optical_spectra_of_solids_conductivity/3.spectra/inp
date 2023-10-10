@@ -1,0 +1,20 @@
+ExperimentalFeatures = yes
+PropagationSpectrumDampMode = exponential
+
+PeriodicDimensions = 3
+
+%LatticeVectors
+  0.0 | 0.5 | 0.5 
+  0.5 | 0.0 | 0.5
+  0.5 | 0.5 | 0.0
+%
+
+a = 10.18
+%LatticeParameters
+ a | a | a
+%
+
+%ReducedCoordinates
+ "Si" | 0.0 | 0.0 | 0.0 
+ "Si" | 1/4 | 1/4 | 1/4 
+%

@@ -1,0 +1,95 @@
+# snippet_start mode
+CalculationMode = td
+#snippet_end
+ExperimentalFeatures = yes
+
+TheoryLevel = independent_particles
+Dimensions = 2
+PeriodicDimensions = 1
+
+BoxShape = parallelepiped
+Spacing = 0.5
+
+LL = 120
+
+%LatticeParameters
+  8.15| LL 
+%
+
+%LatticeVectors
+  1.  | 0.
+  0.  | 1.
+%
+
+U0 = 0.78
+x0 = 0.565*1.88
+y0 = 0.0
+
+
+%Species
+  "tanh" | species_user_defined | potential_formula | " -U0*(1+tanh(x+x0))*(1+tanh(x0-x))*(1+tanh(y+y0))*(1+tanh(-y+y0))" | valence | 4
+%
+
+%Coordinates
+  "tanh" |   0.0   | 0.0
+%
+
+%KpointsGrid
+  1 | 1 
+%
+
+%KPointsPath
+  20
+  -0.5| 0 
+  0.5 | 0 
+%
+
+# snippet_start laser_field
+wpr = 52*eV            # Laser Frequency 
+II = 1.0E9             # Laser intensity in W/cm^2
+EE = sqrt(II/3.51e+16) # Electric field peak amplitude
+AApr = EE * 137/wpr    # Vector potential amplitude
+TT = 10 * femtosecond  # Pulse envelope
+tcpr= 2 * pi/wpr       # Field cycle
+npr = TT/tcpr          # Number of cycles
+Tpr = tcpr*npr         # Total pulse time
+# snippet_end
+
+# snippet_start vector_potential
+%TDExternalFields
+  vector_potential | 1  | 0  | 0 | wpr |"probe"
+%
+# snippet_end
+
+# snippet_start tdfunctions
+%TDFunctions
+  "probe"  | tdf_from_expr | 'AApr*sin(wpr*(t)/(2*npr))^2*step(Tpr-(t))*step(t)'
+%
+
+TDTimeStep = 0.2
+TDPropagationTime = Tpr
+# snippet_end
+
+# snippet_start cap
+Lmin = 30
+
+AbsorbingBoundaries = cap
+ABCapHeight = -1.0
+%ABShape
+ Lmin | LL | "abs(y)"
+%
+# snippet_end
+
+# snippet_start arpes
+
+PhotoElectronSpectrum = pes_flux
+  
+PES_Flux_Lsize = Lmin
+
+Emin =  wpr - 0.2
+Emax =  wpr
+DE   = 0.01
+%PES_Flux_EnergyGrid
+  Emin | Emax | DE
+%
+# snippet_end

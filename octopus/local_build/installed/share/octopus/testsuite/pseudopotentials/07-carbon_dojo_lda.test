@@ -1,0 +1,43 @@
+# -*- coding: utf-8 mode: shell-script -*-
+
+Test       : Carbon pseudodojo LDA
+Program    : octopus
+TestGroups : long-run, pseudopotentials
+Enabled    : Yes
+
+Input: 07-carbon_dojo_lda.01-gs.inp
+match ; SCF convergence    ; GREPCOUNT(static/info, 'SCF converged') ; 1
+Precision: 7.77e-07
+match ;  Total energy        ; GREPFIELD(static/info, 'Total       =', 3) ; -155.35595120
+Precision: 7.23e-06
+match ;  Eigenvalue   [1up]  ; GREPFIELD(static/info, '1   up', 3) ; -14.451847
+Precision: 1.00e-01
+match ;  Occupation   [1up]  ; GREPFIELD(static/info, '1   up', 4) ; 1.0
+Precision: 5.91e-06
+match ;  Eigenvalue   [1dn]  ; GREPFIELD(static/info, '1   dn', 3) ; -11.812562999999999
+Precision: 1.00e-01
+match ;  Occupation   [1dn]  ; GREPFIELD(static/info, '1   dn', 4) ; 1.0
+Precision: 3.10e-05
+match ;  Eigenvalue   [2up]  ; GREPFIELD(static/info, '2   up', 3) ; -6.190701
+Precision: 3.33e-05
+match ;  Occupation   [2up]  ; GREPFIELD(static/info, '2   up', 4) ; 0.666667
+Precision: 1.90e+00
+match ;  Eigenvalue   [2dn]  ; GREPFIELD(static/info, '2   dn', 3) ; -3.8
+Precision: 1.00e-04
+match ;  Occupation   [2dn]  ; GREPFIELD(static/info, '2   dn', 4) ; 0.0
+Precision: 3.10e-05
+match ;  Eigenvalue   [3up]  ; GREPFIELD(static/info, '3   up', 3) ; -6.190701
+Precision: 3.33e-05
+match ;  Occupation   [3up]  ; GREPFIELD(static/info, '3   up', 4) ; 0.666667
+Precision: 1.90e+00
+match ;  Eigenvalue   [3dn]  ; GREPFIELD(static/info, '3   dn', 3) ; -3.8
+Precision: 1.00e-04
+match ;  Occupation   [3dn]  ; GREPFIELD(static/info, '3   dn', 4) ; 0.0
+Precision: 3.10e-05
+match ;  Eigenvalue   [4up]  ; GREPFIELD(static/info, '4   up', 3) ; -6.190701
+Precision: 3.33e-05
+match ;  Occupation   [4up]  ; GREPFIELD(static/info, '4   up', 4) ; 0.666667
+Precision: 1.90e+00
+match ;  Eigenvalue   [4dn]  ; GREPFIELD(static/info, '4   dn', 3) ; -3.8
+Precision: 1.00e-04
+match ;  Occupation   [4dn]  ; GREPFIELD(static/info, '4   dn', 4) ; 0.0

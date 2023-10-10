@@ -1,0 +1,26 @@
+CalculationMode = em_resp
+UnitsOutput = eV_angstrom
+
+Radius = 6.5*angstrom
+Spacing = 0.24*angstrom
+
+CH = 1.097*angstrom
+%Coordinates
+ "C" |           0 |          0 |           0
+ "H" |  CH/sqrt(3) | CH/sqrt(3) |  CH/sqrt(3)
+ "H" | -CH/sqrt(3) |-CH/sqrt(3) |  CH/sqrt(3)
+ "H" |  CH/sqrt(3) |-CH/sqrt(3) | -CH/sqrt(3)
+ "H" | -CH/sqrt(3) | CH/sqrt(3) | -CH/sqrt(3)
+%
+
+# snippet_start changes
+%EMFreqs
+5 | 0*eV | 8*eV
+9 | 10*eV | 12*eV
+%
+EMEta = 0.1*eV
+
+Preconditioner = no
+LinearSolver = qmr_dotp
+ExperimentalFeatures = yes
+# snippet_end

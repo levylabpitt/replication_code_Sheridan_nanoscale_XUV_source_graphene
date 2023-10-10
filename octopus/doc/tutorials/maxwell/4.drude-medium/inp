@@ -1,0 +1,85 @@
+CalculationMode = td
+ExperimentalFeatures = yes
+
+%Systems
+ 'Maxwell' | maxwell
+ 'NP' | dispersive_medium
+%
+
+LinearMediumBoxShape = medium_box_file
+LinearMediumBoxFile = "gold-np-r80nm.off"
+MediumPoleEnergy = 7.87*ev
+MediumPoleDamping = 0.053*ev
+MediumDispersionType = drude_medium
+%MediumCurrentCoordinates
+ -120.0*nm | 0.0 | 0.0
+  -80.0*nm | 0.0 | 0.0 
+  -20.0*nm | 0.0 | 0.0 
+%
+
+l_zero = 550*nm     #central wavelength
+lsize_mx = 1.25*l_zero
+lsize_myz = 0.5*l_zero
+S_c = 0.1           #Courant condition coefficient
+
+dx_mx    = 20*nm
+BoxShape   = parallelepiped
+
+%Lsize
+ lsize_mx+0.25*l_zero | lsize_myz+0.25*l_zero | lsize_myz+0.25*l_zero
+%
+
+%Spacing
+ dx_mx | dx_mx | dx_mx
+%
+
+%MaxwellBoundaryConditions
+ plane_waves | zero | zero
+%
+
+%MaxwellAbsorbingBoundaries
+ cpml | cpml | cpml
+%
+
+MaxwellABWidth              = 0.25*l_zero
+MaxwellABPMLPower           = 3.0
+MaxwellABPMLReflectionError = 1e-16
+
+OutputFormat = axis_x + plane_y
+
+%MaxwellOutput 
+ electric_field
+%
+
+MaxwellOutputInterval = 20
+MaxwellTDOutput       = maxwell_energy + maxwell_total_e_field
+
+%MaxwellFieldsCoordinate
+  -120.0*nm | 0.0 | 0.0
+  -80.0*nm | 0.0 | 0.0 
+  -20.0*nm | 0.0 | 0.0 
+%
+
+TDSystemPropagator = exp_mid
+timestep                = S_c*dx_mx/c
+TDTimeStep              = timestep
+TDPropagationTime       = 240*timestep
+
+lambda = l_zero
+omega  = 2 * pi * c / lambda
+kx     = omega / c
+Ez    = 1.0
+sigma = 40.0*c
+p_s     = -lsize_mx*1.2
+
+%UserDefinedInitialMaxwellStates
+ use_incident_waves
+%
+
+%MaxwellIncidentWaves
+ plane_wave_mx_function | 0 | 0 | Ez | "plane_waves_function"
+%
+
+%MaxwellFunctions
+ "plane_waves_function" | mxf_gaussian_wave | kx | 0 | 0 | p_s | 0 | 0 | sigma
+%

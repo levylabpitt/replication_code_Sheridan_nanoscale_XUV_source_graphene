@@ -1,0 +1,11 @@
+*********************** SCF CYCLE ITER #   12 ************************
+ etot  = -4.46629384E-01 abs_ev   =  1.83E-07 rel_ev   =  7.84E-07
+ ediff =        2.28E-07 abs_dens =  2.71E-07 rel_dens =  2.71E-07
+Matrix vector products:      9
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1       -0.233108    1.000000   ( 2.0E-07)
+
+Elapsed time for SCF step    12:          0.01
+**********************************************************************

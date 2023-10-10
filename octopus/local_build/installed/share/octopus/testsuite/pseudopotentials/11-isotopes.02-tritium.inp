@@ -1,0 +1,14 @@
+CalculationMode = gs
+Debug = info
+
+%Species
+"T" | species_pseudo | file | 'T_ONCV_PBE-1.2.upf'
+%
+
+%Coordinates
+ 'T' | 0.0 | 0.0 | 0.0
+%
+
+Spacing = 0.35
+Radius = 6.0
+

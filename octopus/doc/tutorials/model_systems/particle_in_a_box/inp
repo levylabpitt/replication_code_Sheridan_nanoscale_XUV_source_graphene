@@ -1,0 +1,18 @@
+FromScratch = yes
+CalculationMode = gs
+
+Dimensions = 1
+TheoryLevel = independent_particles
+
+Radius = 5
+Spacing = 0.01
+
+%Species
+  "null" | species_user_defined | potential_formula | "0" | valence | 1
+%
+
+%Coordinates
+  "null" | 0
+%
+
+LCAOStart = lcao_states

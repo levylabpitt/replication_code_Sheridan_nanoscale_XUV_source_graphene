@@ -1,0 +1,3 @@
+# Electronic sum rule       =         3.682707
+# Static polarizability (from sum rule) =         2.065358 A
+#%

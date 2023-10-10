@@ -1,0 +1,2775 @@
+    <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+                                ___
+                             .-'   `'.
+                            /         \
+                            |         ;
+                            |         |           ___.--,
+                   _.._     |0) ~ (0) |    _.---'`__.-( (_.
+            __.--'`_.. '.__.\    '--. \_.-' ,.--'`     `""`
+           ( ,.--'`   ',__ /./;   ;, '.__.'`    __
+           _`) )  .---.__.' / |   |\   \__..--""  """--.,_
+          `---' .'.''-._.-'`_./  /\ '.  \ _.-~~~````~~~-._`-.__.'
+                | |  .' _.-' |  |  \  \  '.               `~---`
+                 \ \/ .'     \  \   '. '-._)
+                  \/ /        \  \    `=.__`~-.
+             jgs  / /\         `) )    / / `"".`\
+            , _.-'.'\ \        / /    ( (     / /
+             `--~`   ) )    .-'.'      '.'.  | (
+                    (/`    ( (`          ) )  '-;
+                     `      '-;         (-'
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2, or (at your option)
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+
+    <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+                           Running octopus
+
+Version                : maya
+Commit                 : ab6cce78a013c99ccb2784512df020dd9aac3c98
+Build time             : Mon Sep 12 11:18:16 CEST 2022
+Configuration options  : maxdim3 sse2 avx libxc_fxc libxc_kxc
+Optional libraries     :
+Architecture           : x86_64
+C compiler             : gcc
+C compiler flags       : -g -gdwarf -Wall -O2 -march=native -ftest-coverage -fprofile-arcs
+C++ compiler           : g++
+C++ compiler flags     : -g -gdwarf -Wall -O2 -march=native -ftest-coverage -fprofile-arcs
+Fortran compiler       : gfortran (GCC version 10.2.1 20210110)
+Fortran compiler flags : -g -gdwarf -Wall -Wno-maybe-uninitialized -O2 -march=native -fbacktrace -ffpe-trap=invalid
+
+             The octopus is swimming in poppyseed (Linux)
+
+
+            Calculation started on 2022/09/12 at 12:12:01
+
+
+************************** Calculation Mode **************************
+Input: [CalculationMode = gs]
+**********************************************************************
+
+
+******************************* Space ********************************
+Octopus will run in 3 dimension(s).
+Octopus will treat the system as periodic in 3 dimension(s).
+**********************************************************************
+
+Input: [PseudopotentialSet = standard]
+Reading Coordinates from ReducedCoordinates block
+
+****************************** Species *******************************
+  Species 'Ni1'
+    type             : pseudopotential
+    file             : '/home/luedersm/Octopus_foss-2020b/share/octopus/pseudopotentials/quantum-simulation.org/hscv/pbe//Ni_HSCV_PBE-1.0.xml'
+    file format      : QSO
+    valence charge   : 16.0
+    atomic number    :  28
+    form on file     : semilocal
+    orbital origin   : from file
+    lmax             : 2
+    llocal           : 0
+    projectors per l : 1
+    total projectors : 2
+    application form : kleinman-bylander
+    orbitals         :  9
+    bound orbitals   :  9
+
+  Species 'Ni2'
+    type             : pseudopotential
+    file             : '/home/luedersm/Octopus_foss-2020b/share/octopus/pseudopotentials/quantum-simulation.org/hscv/pbe//Ni_HSCV_PBE-1.0.xml'
+    file format      : QSO
+    valence charge   : 16.0
+    atomic number    :  28
+    form on file     : semilocal
+    orbital origin   : from file
+    lmax             : 2
+    llocal           : 0
+    projectors per l : 1
+    total projectors : 2
+    application form : kleinman-bylander
+    orbitals         :  9
+    bound orbitals   :  9
+
+  Species 'O'
+    type             : pseudopotential
+    file             : '/home/luedersm/Octopus_foss-2020b/share/octopus/pseudopotentials/PSF/O.psf'
+    file format      : PSF
+    valence charge   : 6.0
+    atomic number    :   8
+    form on file     : semilocal
+    orbital origin   : calculated
+    lmax             : 1
+    llocal           : 0
+    projectors per l : 1
+    total projectors : 1
+    application form : kleinman-bylander
+    orbitals         :  9
+    bound orbitals   :  4
+
+**********************************************************************
+
+
+***************************** Symmetries *****************************
+Space group No.  166
+International: R-3m
+Schoenflies: D3d^5
+  Index                Rotation matrix                      Fractional translations
+    1 :     1   0   0     0   1   0     0   0   1      0.000000    0.000000    0.000000
+    2 :    -1   0   0     0  -1   0     0   0  -1      0.000000    0.000000    0.000000
+    3 :    -1   1   0    -1   0   0    -2   0   1      0.000000    0.000000    0.000000
+    4 :     1  -1   0     1   0   0     2   0  -1      0.000000    0.000000    0.000000
+    5 :     0  -1   0     1  -1   0     0  -2   1      0.000000    0.000000    0.000000
+    6 :     0   1   0    -1   1   0     0   2  -1      0.000000    0.000000    0.000000
+    7 :     1   0   0     1  -1   0     2   0  -1      0.000000    0.000000    0.000000
+    8 :    -1   0   0    -1   1   0    -2   0   1      0.000000    0.000000    0.000000
+    9 :     0  -1   0    -1   0   0     0   0  -1      0.000000    0.000000    0.000000
+   10 :     0   1   0     1   0   0     0   0   1      0.000000    0.000000    0.000000
+   11 :    -1   1   0     0   1   0     0   2  -1      0.000000    0.000000    0.000000
+   12 :     1  -1   0     0  -1   0     0  -2   1      0.000000    0.000000    0.000000
+Info: The system has    12 symmetries that can be used.
+**********************************************************************
+
+Input: [CurvMethod = curv_affine]
+Input: [DerivativesStencil = stencil_stargeneral]
+
+****************************** Lattice *******************************
+  Lattice Vectors [b]
+    0.000000    3.940450    3.940450
+    3.940450    0.000000    3.940450
+    7.880900    7.880900    0.000000
+  Cell volume =           244.7358 [b^3]
+  Reciprocal-Lattice Vectors [b^-1]
+   -0.797267    0.797267    0.797267
+    0.797267   -0.797267    0.797267
+    0.398634    0.398634   -0.398634
+  Cell angles [degree]
+    alpha =   60.000
+    beta  =   60.000
+    gamma =   60.000
+**********************************************************************
+
+Checking if the generated full k-point grid is symmetric
+
+     4 k-points generated from parameters :
+ ---------------------------------------------------
+    n =    2    2    2
+
+    s1  =  0.00  0.00  0.00
+
+ index |    weight    |             coordinates              |
+       1 |     0.125000 |    0.000000    0.000000    0.000000  |
+       2 |     0.375000 |    0.000000    0.500000    0.000000  |
+       3 |     0.125000 |    0.000000    0.000000    0.500000  |
+       4 |     0.375000 |    0.000000    0.500000    0.500000  |
+
+Input: [SpinComponents = polarized]
+Input: [SmearingFunction = semiconducting]
+Input: [SymmetrizeDensity = yes]
+
+******************************* States *******************************
+Total electronic charge  =       44.000
+Number of states         =       25
+States block-size        =        4
+**********************************************************************
+
+
+************************** Parallelization ***************************
+Info: Octopus will run in *serial*
+**********************************************************************
+
+Info: Generating weights for finite-difference discretization of x-gradient
+Info: Generating weights for finite-difference discretization of y-gradient
+Info: Generating weights for finite-difference discretization of z-gradient
+Info: Generating weights for finite-difference discretization of Laplacian
+
+******************************** Grid ********************************
+Simulation Box:
+  Type = parallelepiped
+  Lengths [b] = (   5.573,   5.573,  11.145)
+Main mesh:
+  Spacing [b] = ( 0.398, 0.398, 0.398)    volume/point [b^3] =      0.04459
+  # inner mesh =       5488
+  # total mesh =      15632
+  Grid Cutoff [H] =    31.146137    Grid Cutoff [Ry] =    62.292273
+**********************************************************************
+
+Checking if the real-space grid is symmetric
+Info: states-block size = 0.5 MiB
+Input: [StatesPack = yes]
+Input: [StatesOrthogonalization = cholesky_serial]
+Info: the XCFunctional has been selected to match the pseudopotentials
+      used in the calculation.
+
+**************************** Theory Level ****************************
+Input: [TheoryLevel = kohn_sham]
+
+Exchange-correlation:
+  Exchange
+    Perdew, Burke & Ernzerhof (GGA)
+    [1] J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+    [2] J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+  Correlation
+    Perdew, Burke & Ernzerhof (GGA)
+    [1] J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+    [2] J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+
+Input: [SICCorrection = sic_none]
+**********************************************************************
+
+
+****************************** Hartree *******************************
+Input: [DressedOrbitals = no]
+The chosen Poisson solver is 'fast Fourier transform'
+Input: [PoissonFFTKernel = fft_nocut]
+**********************************************************************
+
+Info: FFT grid dimensions       = 14 x 14 x 28
+      Total grid size           = 5488 (      0.0 MiB )
+Input: [FilterPotentials = filter_TS]
+Info: Pseudopotential for Ni1
+  Radii for localized parts:
+    local part     =  2.9 b
+    non-local part =  2.6 b
+    orbitals       = 10.2 b
+
+Info: Pseudopotential for Ni2
+  Radii for localized parts:
+    local part     =  2.9 b
+    non-local part =  2.6 b
+    orbitals       = 10.2 b
+
+Info: Pseudopotential for O
+  Radii for localized parts:
+    local part     =  2.6 b
+    non-local part =  1.8 b
+    orbitals       =  6.9 b
+
+Input: [RelativisticCorrection = non_relativistic]
+Input: [DFTULevel = dft_u_empirical]
+
+******************************* DFT+U ********************************
+Input: [DFTUDoubleCounting = dft_u_fll]
+Input: [DFTUPoissonSolver = dft_u_poisson_fft]
+
+Method:
+  [1] Dudarev et al., Phys. Rev. B 57, 1505 (1998)
+Implementation:
+  [1] Tancogne-Dejean, Oliveira, and Rubio, Phys. Rev. B 69, 245133 (2017)
+
+Input: [AOTruncation = ao_full]
+Input: [AOThreshold = 0.1000E-01]
+Input: [AONormalize = yes]
+Input: [AOSubmesh = no]
+Input: [AOLoewdin = no]
+Building the LDA+U localized orbital basis.
+Found   2 orbital sets.
+Orbital set  1 has a value of U of  0.18375 Ha.
+It contains  5 orbitals.
+The radius is  4.40000 Bohr,  with   8007 grid points.
+Orbital set  2 has a value of U of  0.18375 Ha.
+It contains  5 orbitals.
+The radius is  4.40000 Bohr,  with   8007 grid points.
+**********************************************************************
+
+Input: [MagneticConstrain = 0]
+
+****************** Approximate memory requirements *******************
+Mesh
+  global  :       0.2 MiB
+  local   :       0.6 MiB
+  total   :       0.8 MiB
+
+States
+  real    :      23.9 MiB (par_kpoints + par_states + par_domains)
+  complex :      47.7 MiB (par_kpoints + par_states + par_domains)
+
+**********************************************************************
+
+Info: Generating external potential
+      done.
+Info: Octopus initialization completed.
+Info: Starting calculation mode.
+Info: Allocating ground state wave-functions
+Info: Blocks of states
+      Block       1 contains       4 states:       1 -       4
+      Block       2 contains       4 states:       5 -       8
+      Block       3 contains       4 states:       9 -      12
+      Block       4 contains       4 states:      13 -      16
+      Block       5 contains       4 states:      17 -      20
+      Block       6 contains       4 states:      21 -      24
+      Block       7 contains       1 states:      25 -      25
+Info: Ground-state allocation done.
+Input: [MixField = potential] (what to mix during SCF cycles)
+Input: [MixingScheme = broyden]
+Info: Mixing uses    4 steps and restarts after   20 steps.
+
+**************************** Eigensolver *****************************
+Input: [Eigensolver = cg]
+Input: [Preconditioner = pre_filter]
+Info: Generating weights for finite-difference discretization of Preconditioner
+Input: [PreconditionerFilterFactor = 0.6000]
+Input: [SubspaceDiagonalization = standard]
+**********************************************************************
+
+Input: [EigensolverSkipKpoints = no]
+Input: [LCAOStart = lcao_states]
+Input: [LCAOScaleFactor = 1.000]
+Input: [LCAOMaximumOrbitalRadius = 20.00 b]
+Input: [GuessMagnetDensity = user_defined]
+Info: Unnormalized total charge =     44.003463
+Info: Renormalized total charge =     44.000000
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       7.048845
+   2       Ni2      -7.048845
+   3         O      -0.000000
+   4         O      -0.000000
+Info: Setting up Hamiltonian.
+Info: Performing initial LCAO calculation with     26 orbitals.
+Info: Getting Hamiltonian matrix elements.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+Eigenvalues [H]
+ #st  Spin   Eigenvalue      Occupation
+#k =       1, k = (  0.000000,  0.000000,  0.000000)
+   1   up    -2.362873       1.000000
+   1   dn    -2.362873       1.000000
+   2   up    -2.359616       1.000000
+   2   dn    -2.359617       1.000000
+   3   up    -2.359272       1.000000
+   3   dn    -2.359272       1.000000
+   4   up    -2.001675       1.000000
+   4   dn    -2.001689       1.000000
+   5   up    -2.000469       1.000000
+   5   dn    -2.000497       1.000000
+   6   up    -1.999862       1.000000
+   6   dn    -1.999870       1.000000
+   7   up    -0.703835       1.000000
+   7   dn    -0.703630       1.000000
+   8   up    -0.653780       1.000000
+   8   dn    -0.655788       1.000000
+   9   up    -0.242338       1.000000
+   9   dn    -0.235216       1.000000
+  10   up    -0.137869       1.000000
+  10   dn    -0.139166       1.000000
+  11   up    -0.137704       1.000000
+  11   dn    -0.139098       1.000000
+  12   up    -0.098776       1.000000
+  12   dn    -0.099369       1.000000
+  13   up    -0.098342       1.000000
+  13   dn    -0.098998       1.000000
+  14   up    -0.098291       1.000000
+  14   dn    -0.098946       1.000000
+  15   up     0.145321       1.000000
+  15   dn     0.145411       1.000000
+  16   up     0.147832       1.000000
+  16   dn     0.147665       1.000000
+  17   up     0.150166       1.000000
+  17   dn     0.151120       1.000000
+  18   up     0.151436       1.000000
+  18   dn     0.151685       1.000000
+  19   up     0.193408       1.000000
+  19   dn     0.194148       1.000000
+  20   up     0.193549       1.000000
+  20   dn     0.194288       1.000000
+  21   up     0.392244       1.000000
+  21   dn     0.403345       1.000000
+  22   up     0.449242       1.000000
+  22   dn     0.449810       1.000000
+  23   up     0.451374       1.000000
+  23   dn     0.451941       1.000000
+  24   up     0.494268       1.000000
+  24   dn     0.495810       1.000000
+  25   up     0.494401       1.000000
+  25   dn     0.495944       1.000000
+#k =       2, k = (  0.000000,  0.500000,  0.000000)
+   1   up    -2.340130       1.000000
+   1   dn    -2.340164       1.000000
+   2   up    -2.337208       1.000000
+   2   dn    -2.337242       1.000000
+   3   up    -1.981996       1.000000
+   3   dn    -1.982007       1.000000
+   4   up    -1.980682       1.000000
+   4   dn    -1.980691       1.000000
+   5   up    -1.896373       1.000000
+   5   dn    -1.896407       1.000000
+   6   up    -1.552612       1.000000
+   6   dn    -1.553324       1.000000
+   7   up    -0.551389       1.000000
+   7   dn    -0.552869       1.000000
+   8   up    -0.541738       1.000000
+   8   dn    -0.546665       1.000000
+   9   up     0.037481       1.000000
+   9   dn     0.032593       1.000000
+  10   up     0.075523       1.000000
+  10   dn     0.083971       1.000000
+  11   up     0.136198       1.000000
+  11   dn     0.131103       1.000000
+  12   up     0.137253       1.000000
+  12   dn     0.132021       1.000000
+  13   up     0.145051       1.000000
+  13   dn     0.141494       1.000000
+  14   up     0.261802       1.000000
+  14   dn     0.256316       1.000000
+  15   up     0.634968       1.000000
+  15   dn     0.644493       1.000000
+  16   up     0.658465       1.000000
+  16   dn     0.663746       1.000000
+  17   up     0.667374       1.000000
+  17   dn     0.668165       1.000000
+  18   up     0.740499       1.000000
+  18   dn     0.749475       1.000000
+  19   up     0.968384       1.000000
+  19   dn     0.968734       1.000000
+  20   up     0.973003       1.000000
+  20   dn     0.974572       1.000000
+  21   up     1.092618       0.000000
+  21   dn     1.095918       0.000000
+  22   up     1.105659       0.000000
+  22   dn     1.107567       0.000000
+  23   up     1.221109       0.000000
+  23   dn     1.221500       0.000000
+  24   up     1.395561       0.000000
+  24   dn     1.399573       0.000000
+  25   up     1.412336       0.000000
+  25   dn     1.414861       0.000000
+#k =       3, k = (  0.000000,  0.000000,  0.500000)
+   1   up    -2.360136       1.000000
+   1   dn    -2.360137       1.000000
+   2   up    -2.356980       1.000000
+   2   dn    -2.356981       1.000000
+   3   up    -2.243060       1.000000
+   3   dn    -2.243090       1.000000
+   4   up    -1.999942       1.000000
+   4   dn    -1.999945       1.000000
+   5   up    -1.998437       1.000000
+   5   dn    -1.998440       1.000000
+   6   up    -1.887602       1.000000
+   6   dn    -1.887813       1.000000
+   7   up    -0.666094       1.000000
+   7   dn    -0.669055       1.000000
+   8   up    -0.659303       1.000000
+   8   dn    -0.660828       1.000000
+   9   up    -0.117911       1.000000
+   9   dn    -0.111559       1.000000
+  10   up    -0.079080       1.000000
+  10   dn    -0.081577       1.000000
+  11   up    -0.067683       1.000000
+  11   dn    -0.069689       1.000000
+  12   up    -0.067483       1.000000
+  12   dn    -0.069587       1.000000
+  13   up    -0.043131       1.000000
+  13   dn    -0.045272       1.000000
+  14   up    -0.042716       1.000000
+  14   dn    -0.044914       1.000000
+  15   up     0.286653       1.000000
+  15   dn     0.287883       1.000000
+  16   up     0.289930       1.000000
+  16   dn     0.291101       1.000000
+  17   up     0.290797       1.000000
+  17   dn     0.294858       1.000000
+  18   up     0.399608       1.000000
+  18   dn     0.406569       1.000000
+  19   up     0.419293       1.000000
+  19   dn     0.420230       1.000000
+  20   up     0.420330       1.000000
+  20   dn     0.421236       1.000000
+  21   up     0.525671       1.000000
+  21   dn     0.536667       1.000000
+  22   up     0.583156       1.000000
+  22   dn     0.584784       1.000000
+  23   up     0.585066       1.000000
+  23   dn     0.586719       1.000000
+  24   up     0.725173       1.000000
+  24   dn     0.726187       1.000000
+  25   up     0.725509       1.000000
+  25   dn     0.726508       1.000000
+#k =       4, k = (  0.000000,  0.500000,  0.500000)
+   1   up    -2.341903       1.000000
+   1   dn    -2.341917       1.000000
+   2   up    -2.339999       1.000000
+   2   dn    -2.340021       1.000000
+   3   up    -1.984016       1.000000
+   3   dn    -1.984028       1.000000
+   4   up    -1.983301       1.000000
+   4   dn    -1.983316       1.000000
+   5   up    -1.936810       1.000000
+   5   dn    -1.936870       1.000000
+   6   up    -1.591993       1.000000
+   6   dn    -1.592656       1.000000
+   7   up    -0.558015       1.000000
+   7   dn    -0.562876       1.000000
+   8   up    -0.548970       1.000000
+   8   dn    -0.549961       1.000000
+   9   up     0.015312       1.000000
+   9   dn     0.017223       1.000000
+  10   up     0.051146       1.000000
+  10   dn     0.051627       1.000000
+  11   up     0.115622       1.000000
+  11   dn     0.112320       1.000000
+  12   up     0.130295       1.000000
+  12   dn     0.126707       1.000000
+  13   up     0.130522       1.000000
+  13   dn     0.127030       1.000000
+  14   up     0.244299       1.000000
+  14   dn     0.239783       1.000000
+  15   up     0.565749       1.000000
+  15   dn     0.572200       1.000000
+  16   up     0.600540       1.000000
+  16   dn     0.604046       1.000000
+  17   up     0.644882       1.000000
+  17   dn     0.645995       1.000000
+  18   up     0.704494       1.000000
+  18   dn     0.714385       1.000000
+  19   up     0.916864       1.000000
+  19   dn     0.917483       1.000000
+  20   up     0.948095       1.000000
+  20   dn     0.949306       1.000000
+  21   up     0.988090       1.000000
+  21   dn     0.989582       1.000000
+  22   up     1.018820       1.000000
+  22   dn     1.019466       1.000000
+  23   up     1.177939       0.000000
+  23   dn     1.182060       0.000000
+  24   up     1.292044       0.000000
+  24   dn     1.294343       0.000000
+  25   up     1.324896       0.000000
+  25   dn     1.325339       0.000000
+Info: Ground-state restart information will be written to 'restart/gs'.
+Info: SCF using complex wavefunctions.
+Info: Starting SCF iteration.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    1 ************************
+ etot  = -2.60082557E+02 abs_ev   =  1.18E+01 rel_ev   =  4.28E-01
+ ediff =        2.60E+02 abs_dens =  1.31E+01 rel_dens =  2.97E-01
+Matrix vector products:    978
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       1    dn       -2.374588    1.000000   ( 8.0E-03)
+      1       1    up       -2.374588    1.000000   ( 8.0E-03)
+      1       3    dn       -2.374235    1.000000   ( 5.8E-02)
+      1       3    up       -2.374234    1.000000   ( 5.7E-02)
+      1       2    dn       -2.373863    1.000000   ( 1.0E-01)
+      1       2    up       -2.373859    1.000000   ( 1.0E-01)
+      1       4    dn       -2.373463    1.000000   ( 1.1E-01)
+      1       4    up       -2.373459    1.000000   ( 1.1E-01)
+
+  [output of 162 eigenvalues skipped: maximum error = 5.4E-01]
+
+     21       4    dn        0.379920    1.000000   ( 4.4E-01)
+     21       2    up        0.380654    1.000000   ( 4.2E-01)
+     23       3    up        0.381264    1.000000   ( 3.1E-01)
+     21       2    dn        0.381298    1.000000   ( 4.2E-01)
+     23       1    up        0.382647    1.000000   ( 1.5E-01)
+     23       1    dn        0.383276    1.000000   ( 1.5E-01)
+     22       4    dn        0.384368    1.000000   ( 3.9E-01)
+     22       4    up        0.385551    1.000000   ( 4.1E-01)
+     22       2    up        0.404499    0.666667   ( 4.0E-01)
+     22       2    dn        0.405522    0.000000   ( 5.2E-01)
+     24       1    up        0.412499    0.000000   ( 1.7E-01)
+     24       1    dn        0.412765    0.000000   ( 1.8E-01)
+     24       3    dn        0.422508    0.000000   ( 3.1E-01)
+     24       3    up        0.423363    0.000000   ( 3.1E-01)
+     25       1    dn        0.429273    0.000000   ( 1.9E-01)
+     25       1    up        0.429880    0.000000   ( 1.9E-01)
+     25       3    dn        0.439350    0.000000   ( 3.1E-01)
+
+  [output of 5 eigenvalues skipped: maximum error = 4.9E-01]
+
+     24       4    dn        0.496239    0.000000   ( 4.8E-01)
+     24       4    up        0.496318    0.000000   ( 4.8E-01)
+     24       2    up        0.509577    0.000000   ( 5.4E-01)
+     24       2    dn        0.509921    0.000000   ( 5.5E-01)
+     25       4    dn        0.515227    0.000000   ( 4.8E-01)
+     25       4    up        0.515496    0.000000   ( 4.8E-01)
+     25       2    up        0.521353    0.000000   ( 5.7E-01)
+     25       2    dn        0.521559    0.000000   ( 5.7E-01)
+
+Density of states:
+
+%--------%------------------------------------------------------------
+%--------%-------------------------------------------%----------------
+%--------%-------------------------------------------%----------------
+%--------%-------------------------------------------%----------------
+%--------%-------------------------------------------%------------%---
+%--------%-------------------------------%----------%%%-----%-----%---
+%--------%-------------------------------%----------%%%--%--%---%-%--%
+%--------%-------------------------------%----------%%%--%-%%-%-%-%-%%
+%--------%-------------------------------%----------%%%--%-%%%%-%-%%%%
+%--------%------------------------------%%---------%%%%--%-%%%%-%-%%%%
+                                                                  ^
+
+Total Magnetic Moment:
+ mz =   0.250000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       2.914963
+   2       Ni2      -2.844780
+   3         O       0.045046
+   4         O       0.045046
+
+Elapsed time for SCF step     1:          1.02
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    2 ************************
+ etot  = -2.68691819E+02 abs_ev   =  3.63E+00 rel_ev   =  1.16E-01
+ ediff =        8.61E+00 abs_dens =  5.60E+00 rel_dens =  1.27E-01
+Matrix vector products:   2366
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    dn       -2.588080    1.000000   ( 1.6E-02)
+      1       2    dn       -2.588079    1.000000   ( 1.6E-02)
+      1       1    dn       -2.587842    1.000000   ( 9.5E-03)
+      1       3    dn       -2.587831    1.000000   ( 1.6E-02)
+      2       4    dn       -2.584695    1.000000   ( 2.2E-02)
+      2       2    dn       -2.584690    1.000000   ( 2.3E-02)
+      1       4    up       -2.584351    1.000000   ( 1.6E-02)
+      1       2    up       -2.584351    1.000000   ( 1.6E-02)
+
+  [output of 161 eigenvalues skipped: maximum error = 3.6E-01]
+
+     21       2    dn        0.195477    1.000000   ( 7.7E-02)
+     23       1    up        0.217357    1.000000   ( 4.3E-02)
+     23       1    dn        0.220997    1.000000   ( 3.8E-02)
+     22       3    up        0.236196    1.000000   ( 2.5E-01)
+     22       3    dn        0.236898    1.000000   ( 1.7E-01)
+     22       4    up        0.246373    1.000000   ( 1.2E-01)
+     22       4    dn        0.250049    1.000000   ( 1.2E-01)
+     22       2    up        0.258411    1.000000   ( 1.2E-01)
+     22       2    dn        0.262900    0.333333   ( 1.3E-01)
+     23       4    up        0.266199    0.000000   ( 7.1E-02)
+     23       4    dn        0.270469    0.000000   ( 7.0E-02)
+     23       3    up        0.271036    0.000000   ( 3.4E-02)
+     23       3    dn        0.274858    0.000000   ( 3.8E-02)
+     24       3    up        0.276154    0.000000   ( 1.0E-01)
+     23       2    up        0.278808    0.000000   ( 1.2E-01)
+     24       3    dn        0.278813    0.000000   ( 6.4E-02)
+     24       1    up        0.278952    0.000000   ( 4.2E-02)
+
+  [output of 6 eigenvalues skipped: maximum error = 1.3E-01]
+
+     24       4    up        0.305912    0.000000   ( 2.7E-01)
+     24       4    dn        0.307981    0.000000   ( 2.8E-01)
+     25       3    up        0.321507    0.000000   ( 1.4E-01)
+     25       3    dn        0.323978    0.000000   ( 3.5E-02)
+     25       2    dn        0.333716    0.000000   ( 2.5E-01)
+     25       2    up        0.336181    0.000000   ( 2.3E-01)
+     25       4    dn        0.386317    0.000000   ( 1.5E-01)
+     25       4    up        0.388905    0.000000   ( 1.9E-01)
+
+Density of states:
+
+%------%--------------------------------------------------------------
+%------%--------------------------------------------------%-----------
+%------%--------------------------------------------------%-----------
+%------%------------------------------------------------%-%--%--------
+%------%------------------------------------------------%-%--%--------
+%------%-----------------------------------------%------%-%--%----%---
+%------%-----------------------------------------%------%-%%-%%%--%%--
+%------%-----------------------------------------%------%%%%-%%%%-%%--
+%------%-----------------------------------------%------%%%%%%%%%-%%--
+%------%----------------------------------------%%-----%%%%%%%%%%%%%%%
+                                                                  ^
+
+Total Magnetic Moment:
+ mz =   0.250000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       2.191672
+   2       Ni2      -1.999940
+   3         O       0.004567
+   4         O       0.004567
+
+Elapsed time for SCF step     2:          2.18
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    3 ************************
+ etot  = -2.70270441E+02 abs_ev   =  5.21E-01 rel_ev   =  1.64E-02
+ ediff =        1.58E+00 abs_dens =  1.04E+00 rel_dens =  2.36E-02
+Matrix vector products:   2253
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.579125    1.000000   ( 2.5E-03)
+      1       2    up       -2.579124    1.000000   ( 2.4E-03)
+      1       3    up       -2.578880    1.000000   ( 2.5E-03)
+      1       1    up       -2.578880    1.000000   ( 2.3E-03)
+      2       4    up       -2.575853    1.000000   ( 2.1E-03)
+      2       2    up       -2.575852    1.000000   ( 2.7E-03)
+      2       1    up       -2.575383    1.000000   ( 1.1E-03)
+      2       3    up       -2.575382    1.000000   ( 1.6E-03)
+
+  [output of 161 eigenvalues skipped: maximum error = 4.9E-02]
+
+     22       1    dn        0.165895    1.000000   ( 1.3E-02)
+     21       2    up        0.167877    1.000000   ( 1.2E-02)
+     23       1    dn        0.171770    1.000000   ( 6.9E-03)
+     22       3    up        0.178898    1.000000   ( 3.8E-02)
+     23       1    up        0.183017    1.000000   ( 8.6E-03)
+     22       4    dn        0.197300    1.000000   ( 1.5E-02)
+     22       2    dn        0.198803    1.000000   ( 4.3E-02)
+     22       4    up        0.210714    1.000000   ( 2.6E-02)
+     22       2    up        0.211578    0.333333   ( 4.7E-02)
+     23       4    dn        0.243413    0.000000   ( 1.4E-02)
+     23       3    dn        0.247183    0.000000   ( 8.4E-03)
+     24       3    dn        0.250194    0.000000   ( 1.9E-02)
+     24       4    dn        0.253168    0.000000   ( 4.4E-02)
+     23       2    dn        0.254133    0.000000   ( 2.4E-02)
+     24       1    dn        0.255742    0.000000   ( 7.4E-03)
+     25       1    dn        0.259492    0.000000   ( 9.3E-03)
+     23       4    up        0.262300    0.000000   ( 1.3E-02)
+
+  [output of 6 eigenvalues skipped: maximum error = 4.6E-02]
+
+     25       1    up        0.274738    0.000000   ( 7.7E-03)
+     24       2    up        0.283643    0.000000   ( 4.1E-02)
+     25       2    up        0.294792    0.000000   ( 7.2E-02)
+     25       2    dn        0.295312    0.000000   ( 7.4E-02)
+     25       3    dn        0.300266    0.000000   ( 3.0E-02)
+     25       3    up        0.300446    0.000000   ( 4.4E-02)
+     25       4    up        0.363015    0.000000   ( 3.0E-02)
+     25       4    dn        0.369822    0.000000   ( 2.6E-02)
+
+Density of states:
+
+------%---------------------------------------------------------------
+------%---------------------------------------------------------------
+-%----%--------------------------------------------------%%--%--------
+-%----%--------------------------------------------------%%--%--------
+-%----%--------------------------------------------------%%%-%%----%--
+-%----%--------------------------------------------------%%%%%%%---%--
+%%----%-----------------------------------------%-------%%%%%%%%%%%%--
+%%----%-----------------------------------------%%------%%%%%%%%%%%%--
+%%----%%----------------------------------------%%------%%%%%%%%%%%%-%
+%%----%%---------------------------------------%%%-----%%%%%%%%%%%%%-%
+                                                                 ^
+
+Total Magnetic Moment:
+ mz =  -0.250000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.803589
+   2       Ni2      -2.062187
+   3         O       0.009880
+   4         O       0.009880
+
+Elapsed time for SCF step     3:          2.17
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    4 ************************
+ etot  = -2.70192217E+02 abs_ev   =  2.90E-02 rel_ev   =  9.11E-04
+ ediff =        7.82E-02 abs_dens =  7.57E-01 rel_dens =  1.72E-02
+Matrix vector products:   2905
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    dn       -2.557886    1.000000   ( 7.8E-04)
+      1       2    dn       -2.557885    1.000000   ( 3.8E-04)
+      1       3    dn       -2.557636    1.000000   ( 4.8E-04)
+      1       1    dn       -2.557635    1.000000   ( 6.1E-04)
+      2       4    dn       -2.554676    1.000000   ( 4.5E-04)
+      2       2    dn       -2.554676    1.000000   ( 5.3E-04)
+      2       3    dn       -2.554191    1.000000   ( 3.8E-04)
+      2       1    dn       -2.554191    1.000000   ( 5.5E-04)
+
+  [output of 161 eigenvalues skipped: maximum error = 1.9E-02]
+
+     21       2    dn        0.156106    1.000000   ( 3.7E-03)
+     22       3    dn        0.159695    1.000000   ( 7.7E-03)
+     22       1    dn        0.161382    1.000000   ( 3.2E-03)
+     23       1    up        0.163168    1.000000   ( 1.3E-02)
+     23       1    dn        0.166749    1.000000   ( 2.5E-03)
+     22       4    up        0.180631    1.000000   ( 4.2E-03)
+     22       2    up        0.181329    1.000000   ( 8.1E-03)
+     22       4    dn        0.193473    1.000000   ( 2.8E-03)
+     22       2    dn        0.193985    0.333333   ( 7.0E-03)
+     23       4    up        0.245764    0.000000   ( 2.8E-03)
+     23       3    up        0.247610    0.000000   ( 3.1E-03)
+     24       3    up        0.250820    0.000000   ( 1.6E-02)
+     24       4    up        0.254093    0.000000   ( 6.8E-03)
+     23       2    up        0.255768    0.000000   ( 4.6E-03)
+     24       1    up        0.255936    0.000000   ( 3.9E-03)
+     23       4    dn        0.258737    0.000000   ( 3.4E-03)
+     23       3    dn        0.259233    0.000000   ( 3.2E-03)
+
+  [output of 6 eigenvalues skipped: maximum error = 1.4E-02]
+
+     25       1    dn        0.270367    0.000000   ( 3.2E-03)
+     24       2    dn        0.278720    0.000000   ( 2.2E-02)
+     25       2    up        0.290211    0.000000   ( 2.2E-02)
+     25       3    up        0.291075    0.000000   ( 2.8E-02)
+     25       2    dn        0.292233    0.000000   ( 6.2E-03)
+     25       3    dn        0.293960    0.000000   ( 4.2E-02)
+     25       4    dn        0.363076    0.000000   ( 5.2E-03)
+     25       4    up        0.366409    0.000000   ( 7.0E-03)
+
+Density of states:
+
+---------------------------------------------------------%------------
+%-----%--------------------------------------------------%%-----------
+%-----%--------------------------------------------------%%%%---------
+%-----%-----------------------------------------%--------%%%%-%----%--
+%-----%-----------------------------------------%--------%%%%-%----%--
+%%---%%-----------------------------------------%--------%%%%%%%--%%--
+%%---%%-----------------------------------------%-------%%%%%%%%%-%%--
+%%---%%-----------------------------------------%-------%%%%%%%%%%%%--
+%%---%%-----------------------------------------%-------%%%%%%%%%%%%-%
+%%---%%---------------------------------------%%%------%%%%%%%%%%%%%-%
+                                                                 ^
+
+Total Magnetic Moment:
+ mz =   0.250000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       2.039847
+   2       Ni2      -1.798803
+   3         O      -0.003256
+   4         O      -0.003256
+
+Elapsed time for SCF step     4:          3.27
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    5 ************************
+ etot  = -2.70940128E+02 abs_ev   =  2.11E-01 rel_ev   =  6.59E-03
+ ediff =        7.48E-01 abs_dens =  1.09E+00 rel_dens =  2.49E-02
+Matrix vector products:   2881
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    dn       -2.487803    1.000000   ( 3.3E-03)
+      1       2    dn       -2.487802    1.000000   ( 3.3E-03)
+      1       3    dn       -2.487541    1.000000   ( 3.2E-03)
+      1       1    dn       -2.487540    1.000000   ( 3.2E-03)
+      1       4    up       -2.486983    1.000000   ( 3.1E-03)
+      1       2    up       -2.486982    1.000000   ( 3.1E-03)
+      1       3    up       -2.486719    1.000000   ( 3.0E-03)
+      1       1    up       -2.486718    1.000000   ( 3.0E-03)
+
+  [output of 159 eigenvalues skipped: maximum error = 6.2E-02]
+
+     22       1    dn        0.089212    1.000000   ( 6.6E-02)
+     21       4    up        0.089748    1.000000   ( 9.4E-03)
+     21       4    dn        0.090307    1.000000   ( 1.1E-02)
+     21       2    up        0.108436    1.000000   ( 1.2E-02)
+     21       2    dn        0.108986    1.000000   ( 1.2E-02)
+     22       4    up        0.109487    1.000000   ( 8.3E-03)
+     22       4    dn        0.112510    1.000000   ( 7.3E-03)
+     22       2    up        0.113880    1.000000   ( 8.8E-03)
+     22       2    dn        0.116513    1.000000   ( 3.9E-03)
+     23       1    up        0.150902    0.000000   ( 5.3E-03)
+     23       1    dn        0.151415    0.000000   ( 3.9E-02)
+     23       3    up        0.247587    0.000000   ( 5.4E-03)
+     23       3    dn        0.247600    0.000000   ( 4.7E-03)
+     24       3    dn        0.248457    0.000000   ( 7.5E-03)
+     24       3    up        0.248483    0.000000   ( 7.6E-03)
+     23       4    up        0.250959    0.000000   ( 5.8E-03)
+     23       4    dn        0.250994    0.000000   ( 5.4E-03)
+
+  [output of 8 eigenvalues skipped: maximum error = 6.9E-03]
+
+     24       2    dn        0.266618    0.000000   ( 1.6E-02)
+     24       2    up        0.266696    0.000000   ( 7.4E-03)
+     25       3    up        0.271043    0.000000   ( 2.2E-02)
+     25       3    dn        0.271363    0.000000   ( 2.1E-02)
+     25       2    up        0.292588    0.000000   ( 1.0E-02)
+     25       2    dn        0.292761    0.000000   ( 1.3E-02)
+     25       4    up        0.362573    0.000000   ( 1.1E-02)
+     25       4    dn        0.363142    0.000000   ( 1.3E-02)
+
+Density of states:
+
+---------------------------------------------------------%------------
+---------------------------------------------------------%------------
+---%-----------------------------------------------------%------------
+%--%-----------------------------------------------------%-%-%%-------
+%--%-----------------------------------------------------%-%%%%-------
+%--%-------------------------------------------%---------%-%%%%---%---
+%--%-------------------------------------------%---------%-%%%%%--%---
+%%-%-------------------------------------------%---------%%%%%%%--%%--
+%%-%%------------------------------------------%-------%-%%%%%%%--%%--
+%%-%%-----------------------------------------%%-------%%%%%%%%%--%%-%
+                                                               ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.757722
+   2       Ni2      -1.758558
+   3         O       0.000299
+   4         O       0.000299
+
+Elapsed time for SCF step     5:          3.28
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    6 ************************
+ etot  = -2.70881985E+02 abs_ev   =  1.33E-01 rel_ev   =  4.18E-03
+ ediff =        5.81E-02 abs_dens =  5.21E-01 rel_dens =  1.18E-02
+Matrix vector products:   2950
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.470721    1.000000   ( 1.2E-03)
+      1       2    up       -2.470720    1.000000   ( 1.3E-03)
+      1       3    up       -2.470456    1.000000   ( 1.2E-03)
+      1       1    up       -2.470455    1.000000   ( 1.2E-03)
+      1       4    dn       -2.468725    1.000000   ( 1.3E-03)
+      1       2    dn       -2.468724    1.000000   ( 1.3E-03)
+      1       3    dn       -2.468459    1.000000   ( 1.3E-03)
+      1       1    dn       -2.468458    1.000000   ( 1.3E-03)
+
+  [output of 159 eigenvalues skipped: maximum error = 3.3E-02]
+
+     22       4    dn        0.087263    1.000000   ( 2.9E-03)
+     21       3    up        0.093922    1.000000   ( 4.2E-03)
+     21       3    dn        0.094448    1.000000   ( 2.6E-03)
+     22       3    up        0.095049    1.000000   ( 3.3E-03)
+     22       3    dn        0.095597    1.000000   ( 4.1E-03)
+     21       2    up        0.097195    1.000000   ( 2.1E-02)
+     21       2    dn        0.097976    1.000000   ( 1.3E-02)
+     22       2    dn        0.102473    1.000000   ( 1.2E-02)
+     22       2    up        0.102996    1.000000   ( 7.4E-03)
+     23       1    up        0.158529    0.000000   ( 4.4E-03)
+     23       1    dn        0.158709    0.000000   ( 5.2E-03)
+     23       3    dn        0.249285    0.000000   ( 5.2E-03)
+     23       3    up        0.250946    0.000000   ( 9.5E-03)
+     24       3    dn        0.252506    0.000000   ( 7.1E-03)
+     24       3    up        0.254054    0.000000   ( 1.0E-03)
+     23       4    dn        0.254444    0.000000   ( 2.3E-03)
+     24       4    dn        0.256134    0.000000   ( 4.3E-03)
+
+  [output of 8 eigenvalues skipped: maximum error = 4.4E-03]
+
+     24       2    dn        0.268952    0.000000   ( 4.3E-03)
+     24       2    up        0.270456    0.000000   ( 4.1E-03)
+     25       3    up        0.280714    0.000000   ( 2.1E-02)
+     25       3    dn        0.280856    0.000000   ( 1.9E-02)
+     25       2    dn        0.293145    0.000000   ( 5.2E-03)
+     25       2    up        0.293233    0.000000   ( 5.7E-03)
+     25       4    up        0.372271    0.000000   ( 3.9E-03)
+     25       4    dn        0.372839    0.000000   ( 4.8E-03)
+
+Density of states:
+
+---------------------------------------------------------%----%-------
+---------------------------------------------------------%-%-%%-------
+%-%------------------------------------------------------%-%%%%-------
+%-%------------------------------------------------------%-%%%%---%---
+%-%--------------------------------------------%---------%-%%%%---%---
+%-%--------------------------------------------%---------%-%%%%---%---
+%%%%-------------------------------------------%---------%-%%%%---%---
+%%%%-------------------------------------------%--------%%%%%%%---%%--
+%%%%-------------------------------------------%-------%%%%%%%%---%%--
+%%%%------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.689669
+   2       Ni2      -1.692983
+   3         O       0.001801
+   4         O       0.001801
+
+Elapsed time for SCF step     6:          3.34
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    7 ************************
+ etot  = -2.70654407E+02 abs_ev   =  8.59E-02 rel_ev   =  2.70E-03
+ ediff =        2.28E-01 abs_dens =  9.07E-02 rel_dens =  2.06E-03
+Matrix vector products:   2521
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.463233    1.000000   ( 4.7E-04)
+      1       2    up       -2.463232    1.000000   ( 2.5E-04)
+      1       3    up       -2.462964    1.000000   ( 4.4E-04)
+      1       1    up       -2.462964    1.000000   ( 4.2E-04)
+      1       4    dn       -2.461388    1.000000   ( 4.4E-04)
+      1       2    dn       -2.461387    1.000000   ( 4.4E-04)
+      1       3    dn       -2.461119    1.000000   ( 4.1E-04)
+      1       1    dn       -2.461118    1.000000   ( 4.1E-04)
+
+  [output of 159 eigenvalues skipped: maximum error = 5.3E-03]
+
+     22       4    dn        0.087751    1.000000   ( 5.2E-04)
+     21       3    up        0.094052    1.000000   ( 8.3E-04)
+     21       3    dn        0.094557    1.000000   ( 9.9E-04)
+     22       3    up        0.095286    1.000000   ( 7.8E-04)
+     22       3    dn        0.095808    1.000000   ( 7.6E-04)
+     21       2    up        0.096472    1.000000   ( 1.8E-03)
+     21       2    dn        0.097148    1.000000   ( 1.5E-03)
+     22       2    dn        0.101165    1.000000   ( 1.4E-03)
+     22       2    up        0.101568    1.000000   ( 1.3E-03)
+     23       1    up        0.158381    0.000000   ( 8.9E-04)
+     23       1    dn        0.158511    0.000000   ( 9.5E-04)
+     23       3    dn        0.252424    0.000000   ( 5.3E-03)
+     23       3    up        0.253923    0.000000   ( 5.6E-03)
+     24       3    dn        0.256113    0.000000   ( 1.1E-03)
+     24       3    up        0.257542    0.000000   ( 1.1E-03)
+     23       4    dn        0.258800    0.000000   ( 8.6E-04)
+     24       4    dn        0.259852    0.000000   ( 1.0E-03)
+
+  [output of 8 eigenvalues skipped: maximum error = 1.2E-03]
+
+     24       2    dn        0.272043    0.000000   ( 2.3E-03)
+     24       2    up        0.273374    0.000000   ( 2.6E-03)
+     25       3    up        0.279161    0.000000   ( 1.2E-02)
+     25       3    dn        0.279495    0.000000   ( 1.2E-02)
+     25       2    dn        0.294169    0.000000   ( 2.1E-03)
+     25       2    up        0.294311    0.000000   ( 2.9E-03)
+     25       4    up        0.372395    0.000000   ( 1.5E-03)
+     25       4    dn        0.372838    0.000000   ( 1.5E-03)
+
+Density of states:
+
+---------------------------------------------------------%--%-%-------
+---------------------------------------------------------%--%-%-------
+%-%------------------------------------------------------%-%%%%-------
+%-%------------------------------------------------------%-%%%%-------
+%-%--------------------------------------------%---------%-%%%%-------
+%-%--------------------------------------------%---------%-%%%%---%---
+%%%%-------------------------------------------%---------%-%%%%---%%--
+%%%%-------------------------------------------%--------%%%%%%%---%%--
+%%%%-------------------------------------------%-------%%%%%%%%---%%--
+%%%%------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.692830
+   2       Ni2      -1.695537
+   3         O       0.001572
+   4         O       0.001572
+
+Elapsed time for SCF step     7:          2.79
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    8 ************************
+ etot  = -2.70546833E+02 abs_ev   =  2.59E-02 rel_ev   =  8.16E-04
+ ediff =        1.08E-01 abs_dens =  1.30E-01 rel_dens =  2.96E-03
+Matrix vector products:   2740
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.457224    1.000000   ( 5.0E-04)
+      1       2    up       -2.457224    1.000000   ( 4.8E-04)
+      1       3    up       -2.456954    1.000000   ( 4.9E-04)
+      1       1    up       -2.456954    1.000000   ( 4.9E-04)
+      1       4    dn       -2.456261    1.000000   ( 4.6E-04)
+      1       2    dn       -2.456260    1.000000   ( 4.7E-04)
+      1       3    dn       -2.455991    1.000000   ( 4.6E-04)
+      1       1    dn       -2.455990    1.000000   ( 4.6E-04)
+
+  [output of 159 eigenvalues skipped: maximum error = 6.4E-03]
+
+     22       4    dn        0.086463    1.000000   ( 6.8E-04)
+     21       3    up        0.093167    1.000000   ( 7.8E-04)
+     21       3    dn        0.093465    1.000000   ( 8.1E-04)
+     21       2    up        0.094036    1.000000   ( 1.0E-03)
+     22       3    up        0.094493    1.000000   ( 7.4E-04)
+     21       2    dn        0.094547    1.000000   ( 8.6E-04)
+     22       3    dn        0.094801    1.000000   ( 7.1E-04)
+     22       2    dn        0.097401    1.000000   ( 1.0E-03)
+     22       2    up        0.097587    1.000000   ( 1.0E-03)
+     23       1    up        0.157796    0.000000   ( 6.4E-04)
+     23       1    dn        0.157875    0.000000   ( 4.5E-04)
+     23       3    dn        0.255181    0.000000   ( 2.7E-03)
+     23       3    up        0.256066    0.000000   ( 3.3E-03)
+     24       3    dn        0.259482    0.000000   ( 7.9E-04)
+     24       3    up        0.260320    0.000000   ( 8.3E-04)
+     23       4    dn        0.263066    0.000000   ( 9.0E-04)
+     24       4    dn        0.263281    0.000000   ( 8.7E-04)
+
+  [output of 8 eigenvalues skipped: maximum error = 1.2E-03]
+
+     24       2    dn        0.274575    0.000000   ( 2.1E-03)
+     24       2    up        0.275336    0.000000   ( 1.6E-03)
+     25       3    up        0.277277    0.000000   ( 2.1E-02)
+     25       3    dn        0.277624    0.000000   ( 2.0E-02)
+     25       2    dn        0.295034    0.000000   ( 7.5E-04)
+     25       2    up        0.295163    0.000000   ( 1.7E-03)
+     25       4    up        0.371930    0.000000   ( 7.7E-04)
+     25       4    dn        0.372143    0.000000   ( 7.4E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+--%---------------------------------------------------------%---------
+--%------------------------------------------------------%--%-%-------
+--%------------------------------------------------------%--%-%-------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%-------
+%-%--------------------------------------------%---------%-%%%%---%%--
+%%%--------------------------------------------%---------%-%%%%---%%--
+%%%--------------------------------------------%-------%%%%%%%%---%%--
+%%%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.697931
+   2       Ni2      -1.699458
+   3         O       0.001019
+   4         O       0.001019
+
+Elapsed time for SCF step     8:          2.92
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    9 ************************
+ etot  = -2.70613657E+02 abs_ev   =  3.41E-02 rel_ev   =  1.07E-03
+ ediff =        6.68E-02 abs_dens =  1.27E-01 rel_dens =  2.89E-03
+Matrix vector products:   2957
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.454752    1.000000   ( 4.4E-04)
+      1       2    up       -2.454751    1.000000   ( 4.4E-04)
+      1       3    up       -2.454481    1.000000   ( 4.5E-04)
+      1       1    up       -2.454481    1.000000   ( 4.5E-04)
+      1       4    dn       -2.454024    1.000000   ( 4.3E-04)
+      1       2    dn       -2.454023    1.000000   ( 4.3E-04)
+      1       3    dn       -2.453753    1.000000   ( 4.4E-04)
+      1       1    dn       -2.453753    1.000000   ( 4.4E-04)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.3E-02]
+
+     22       4    dn        0.085381    1.000000   ( 4.9E-04)
+     21       2    up        0.091098    1.000000   ( 6.2E-04)
+     21       2    dn        0.091376    1.000000   ( 1.5E-03)
+     22       2    dn        0.092062    1.000000   ( 1.7E-03)
+     22       2    up        0.092110    1.000000   ( 2.2E-03)
+     21       3    up        0.093590    1.000000   ( 6.9E-04)
+     21       3    dn        0.093811    1.000000   ( 7.0E-04)
+     22       3    up        0.094956    1.000000   ( 6.0E-04)
+     22       3    dn        0.095186    1.000000   ( 5.8E-04)
+     23       1    up        0.158150    0.000000   ( 4.3E-04)
+     23       1    dn        0.158182    0.000000   ( 5.2E-04)
+     23       3    dn        0.256677    0.000000   ( 1.4E-03)
+     23       3    up        0.257297    0.000000   ( 1.8E-03)
+     24       3    dn        0.262143    0.000000   ( 1.1E-03)
+     24       3    up        0.262754    0.000000   ( 1.0E-03)
+     23       4    dn        0.265157    0.000000   ( 8.4E-04)
+     23       4    up        0.265815    0.000000   ( 1.4E-03)
+
+  [output of 8 eigenvalues skipped: maximum error = 1.7E-03]
+
+     23       2    up        0.276518    0.000000   ( 1.2E-03)
+     25       3    up        0.276544    0.000000   ( 1.3E-02)
+     24       2    up        0.276655    0.000000   ( 9.5E-04)
+     25       3    dn        0.276850    0.000000   ( 1.3E-02)
+     25       2    dn        0.295276    0.000000   ( 8.2E-04)
+     25       2    up        0.295389    0.000000   ( 7.5E-04)
+     25       4    up        0.372148    0.000000   ( 5.4E-04)
+     25       4    dn        0.372287    0.000000   ( 5.2E-04)
+
+Density of states:
+
+--%---------------------------------------------------------%---------
+--%---------------------------------------------------------%%--------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%-------
+%-%--------------------------------------------%---------%-%%%%---%%--
+%-%--------------------------------------------%---------%-%%%%---%%--
+%-%--------------------------------------------%-------%%%%%%%%---%%--
+%%%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.696313
+   2       Ni2      -1.697393
+   3         O       0.000758
+   4         O       0.000758
+
+Elapsed time for SCF step     9:          3.09
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   10 ************************
+ etot  = -2.70612367E+02 abs_ev   =  8.94E-03 rel_ev   =  2.81E-04
+ ediff =        1.29E-03 abs_dens =  1.35E-01 rel_dens =  3.07E-03
+Matrix vector products:   2839
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    dn       -2.452035    1.000000   ( 5.3E-04)
+      1       2    dn       -2.452035    1.000000   ( 5.3E-04)
+      1       4    up       -2.451989    1.000000   ( 5.5E-04)
+      1       2    up       -2.451988    1.000000   ( 5.5E-04)
+      1       3    dn       -2.451766    1.000000   ( 5.4E-04)
+      1       1    dn       -2.451765    1.000000   ( 5.4E-04)
+      1       3    up       -2.451719    1.000000   ( 5.6E-04)
+      1       1    up       -2.451718    1.000000   ( 5.6E-04)
+
+  [output of 159 eigenvalues skipped: maximum error = 7.1E-03]
+
+     22       4    up        0.083858    1.000000   ( 4.7E-04)
+     21       2    up        0.087170    1.000000   ( 1.1E-03)
+     21       2    dn        0.087201    1.000000   ( 6.5E-04)
+     22       2    up        0.089281    1.000000   ( 2.5E-03)
+     22       2    dn        0.089350    1.000000   ( 2.7E-03)
+     21       3    up        0.093771    1.000000   ( 6.4E-04)
+     21       3    dn        0.093788    1.000000   ( 6.5E-04)
+     22       3    up        0.095165    1.000000   ( 6.0E-04)
+     22       3    dn        0.095182    1.000000   ( 5.8E-04)
+     23       1    dn        0.158174    0.000000   ( 4.4E-04)
+     23       1    up        0.158174    0.000000   ( 4.0E-04)
+     23       3    up        0.259022    0.000000   ( 9.2E-04)
+     23       3    dn        0.259027    0.000000   ( 1.0E-03)
+     24       3    dn        0.265670    0.000000   ( 7.8E-04)
+     24       3    up        0.265698    0.000000   ( 6.9E-04)
+     23       4    dn        0.267993    0.000000   ( 9.8E-04)
+     23       4    up        0.268004    0.000000   ( 8.3E-04)
+
+  [output of 8 eigenvalues skipped: maximum error = 8.9E-03]
+
+     23       2    dn        0.278043    0.000000   ( 2.4E-03)
+     23       2    up        0.278052    0.000000   ( 1.6E-03)
+     24       2    dn        0.280228    0.000000   ( 1.7E-04)
+     24       2    up        0.280263    0.000000   ( 1.1E-03)
+     25       2    dn        0.295830    0.000000   ( 8.6E-04)
+     25       2    up        0.295843    0.000000   ( 6.2E-04)
+     25       4    dn        0.371991    0.000000   ( 5.4E-04)
+     25       4    up        0.372015    0.000000   ( 5.4E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.700471
+   2       Ni2      -1.700587
+   3         O       0.000190
+   4         O       0.000190
+
+Elapsed time for SCF step    10:          3.04
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   11 ************************
+ etot  = -2.70608644E+02 abs_ev   =  6.57E-03 rel_ev   =  2.07E-04
+ ediff =        3.72E-03 abs_dens =  4.39E-02 rel_dens =  9.98E-04
+Matrix vector products:   2907
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    dn       -2.451680    1.000000   ( 2.5E-04)
+      1       4    up       -2.451680    1.000000   ( 2.5E-04)
+      1       2    dn       -2.451679    1.000000   ( 2.5E-04)
+      1       2    up       -2.451679    1.000000   ( 2.5E-04)
+      1       3    dn       -2.451411    1.000000   ( 2.6E-04)
+      1       3    up       -2.451411    1.000000   ( 2.6E-04)
+      1       1    dn       -2.451410    1.000000   ( 2.6E-04)
+      1       1    up       -2.451410    1.000000   ( 2.6E-04)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.8E-03]
+
+     22       4    up        0.083680    1.000000   ( 1.7E-04)
+     21       2    up        0.086217    1.000000   ( 5.8E-04)
+     21       2    dn        0.086239    1.000000   ( 5.6E-04)
+     22       2    up        0.089097    1.000000   ( 4.5E-04)
+     22       2    dn        0.089149    1.000000   ( 4.6E-04)
+     21       3    up        0.094138    1.000000   ( 2.2E-04)
+     21       3    dn        0.094157    1.000000   ( 2.5E-04)
+     22       3    up        0.095531    1.000000   ( 2.2E-04)
+     22       3    dn        0.095551    1.000000   ( 2.2E-04)
+     23       1    up        0.158268    0.000000   ( 1.5E-04)
+     23       1    dn        0.158269    0.000000   ( 1.6E-04)
+     23       3    up        0.259191    0.000000   ( 7.3E-04)
+     23       3    dn        0.259200    0.000000   ( 4.9E-04)
+     24       3    dn        0.265666    0.000000   ( 3.6E-04)
+     24       3    up        0.265684    0.000000   ( 3.4E-04)
+     23       4    dn        0.268248    0.000000   ( 2.6E-04)
+     23       4    up        0.268252    0.000000   ( 2.3E-04)
+
+  [output of 8 eigenvalues skipped: maximum error = 5.4E-03]
+
+     23       2    dn        0.278241    0.000000   ( 3.5E-04)
+     23       2    up        0.278245    0.000000   ( 2.8E-04)
+     24       2    dn        0.280461    0.000000   ( 2.5E-04)
+     24       2    up        0.280484    0.000000   ( 2.5E-04)
+     25       2    dn        0.295852    0.000000   ( 2.9E-04)
+     25       2    up        0.295859    0.000000   ( 3.4E-04)
+     25       4    dn        0.372069    0.000000   ( 3.6E-04)
+     25       4    up        0.372077    0.000000   ( 4.8E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.700219
+   2       Ni2      -1.700274
+   3         O       0.000104
+   4         O       0.000104
+
+Elapsed time for SCF step    11:          3.09
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   12 ************************
+ etot  = -2.70587212E+02 abs_ev   =  7.24E-03 rel_ev   =  2.28E-04
+ ediff =        2.14E-02 abs_dens =  6.80E-02 rel_dens =  1.54E-03
+Matrix vector products:   2823
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.450051    1.000000   ( 1.0E-03)
+      1       2    up       -2.450051    1.000000   ( 1.0E-03)
+      1       4    dn       -2.449974    1.000000   ( 1.0E-03)
+      1       2    dn       -2.449973    1.000000   ( 1.0E-03)
+      1       3    up       -2.449785    1.000000   ( 1.0E-03)
+      1       1    up       -2.449785    1.000000   ( 1.0E-03)
+      1       3    dn       -2.449708    1.000000   ( 1.0E-03)
+      1       1    dn       -2.449707    1.000000   ( 1.0E-03)
+
+  [output of 159 eigenvalues skipped: maximum error = 3.9E-03]
+
+     22       4    dn        0.083186    1.000000   ( 2.1E-04)
+     21       2    up        0.084287    1.000000   ( 7.4E-04)
+     21       2    dn        0.084309    1.000000   ( 7.4E-04)
+     22       2    up        0.088569    1.000000   ( 4.4E-04)
+     22       2    dn        0.088597    1.000000   ( 5.2E-04)
+     21       3    up        0.094391    1.000000   ( 2.9E-04)
+     21       3    dn        0.094412    1.000000   ( 2.8E-04)
+     22       3    up        0.095820    1.000000   ( 2.8E-04)
+     22       3    dn        0.095842    1.000000   ( 2.8E-04)
+     23       1    dn        0.158212    0.000000   ( 1.9E-04)
+     23       1    up        0.158221    0.000000   ( 2.1E-04)
+     23       3    up        0.259689    0.000000   ( 3.9E-04)
+     23       3    dn        0.259694    0.000000   ( 3.2E-04)
+     24       3    dn        0.266229    0.000000   ( 3.5E-04)
+     24       3    up        0.266249    0.000000   ( 3.2E-04)
+     23       4    dn        0.268944    0.000000   ( 3.8E-04)
+     23       4    up        0.268945    0.000000   ( 3.6E-04)
+
+  [output of 8 eigenvalues skipped: maximum error = 4.5E-03]
+
+     23       2    dn        0.278709    0.000000   ( 5.9E-04)
+     23       2    up        0.278710    0.000000   ( 6.3E-04)
+     24       2    dn        0.281403    0.000000   ( 2.8E-04)
+     24       2    up        0.281428    0.000000   ( 3.0E-04)
+     25       2    dn        0.296030    0.000000   ( 2.7E-04)
+     25       2    up        0.296034    0.000000   ( 3.0E-04)
+     25       4    up        0.372071    0.000000   ( 3.4E-04)
+     25       4    dn        0.372072    0.000000   ( 2.5E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.700954
+   2       Ni2      -1.700959
+   3         O       0.000024
+   4         O       0.000024
+
+Elapsed time for SCF step    12:          2.69
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   13 ************************
+ etot  = -2.70601321E+02 abs_ev   =  2.57E-03 rel_ev   =  8.09E-05
+ ediff =        1.41E-02 abs_dens =  2.18E-02 rel_dens =  4.96E-04
+Matrix vector products:   3215
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449938    1.000000   ( 4.2E-04)
+      1       2    up       -2.449938    1.000000   ( 4.2E-04)
+      1       4    dn       -2.449902    1.000000   ( 4.1E-04)
+      1       2    dn       -2.449901    1.000000   ( 4.1E-04)
+      1       3    up       -2.449675    1.000000   ( 4.8E-04)
+      1       1    up       -2.449674    1.000000   ( 4.9E-04)
+      1       3    dn       -2.449639    1.000000   ( 4.7E-04)
+      1       1    dn       -2.449638    1.000000   ( 4.8E-04)
+
+  [output of 159 eigenvalues skipped: maximum error = 9.7E-04]
+
+     22       4    up        0.083030    1.000000   ( 8.8E-05)
+     21       2    up        0.083739    1.000000   ( 2.7E-04)
+     21       2    dn        0.083757    1.000000   ( 2.6E-04)
+     22       2    up        0.088446    1.000000   ( 1.4E-04)
+     22       2    dn        0.088459    1.000000   ( 1.4E-04)
+     21       3    up        0.094481    1.000000   ( 9.7E-05)
+     21       3    dn        0.094488    1.000000   ( 9.3E-05)
+     22       3    up        0.095917    1.000000   ( 9.4E-05)
+     22       3    dn        0.095925    1.000000   ( 9.3E-05)
+     23       1    dn        0.158190    0.000000   ( 6.4E-05)
+     23       1    up        0.158197    0.000000   ( 6.6E-05)
+     23       3    up        0.259336    0.000000   ( 1.6E-04)
+     23       3    dn        0.259362    0.000000   ( 1.5E-04)
+     24       3    up        0.265591    0.000000   ( 1.7E-04)
+     24       3    dn        0.265602    0.000000   ( 2.4E-04)
+     23       4    up        0.268615    0.000000   ( 1.4E-04)
+     23       4    dn        0.268639    0.000000   ( 1.4E-04)
+
+  [output of 8 eigenvalues skipped: maximum error = 2.5E-03]
+
+     23       2    up        0.278455    0.000000   ( 2.6E-04)
+     23       2    dn        0.278472    0.000000   ( 2.4E-04)
+     24       2    up        0.280888    0.000000   ( 1.7E-04)
+     24       2    dn        0.280894    0.000000   ( 1.6E-04)
+     25       2    up        0.295927    0.000000   ( 1.1E-04)
+     25       2    dn        0.295929    0.000000   ( 1.1E-04)
+     25       4    dn        0.372080    0.000000   ( 2.4E-04)
+     25       4    up        0.372082    0.000000   ( 3.2E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.699936
+   2       Ni2      -1.699888
+   3         O      -0.000024
+   4         O      -0.000024
+
+Elapsed time for SCF step    13:          3.38
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   14 ************************
+ etot  = -2.70605992E+02 abs_ev   =  4.70E-04 rel_ev   =  1.48E-05
+ ediff =        4.67E-03 abs_dens =  2.46E-02 rel_dens =  5.60E-04
+Matrix vector products:   3086
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449404    1.000000   ( 6.9E-04)
+      1       2    up       -2.449403    1.000000   ( 6.9E-04)
+      1       4    dn       -2.449381    1.000000   ( 6.8E-04)
+      1       2    dn       -2.449380    1.000000   ( 6.7E-04)
+      1       3    up       -2.449146    1.000000   ( 7.3E-04)
+      1       1    up       -2.449146    1.000000   ( 7.2E-04)
+      1       3    dn       -2.449123    1.000000   ( 7.2E-04)
+      1       1    dn       -2.449123    1.000000   ( 7.1E-04)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.1E-03]
+
+     22       4    dn        0.082815    1.000000   ( 8.6E-05)
+     21       2    up        0.083044    1.000000   ( 4.1E-04)
+     21       2    dn        0.083058    1.000000   ( 4.0E-04)
+     22       2    up        0.088303    1.000000   ( 1.7E-04)
+     22       2    dn        0.088305    1.000000   ( 1.7E-04)
+     21       3    dn        0.094513    1.000000   ( 1.1E-04)
+     21       3    up        0.094513    1.000000   ( 1.1E-04)
+     22       3    up        0.095970    1.000000   ( 1.1E-04)
+     22       3    dn        0.095970    1.000000   ( 1.1E-04)
+     23       1    dn        0.158109    0.000000   ( 7.9E-05)
+     23       1    up        0.158116    0.000000   ( 7.5E-05)
+     23       3    up        0.259011    0.000000   ( 1.1E-04)
+     23       3    dn        0.259032    0.000000   ( 1.5E-04)
+     24       3    up        0.264921    0.000000   ( 1.3E-04)
+     24       3    dn        0.264937    0.000000   ( 1.7E-04)
+     23       4    up        0.268339    0.000000   ( 1.5E-04)
+     23       4    dn        0.268360    0.000000   ( 1.5E-04)
+
+  [output of 8 eigenvalues skipped: maximum error = 1.7E-03]
+
+     23       2    up        0.278227    0.000000   ( 2.7E-04)
+     23       2    dn        0.278243    0.000000   ( 2.8E-04)
+     24       2    up        0.280360    0.000000   ( 1.3E-04)
+     24       2    dn        0.280373    0.000000   ( 1.3E-04)
+     25       2    up        0.295866    0.000000   ( 1.2E-04)
+     25       2    dn        0.295869    0.000000   ( 1.1E-04)
+     25       4    dn        0.372062    0.000000   ( 1.8E-04)
+     25       4    up        0.372064    0.000000   ( 2.6E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.699070
+   2       Ni2      -1.699019
+   3         O      -0.000046
+   4         O      -0.000046
+
+Elapsed time for SCF step    14:          2.97
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   15 ************************
+ etot  = -2.70604421E+02 abs_ev   =  3.27E-03 rel_ev   =  1.03E-04
+ ediff =        1.57E-03 abs_dens =  4.74E-03 rel_dens =  1.08E-04
+Matrix vector products:   2795
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449336    1.000000   ( 3.2E-05)
+      1       2    up       -2.449336    1.000000   ( 3.2E-05)
+      1       4    dn       -2.449330    1.000000   ( 3.2E-05)
+      1       2    dn       -2.449330    1.000000   ( 3.1E-05)
+      1       3    up       -2.449078    1.000000   ( 3.3E-05)
+      1       1    up       -2.449078    1.000000   ( 3.3E-05)
+      1       3    dn       -2.449072    1.000000   ( 3.3E-05)
+      1       1    dn       -2.449071    1.000000   ( 3.2E-05)
+
+  [output of 159 eigenvalues skipped: maximum error = 6.5E-04]
+
+     22       4    up        0.082847    1.000000   ( 4.2E-05)
+     21       2    up        0.083218    1.000000   ( 6.9E-05)
+     21       2    dn        0.083225    1.000000   ( 7.5E-05)
+     22       2    up        0.088448    1.000000   ( 6.2E-05)
+     22       2    dn        0.088451    1.000000   ( 6.1E-05)
+     21       3    up        0.094493    1.000000   ( 4.7E-05)
+     21       3    dn        0.094493    1.000000   ( 4.5E-05)
+     22       3    up        0.095952    1.000000   ( 4.1E-05)
+     22       3    dn        0.095952    1.000000   ( 4.1E-05)
+     23       1    dn        0.158079    0.000000   ( 4.6E-05)
+     23       1    up        0.158080    0.000000   ( 4.5E-05)
+     23       3    up        0.258734    0.000000   ( 1.1E-04)
+     23       3    dn        0.258734    0.000000   ( 7.9E-05)
+     24       3    up        0.264268    0.000000   ( 9.2E-05)
+     24       3    dn        0.264272    0.000000   ( 1.0E-04)
+     23       4    up        0.268038    0.000000   ( 8.8E-05)
+     23       4    dn        0.268039    0.000000   ( 8.6E-05)
+
+  [output of 8 eigenvalues skipped: maximum error = 1.2E-03]
+
+     23       2    up        0.278014    0.000000   ( 2.1E-04)
+     23       2    dn        0.278015    0.000000   ( 2.2E-04)
+     24       2    up        0.279696    0.000000   ( 1.0E-04)
+     24       2    dn        0.279698    0.000000   ( 9.2E-05)
+     25       2    up        0.295826    0.000000   ( 7.2E-05)
+     25       2    dn        0.295827    0.000000   ( 6.9E-05)
+     25       4    up        0.372049    0.000000   ( 2.2E-04)
+     25       4    dn        0.372050    0.000000   ( 1.5E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698312
+   2       Ni2      -1.698296
+   3         O      -0.000013
+   4         O      -0.000013
+
+Elapsed time for SCF step    15:          2.68
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   16 ************************
+ etot  = -2.70601626E+02 abs_ev   =  1.27E-03 rel_ev   =  4.01E-05
+ ediff =        2.80E-03 abs_dens =  2.94E-03 rel_dens =  6.67E-05
+Matrix vector products:   3177
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449260    1.000000   ( 9.2E-05)
+      1       2    up       -2.449259    1.000000   ( 9.1E-05)
+      1       4    dn       -2.449254    1.000000   ( 8.7E-05)
+      1       2    dn       -2.449254    1.000000   ( 8.7E-05)
+      1       3    up       -2.449002    1.000000   ( 9.8E-05)
+      1       1    up       -2.449002    1.000000   ( 9.1E-05)
+      1       3    dn       -2.448997    1.000000   ( 9.2E-05)
+      1       1    dn       -2.448996    1.000000   ( 8.8E-05)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.3E-04]
+
+     22       4    up        0.082830    1.000000   ( 1.5E-05)
+     21       2    up        0.083170    1.000000   ( 2.3E-05)
+     21       2    dn        0.083176    1.000000   ( 2.5E-05)
+     22       2    up        0.088466    1.000000   ( 1.9E-05)
+     22       2    dn        0.088467    1.000000   ( 2.0E-05)
+     21       3    up        0.094504    1.000000   ( 1.8E-05)
+     21       3    dn        0.094505    1.000000   ( 1.8E-05)
+     22       3    up        0.095964    1.000000   ( 1.9E-05)
+     22       3    dn        0.095965    1.000000   ( 1.9E-05)
+     23       1    up        0.158077    0.000000   ( 1.2E-05)
+     23       1    dn        0.158077    0.000000   ( 1.1E-05)
+     23       3    up        0.258762    0.000000   ( 1.1E-04)
+     23       3    dn        0.258762    0.000000   ( 3.9E-05)
+     24       3    up        0.264269    0.000000   ( 9.4E-05)
+     24       3    dn        0.264272    0.000000   ( 1.1E-04)
+     23       4    up        0.268072    0.000000   ( 2.4E-05)
+     23       4    dn        0.268072    0.000000   ( 2.4E-05)
+
+  [output of 8 eigenvalues skipped: maximum error = 5.8E-04]
+
+     23       2    up        0.278043    0.000000   ( 3.5E-05)
+     23       2    dn        0.278043    0.000000   ( 3.8E-05)
+     24       2    up        0.279709    0.000000   ( 4.0E-05)
+     24       2    dn        0.279711    0.000000   ( 4.5E-05)
+     25       2    up        0.295842    0.000000   ( 3.2E-05)
+     25       2    dn        0.295843    0.000000   ( 3.0E-05)
+     25       4    up        0.372045    0.000000   ( 1.5E-04)
+     25       4    dn        0.372047    0.000000   ( 1.3E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698389
+   2       Ni2      -1.698377
+   3         O      -0.000010
+   4         O      -0.000010
+
+Elapsed time for SCF step    16:          3.03
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   17 ************************
+ etot  = -2.70602240E+02 abs_ev   =  2.25E-04 rel_ev   =  7.09E-06
+ ediff =        6.15E-04 abs_dens =  2.10E-03 rel_dens =  4.76E-05
+Matrix vector products:   3215
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449258    1.000000   ( 7.3E-05)
+      1       2    up       -2.449257    1.000000   ( 7.3E-05)
+      1       4    dn       -2.449253    1.000000   ( 7.2E-05)
+      1       2    dn       -2.449252    1.000000   ( 7.2E-05)
+      1       3    up       -2.449001    1.000000   ( 8.6E-05)
+      1       1    up       -2.449001    1.000000   ( 8.7E-05)
+      1       3    dn       -2.448996    1.000000   ( 8.5E-05)
+      1       1    dn       -2.448995    1.000000   ( 8.6E-05)
+
+  [output of 159 eigenvalues skipped: maximum error = 8.2E-05]
+
+     22       4    dn        0.082813    1.000000   ( 9.3E-06)
+     21       2    up        0.083118    1.000000   ( 2.3E-05)
+     21       2    dn        0.083123    1.000000   ( 2.3E-05)
+     22       2    up        0.088462    1.000000   ( 1.2E-05)
+     22       2    dn        0.088463    1.000000   ( 1.2E-05)
+     21       3    up        0.094515    1.000000   ( 1.0E-05)
+     21       3    dn        0.094515    1.000000   ( 9.6E-06)
+     22       3    up        0.095975    1.000000   ( 1.1E-05)
+     22       3    dn        0.095976    1.000000   ( 1.0E-05)
+     23       1    up        0.158080    0.000000   ( 4.8E-06)
+     23       1    dn        0.158080    0.000000   ( 4.3E-06)
+     23       3    up        0.258767    0.000000   ( 6.0E-05)
+     23       3    dn        0.258768    0.000000   ( 2.5E-05)
+     24       3    up        0.264271    0.000000   ( 5.4E-05)
+     24       3    dn        0.264274    0.000000   ( 6.8E-05)
+     23       4    up        0.268079    0.000000   ( 1.3E-05)
+     23       4    dn        0.268081    0.000000   ( 1.3E-05)
+
+  [output of 8 eigenvalues skipped: maximum error = 2.4E-04]
+
+     23       2    up        0.278050    0.000000   ( 1.3E-05)
+     23       2    dn        0.278051    0.000000   ( 1.2E-05)
+     24       2    up        0.279720    0.000000   ( 1.9E-05)
+     24       2    dn        0.279722    0.000000   ( 1.9E-05)
+     25       2    up        0.295842    0.000000   ( 1.6E-05)
+     25       2    dn        0.295843    0.000000   ( 1.5E-05)
+     25       4    up        0.372047    0.000000   ( 1.2E-04)
+     25       4    dn        0.372048    0.000000   ( 1.1E-04)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698408
+   2       Ni2      -1.698396
+   3         O      -0.000011
+   4         O      -0.000011
+
+Elapsed time for SCF step    17:          2.94
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   18 ************************
+ etot  = -2.70602568E+02 abs_ev   =  1.66E-04 rel_ev   =  5.23E-06
+ ediff =        3.28E-04 abs_dens =  2.70E-04 rel_dens =  6.13E-06
+Matrix vector products:   2976
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449260    1.000000   ( 4.2E-06)
+      1       2    up       -2.449259    1.000000   ( 4.2E-06)
+      1       4    dn       -2.449255    1.000000   ( 4.0E-06)
+      1       2    dn       -2.449255    1.000000   ( 4.0E-06)
+      1       3    up       -2.449003    1.000000   ( 4.8E-06)
+      1       1    up       -2.449003    1.000000   ( 4.9E-06)
+      1       3    dn       -2.448999    1.000000   ( 4.6E-06)
+      1       1    dn       -2.448998    1.000000   ( 4.7E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 3.4E-05]
+
+     22       4    dn        0.082809    1.000000   ( 2.4E-06)
+     21       2    up        0.083115    1.000000   ( 3.5E-06)
+     21       2    dn        0.083120    1.000000   ( 3.4E-06)
+     22       2    up        0.088468    1.000000   ( 3.9E-06)
+     22       2    dn        0.088468    1.000000   ( 3.8E-06)
+     21       3    up        0.094516    1.000000   ( 2.4E-06)
+     21       3    dn        0.094516    1.000000   ( 2.4E-06)
+     22       3    up        0.095976    1.000000   ( 2.5E-06)
+     22       3    dn        0.095976    1.000000   ( 2.4E-06)
+     23       1    dn        0.158081    0.000000   ( 1.5E-06)
+     23       1    up        0.158081    0.000000   ( 1.4E-06)
+     23       3    up        0.258767    0.000000   ( 3.9E-05)
+     23       3    dn        0.258768    0.000000   ( 1.9E-05)
+     24       3    up        0.264268    0.000000   ( 4.6E-05)
+     24       3    dn        0.264271    0.000000   ( 5.1E-05)
+     23       4    up        0.268079    0.000000   ( 4.6E-06)
+     23       4    dn        0.268080    0.000000   ( 4.6E-06)
+
+  [output of 8 eigenvalues skipped: maximum error = 4.3E-05]
+
+     23       2    up        0.278051    0.000000   ( 3.4E-06)
+     23       2    dn        0.278052    0.000000   ( 3.2E-06)
+     24       2    up        0.279716    0.000000   ( 5.7E-06)
+     24       2    dn        0.279718    0.000000   ( 6.0E-06)
+     25       2    up        0.295842    0.000000   ( 8.5E-06)
+     25       2    dn        0.295843    0.000000   ( 8.3E-06)
+     25       4    up        0.372047    0.000000   ( 4.8E-05)
+     25       4    dn        0.372048    0.000000   ( 4.5E-05)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698412
+   2       Ni2      -1.698402
+   3         O      -0.000009
+   4         O      -0.000009
+
+Elapsed time for SCF step    18:          2.84
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   19 ************************
+ etot  = -2.70602924E+02 abs_ev   =  1.73E-04 rel_ev   =  5.43E-06
+ ediff =        3.56E-04 abs_dens =  3.70E-04 rel_dens =  8.40E-06
+Matrix vector products:   2530
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449263    1.000000   ( 7.3E-06)
+      1       2    up       -2.449263    1.000000   ( 7.3E-06)
+      1       4    dn       -2.449260    1.000000   ( 7.4E-06)
+      1       2    dn       -2.449260    1.000000   ( 7.4E-06)
+      1       3    up       -2.449007    1.000000   ( 8.5E-06)
+      1       1    up       -2.449006    1.000000   ( 8.6E-06)
+      1       3    dn       -2.449004    1.000000   ( 8.7E-06)
+      1       1    dn       -2.449003    1.000000   ( 8.7E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 5.1E-05]
+
+     22       4    dn        0.082810    1.000000   ( 1.2E-06)
+     21       2    up        0.083132    1.000000   ( 1.6E-05)
+     21       2    dn        0.083136    1.000000   ( 1.5E-05)
+     22       2    up        0.088481    1.000000   ( 1.3E-05)
+     22       2    dn        0.088482    1.000000   ( 1.2E-05)
+     21       3    up        0.094515    1.000000   ( 1.4E-06)
+     21       3    dn        0.094515    1.000000   ( 1.4E-06)
+     22       3    up        0.095975    1.000000   ( 1.4E-06)
+     22       3    dn        0.095975    1.000000   ( 1.4E-06)
+     23       1    dn        0.158083    0.000000   ( 1.1E-06)
+     23       1    up        0.158083    0.000000   ( 1.7E-06)
+     23       3    up        0.258770    0.000000   ( 3.4E-05)
+     23       3    dn        0.258770    0.000000   ( 6.4E-06)
+     24       3    up        0.264268    0.000000   ( 2.5E-05)
+     24       3    dn        0.264269    0.000000   ( 2.8E-05)
+     23       4    up        0.268078    0.000000   ( 5.8E-06)
+     23       4    dn        0.268079    0.000000   ( 5.6E-06)
+
+  [output of 8 eigenvalues skipped: maximum error = 3.2E-05]
+
+     23       2    up        0.278053    0.000000   ( 3.9E-06)
+     23       2    dn        0.278053    0.000000   ( 3.6E-06)
+     24       2    up        0.279711    0.000000   ( 3.5E-06)
+     24       2    dn        0.279712    0.000000   ( 3.1E-06)
+     25       2    up        0.295843    0.000000   ( 3.7E-06)
+     25       2    dn        0.295844    0.000000   ( 3.5E-06)
+     25       4    up        0.372048    0.000000   ( 2.0E-05)
+     25       4    dn        0.372049    0.000000   ( 1.9E-05)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698408
+   2       Ni2      -1.698402
+   3         O      -0.000005
+   4         O      -0.000005
+
+Elapsed time for SCF step    19:          2.50
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   20 ************************
+ etot  = -2.70602558E+02 abs_ev   =  9.88E-05 rel_ev   =  3.11E-06
+ ediff =        3.66E-04 abs_dens =  1.46E-04 rel_dens =  3.32E-06
+Matrix vector products:   3075
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449260    1.000000   ( 2.8E-06)
+      1       2    up       -2.449259    1.000000   ( 2.9E-06)
+      1       4    dn       -2.449257    1.000000   ( 3.0E-06)
+      1       2    dn       -2.449257    1.000000   ( 3.0E-06)
+      1       3    up       -2.449003    1.000000   ( 3.0E-06)
+      1       1    up       -2.449003    1.000000   ( 3.1E-06)
+      1       3    dn       -2.449001    1.000000   ( 3.1E-06)
+      1       1    dn       -2.449000    1.000000   ( 3.1E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 2.7E-05]
+
+     22       4    dn        0.082814    1.000000   ( 1.0E-06)
+     21       2    up        0.083146    1.000000   ( 5.7E-06)
+     21       2    dn        0.083149    1.000000   ( 4.6E-06)
+     22       2    up        0.088494    1.000000   ( 4.7E-06)
+     22       2    dn        0.088494    1.000000   ( 5.1E-06)
+     21       3    up        0.094517    1.000000   ( 8.4E-07)
+     21       3    dn        0.094518    1.000000   ( 1.1E-06)
+     22       3    up        0.095978    1.000000   ( 7.8E-07)
+     22       3    dn        0.095978    1.000000   ( 9.0E-07)
+     23       1    dn        0.158085    0.000000   ( 8.1E-07)
+     23       1    up        0.158085    0.000000   ( 8.0E-07)
+     23       3    dn        0.258776    0.000000   ( 2.1E-06)
+     23       3    up        0.258776    0.000000   ( 2.4E-05)
+     24       3    up        0.264272    0.000000   ( 1.7E-05)
+     24       3    dn        0.264273    0.000000   ( 1.5E-05)
+     23       4    dn        0.268083    0.000000   ( 3.9E-06)
+     23       4    up        0.268083    0.000000   ( 4.1E-06)
+
+  [output of 8 eigenvalues skipped: maximum error = 2.0E-05]
+
+     23       2    up        0.278058    0.000000   ( 5.7E-06)
+     23       2    dn        0.278058    0.000000   ( 4.9E-06)
+     24       2    dn        0.279713    0.000000   ( 1.3E-06)
+     24       2    up        0.279713    0.000000   ( 1.4E-06)
+     25       2    up        0.295845    0.000000   ( 1.9E-06)
+     25       2    dn        0.295845    0.000000   ( 1.7E-06)
+     25       4    up        0.372050    0.000000   ( 1.3E-05)
+     25       4    dn        0.372050    0.000000   ( 1.6E-05)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698423
+   2       Ni2      -1.698419
+   3         O      -0.000003
+   4         O      -0.000003
+
+Elapsed time for SCF step    20:          3.13
+**********************************************************************
+
+Info: restarting mixing.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   21 ************************
+ etot  = -2.70602660E+02 abs_ev   =  5.84E-05 rel_ev   =  1.84E-06
+ ediff =        1.02E-04 abs_dens =  7.78E-05 rel_dens =  1.77E-06
+Matrix vector products:   3122
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449262    1.000000   ( 1.9E-06)
+      1       2    up       -2.449262    1.000000   ( 1.8E-06)
+      1       4    dn       -2.449261    1.000000   ( 2.1E-06)
+      1       2    dn       -2.449260    1.000000   ( 2.0E-06)
+      1       3    up       -2.449006    1.000000   ( 2.0E-06)
+      1       1    up       -2.449005    1.000000   ( 1.9E-06)
+      1       3    dn       -2.449004    1.000000   ( 2.2E-06)
+      1       1    dn       -2.449003    1.000000   ( 2.1E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 9.9E-06]
+
+     22       4    dn        0.082814    1.000000   ( 3.7E-07)
+     21       2    up        0.083151    1.000000   ( 2.1E-06)
+     21       2    dn        0.083153    1.000000   ( 2.0E-06)
+     22       2    up        0.088497    1.000000   ( 2.1E-06)
+     22       2    dn        0.088497    1.000000   ( 2.1E-06)
+     21       3    up        0.094517    1.000000   ( 3.8E-07)
+     21       3    dn        0.094517    1.000000   ( 4.4E-07)
+     22       3    up        0.095977    1.000000   ( 4.0E-07)
+     22       3    dn        0.095977    1.000000   ( 4.7E-07)
+     23       1    dn        0.158085    0.000000   ( 3.8E-07)
+     23       1    up        0.158085    0.000000   ( 4.0E-07)
+     23       3    up        0.258776    0.000000   ( 1.5E-05)
+     23       3    dn        0.258776    0.000000   ( 3.7E-06)
+     24       3    up        0.264271    0.000000   ( 1.4E-05)
+     24       3    dn        0.264271    0.000000   ( 1.3E-05)
+     23       4    up        0.268082    0.000000   ( 1.5E-06)
+     23       4    dn        0.268082    0.000000   ( 1.4E-06)
+
+  [output of 8 eigenvalues skipped: maximum error = 2.3E-05]
+
+     23       2    up        0.278058    0.000000   ( 1.2E-06)
+     23       2    dn        0.278058    0.000000   ( 1.1E-06)
+     24       2    up        0.279711    0.000000   ( 7.5E-07)
+     24       2    dn        0.279711    0.000000   ( 6.6E-07)
+     25       2    up        0.295845    0.000000   ( 1.2E-06)
+     25       2    dn        0.295845    0.000000   ( 1.1E-06)
+     25       4    up        0.372050    0.000000   ( 5.6E-06)
+     25       4    dn        0.372050    0.000000   ( 5.8E-06)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698423
+   2       Ni2      -1.698420
+   3         O      -0.000002
+   4         O      -0.000002
+
+Elapsed time for SCF step    21:          3.03
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   22 ************************
+ etot  = -2.70602721E+02 abs_ev   =  3.11E-05 rel_ev   =  9.80E-07
+ ediff =        6.12E-05 abs_dens =  4.47E-05 rel_dens =  1.02E-06
+Matrix vector products:   2916
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449264    1.000000   ( 1.3E-06)
+      1       2    up       -2.449264    1.000000   ( 1.3E-06)
+      1       4    dn       -2.449263    1.000000   ( 1.4E-06)
+      1       2    dn       -2.449262    1.000000   ( 1.4E-06)
+      1       3    up       -2.449008    1.000000   ( 1.4E-06)
+      1       1    up       -2.449007    1.000000   ( 1.4E-06)
+      1       3    dn       -2.449007    1.000000   ( 1.5E-06)
+      1       1    dn       -2.449006    1.000000   ( 1.5E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 6.9E-06]
+
+     22       4    up        0.082813    1.000000   ( 1.8E-07)
+     21       2    up        0.083154    1.000000   ( 1.2E-06)
+     21       2    dn        0.083155    1.000000   ( 1.0E-06)
+     22       2    up        0.088499    1.000000   ( 1.2E-06)
+     22       2    dn        0.088499    1.000000   ( 1.3E-06)
+     21       3    up        0.094517    1.000000   ( 2.4E-07)
+     21       3    dn        0.094517    1.000000   ( 2.9E-07)
+     22       3    up        0.095977    1.000000   ( 2.2E-07)
+     22       3    dn        0.095977    1.000000   ( 2.7E-07)
+     23       1    dn        0.158085    0.000000   ( 1.9E-07)
+     23       1    up        0.158085    0.000000   ( 2.0E-07)
+     23       3    up        0.258775    0.000000   ( 6.5E-06)
+     23       3    dn        0.258775    0.000000   ( 3.5E-06)
+     24       3    up        0.264269    0.000000   ( 7.6E-06)
+     24       3    dn        0.264270    0.000000   ( 7.9E-06)
+     23       4    up        0.268080    0.000000   ( 9.8E-07)
+     23       4    dn        0.268081    0.000000   ( 9.4E-07)
+
+  [output of 8 eigenvalues skipped: maximum error = 7.2E-06]
+
+     23       2    up        0.278058    0.000000   ( 8.3E-07)
+     23       2    dn        0.278058    0.000000   ( 7.9E-07)
+     24       2    up        0.279708    0.000000   ( 3.7E-07)
+     24       2    dn        0.279708    0.000000   ( 4.0E-07)
+     25       2    up        0.295845    0.000000   ( 5.4E-07)
+     25       2    dn        0.295845    0.000000   ( 5.3E-07)
+     25       4    up        0.372050    0.000000   ( 3.1E-06)
+     25       4    dn        0.372050    0.000000   ( 3.7E-06)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698424
+   2       Ni2      -1.698422
+   3         O      -0.000002
+   4         O      -0.000002
+
+Elapsed time for SCF step    22:          2.94
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   23 ************************
+ etot  = -2.70602767E+02 abs_ev   =  2.70E-05 rel_ev   =  8.48E-07
+ ediff =        4.59E-05 abs_dens =  8.62E-05 rel_dens =  1.96E-06
+Matrix vector products:   2447
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449267    1.000000   ( 2.1E-06)
+      1       2    up       -2.449266    1.000000   ( 2.1E-06)
+      1       4    dn       -2.449266    1.000000   ( 2.3E-06)
+      1       2    dn       -2.449265    1.000000   ( 2.3E-06)
+      1       3    up       -2.449010    1.000000   ( 2.4E-06)
+      1       1    up       -2.449010    1.000000   ( 2.4E-06)
+      1       3    dn       -2.449009    1.000000   ( 2.7E-06)
+      1       1    dn       -2.449009    1.000000   ( 2.7E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.3E-05]
+
+     22       4    up        0.082813    1.000000   ( 2.8E-07)
+     21       2    up        0.083159    1.000000   ( 3.2E-06)
+     21       2    dn        0.083161    1.000000   ( 3.1E-06)
+     22       2    up        0.088503    1.000000   ( 4.1E-06)
+     22       2    dn        0.088503    1.000000   ( 4.4E-06)
+     21       3    up        0.094516    1.000000   ( 3.0E-07)
+     21       3    dn        0.094516    1.000000   ( 3.5E-07)
+     22       3    up        0.095976    1.000000   ( 3.1E-07)
+     22       3    dn        0.095976    1.000000   ( 3.6E-07)
+     23       1    dn        0.158085    0.000000   ( 3.2E-07)
+     23       1    up        0.158085    0.000000   ( 3.4E-07)
+     23       3    up        0.258775    0.000000   ( 8.0E-06)
+     23       3    dn        0.258775    0.000000   ( 6.3E-06)
+     24       3    up        0.264267    0.000000   ( 7.5E-06)
+     24       3    dn        0.264267    0.000000   ( 7.2E-06)
+     23       4    up        0.268080    0.000000   ( 1.6E-06)
+     23       4    dn        0.268080    0.000000   ( 1.6E-06)
+
+  [output of 8 eigenvalues skipped: maximum error = 1.2E-05]
+
+     23       2    up        0.278058    0.000000   ( 1.5E-06)
+     23       2    dn        0.278058    0.000000   ( 1.4E-06)
+     24       2    up        0.279705    0.000000   ( 4.5E-07)
+     24       2    dn        0.279705    0.000000   ( 4.0E-07)
+     25       2    up        0.295844    0.000000   ( 7.3E-07)
+     25       2    dn        0.295845    0.000000   ( 6.8E-07)
+     25       4    up        0.372050    0.000000   ( 4.2E-06)
+     25       4    dn        0.372050    0.000000   ( 4.0E-06)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698428
+   2       Ni2      -1.698426
+   3         O      -0.000001
+   4         O      -0.000001
+
+Elapsed time for SCF step    23:          2.48
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   24 ************************
+ etot  = -2.70602755E+02 abs_ev   =  6.53E-06 rel_ev   =  2.06E-07
+ ediff =        1.26E-05 abs_dens =  7.23E-05 rel_dens =  1.64E-06
+Matrix vector products:   3044
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449268    1.000000   ( 1.7E-06)
+      1       2    up       -2.449268    1.000000   ( 1.7E-06)
+      1       4    dn       -2.449268    1.000000   ( 1.8E-06)
+      1       2    dn       -2.449267    1.000000   ( 1.8E-06)
+      1       3    up       -2.449012    1.000000   ( 1.8E-06)
+      1       3    dn       -2.449011    1.000000   ( 1.9E-06)
+      1       1    up       -2.449011    1.000000   ( 1.8E-06)
+      1       1    dn       -2.449011    1.000000   ( 2.0E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.0E-05]
+
+     22       4    up        0.082814    1.000000   ( 2.1E-07)
+     21       2    up        0.083165    1.000000   ( 2.3E-06)
+     21       2    dn        0.083166    1.000000   ( 2.0E-06)
+     22       2    up        0.088507    1.000000   ( 1.8E-06)
+     22       2    dn        0.088507    1.000000   ( 1.8E-06)
+     21       3    up        0.094516    1.000000   ( 2.9E-07)
+     21       3    dn        0.094516    1.000000   ( 3.3E-07)
+     22       3    up        0.095976    1.000000   ( 2.9E-07)
+     22       3    dn        0.095976    1.000000   ( 3.3E-07)
+     23       1    dn        0.158085    0.000000   ( 2.9E-07)
+     23       1    up        0.158085    0.000000   ( 2.5E-07)
+     23       3    dn        0.258776    0.000000   ( 6.6E-06)
+     23       3    up        0.258776    0.000000   ( 7.9E-06)
+     24       3    up        0.264266    0.000000   ( 6.6E-06)
+     24       3    dn        0.264266    0.000000   ( 5.9E-06)
+     23       4    dn        0.268080    0.000000   ( 1.6E-06)
+     23       4    up        0.268080    0.000000   ( 1.5E-06)
+
+  [output of 8 eigenvalues skipped: maximum error = 8.6E-06]
+
+     23       2    dn        0.278058    0.000000   ( 9.2E-07)
+     23       2    up        0.278058    0.000000   ( 1.3E-06)
+     24       2    dn        0.279703    0.000000   ( 4.2E-07)
+     24       2    up        0.279703    0.000000   ( 3.8E-07)
+     25       2    up        0.295845    0.000000   ( 6.4E-07)
+     25       2    dn        0.295845    0.000000   ( 6.2E-07)
+     25       4    up        0.372050    0.000000   ( 3.0E-06)
+     25       4    dn        0.372050    0.000000   ( 3.2E-06)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698431
+   2       Ni2      -1.698430
+   3         O      -0.000001
+   4         O      -0.000001
+
+Elapsed time for SCF step    24:          3.18
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   25 ************************
+ etot  = -2.70602776E+02 abs_ev   =  2.03E-05 rel_ev   =  6.39E-07
+ ediff =        2.13E-05 abs_dens =  9.15E-05 rel_dens =  2.08E-06
+Matrix vector products:   2685
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    dn       -2.449271    1.000000   ( 2.4E-06)
+      1       4    up       -2.449271    1.000000   ( 2.2E-06)
+      1       2    dn       -2.449270    1.000000   ( 2.4E-06)
+      1       2    up       -2.449270    1.000000   ( 2.2E-06)
+      1       3    dn       -2.449014    1.000000   ( 2.6E-06)
+      1       3    up       -2.449014    1.000000   ( 2.4E-06)
+      1       1    dn       -2.449014    1.000000   ( 2.6E-06)
+      1       1    up       -2.449014    1.000000   ( 2.4E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.1E-05]
+
+     22       4    up        0.082814    1.000000   ( 2.8E-07)
+     21       2    up        0.083170    1.000000   ( 2.7E-06)
+     21       2    dn        0.083171    1.000000   ( 2.9E-06)
+     22       2    dn        0.088511    1.000000   ( 3.1E-06)
+     22       2    up        0.088511    1.000000   ( 3.2E-06)
+     21       3    dn        0.094516    1.000000   ( 4.3E-07)
+     21       3    up        0.094516    1.000000   ( 3.7E-07)
+     22       3    dn        0.095976    1.000000   ( 4.3E-07)
+     22       3    up        0.095976    1.000000   ( 3.8E-07)
+     23       1    dn        0.158085    0.000000   ( 3.0E-07)
+     23       1    up        0.158085    0.000000   ( 3.6E-07)
+     23       3    up        0.258777    0.000000   ( 8.2E-06)
+     23       3    dn        0.258777    0.000000   ( 7.1E-06)
+     24       3    up        0.264266    0.000000   ( 6.1E-06)
+     24       3    dn        0.264266    0.000000   ( 5.3E-06)
+     23       4    up        0.268079    0.000000   ( 1.3E-06)
+     23       4    dn        0.268080    0.000000   ( 1.2E-06)
+
+  [output of 8 eigenvalues skipped: maximum error = 7.6E-06]
+
+     23       2    up        0.278059    0.000000   ( 1.1E-06)
+     23       2    dn        0.278059    0.000000   ( 1.2E-06)
+     24       2    up        0.279702    0.000000   ( 4.6E-07)
+     24       2    dn        0.279702    0.000000   ( 4.4E-07)
+     25       2    up        0.295845    0.000000   ( 7.2E-07)
+     25       2    dn        0.295845    0.000000   ( 7.1E-07)
+     25       4    dn        0.372050    0.000000   ( 2.6E-06)
+     25       4    up        0.372050    0.000000   ( 2.3E-06)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698435
+   2       Ni2      -1.698434
+   3         O      -0.000000
+   4         O      -0.000000
+
+Elapsed time for SCF step    25:          2.64
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   26 ************************
+ etot  = -2.70602752E+02 abs_ev   =  4.42E-06 rel_ev   =  1.39E-07
+ ediff =        2.40E-05 abs_dens =  9.61E-05 rel_dens =  2.18E-06
+Matrix vector products:   2886
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449273    1.000000   ( 2.5E-06)
+      1       4    dn       -2.449273    1.000000   ( 2.7E-06)
+      1       2    up       -2.449272    1.000000   ( 2.6E-06)
+      1       2    dn       -2.449272    1.000000   ( 2.8E-06)
+      1       3    up       -2.449016    1.000000   ( 2.8E-06)
+      1       3    dn       -2.449016    1.000000   ( 3.0E-06)
+      1       1    up       -2.449015    1.000000   ( 2.8E-06)
+      1       1    dn       -2.449015    1.000000   ( 3.0E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 9.8E-06]
+
+     22       4    up        0.082815    1.000000   ( 2.9E-07)
+     21       2    up        0.083176    1.000000   ( 3.3E-06)
+     21       2    dn        0.083176    1.000000   ( 2.4E-06)
+     22       2    dn        0.088515    1.000000   ( 2.3E-06)
+     22       2    up        0.088515    1.000000   ( 2.4E-06)
+     21       3    up        0.094516    1.000000   ( 3.8E-07)
+     21       3    dn        0.094516    1.000000   ( 4.1E-07)
+     22       3    up        0.095976    1.000000   ( 3.9E-07)
+     22       3    dn        0.095976    1.000000   ( 4.2E-07)
+     23       1    up        0.158085    0.000000   ( 3.4E-07)
+     23       1    dn        0.158085    0.000000   ( 3.8E-07)
+     23       3    dn        0.258779    0.000000   ( 8.3E-06)
+     23       3    up        0.258779    0.000000   ( 8.5E-06)
+     24       3    dn        0.264267    0.000000   ( 3.2E-06)
+     24       3    up        0.264267    0.000000   ( 3.4E-06)
+     23       4    dn        0.268080    0.000000   ( 1.1E-06)
+     23       4    up        0.268080    0.000000   ( 1.1E-06)
+
+  [output of 8 eigenvalues skipped: maximum error = 6.3E-06]
+
+     23       2    dn        0.278060    0.000000   ( 1.8E-06)
+     23       2    up        0.278060    0.000000   ( 1.9E-06)
+     24       2    dn        0.279702    0.000000   ( 4.1E-07)
+     24       2    up        0.279702    0.000000   ( 5.0E-07)
+     25       2    dn        0.295845    0.000000   ( 6.2E-07)
+     25       2    up        0.295845    0.000000   ( 6.3E-07)
+     25       4    up        0.372050    0.000000   ( 1.9E-06)
+     25       4    dn        0.372050    0.000000   ( 2.0E-06)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =  -0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698440
+   2       Ni2      -1.698440
+   3         O       0.000000
+   4         O       0.000000
+
+Elapsed time for SCF step    26:          2.76
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   27 ************************
+ etot  = -2.70602753E+02 abs_ev   =  1.45E-05 rel_ev   =  4.55E-07
+ ediff =        1.33E-06 abs_dens =  9.16E-05 rel_dens =  2.08E-06
+Matrix vector products:   3118
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    up       -2.449275    1.000000   ( 2.6E-06)
+      1       4    dn       -2.449275    1.000000   ( 2.8E-06)
+      1       2    up       -2.449274    1.000000   ( 2.6E-06)
+      1       2    dn       -2.449274    1.000000   ( 2.8E-06)
+      1       3    up       -2.449018    1.000000   ( 2.8E-06)
+      1       3    dn       -2.449018    1.000000   ( 3.0E-06)
+      1       1    up       -2.449018    1.000000   ( 2.8E-06)
+      1       1    dn       -2.449018    1.000000   ( 3.0E-06)
+
+  [output of 159 eigenvalues skipped: maximum error = 5.7E-06]
+
+     22       4    dn        0.082815    1.000000   ( 3.8E-07)
+     21       2    dn        0.083180    1.000000   ( 1.8E-06)
+     21       2    up        0.083180    1.000000   ( 2.2E-06)
+     22       2    up        0.088516    1.000000   ( 1.1E-06)
+     22       2    dn        0.088516    1.000000   ( 1.2E-06)
+     21       3    up        0.094515    1.000000   ( 4.0E-07)
+     21       3    dn        0.094515    1.000000   ( 4.2E-07)
+     22       3    up        0.095975    1.000000   ( 4.1E-07)
+     22       3    dn        0.095975    1.000000   ( 4.3E-07)
+     23       1    up        0.158086    0.000000   ( 3.2E-07)
+     23       1    dn        0.158086    0.000000   ( 3.1E-07)
+     23       3    dn        0.258780    0.000000   ( 5.5E-06)
+     23       3    up        0.258780    0.000000   ( 6.0E-06)
+     24       3    dn        0.264269    0.000000   ( 2.2E-06)
+     24       3    up        0.264269    0.000000   ( 2.8E-06)
+     23       4    dn        0.268081    0.000000   ( 6.9E-07)
+     23       4    up        0.268081    0.000000   ( 7.1E-07)
+
+  [output of 8 eigenvalues skipped: maximum error = 5.5E-06]
+
+     23       2    dn        0.278061    0.000000   ( 1.6E-06)
+     23       2    up        0.278061    0.000000   ( 1.6E-06)
+     24       2    dn        0.279703    0.000000   ( 4.9E-07)
+     24       2    up        0.279703    0.000000   ( 5.2E-07)
+     25       2    dn        0.295845    0.000000   ( 3.9E-07)
+     25       2    up        0.295845    0.000000   ( 3.9E-07)
+     25       4    up        0.372050    0.000000   ( 1.7E-06)
+     25       4    dn        0.372050    0.000000   ( 1.8E-06)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698445
+   2       Ni2      -1.698446
+   3         O       0.000000
+   4         O       0.000000
+
+Elapsed time for SCF step    27:          3.05
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   28 ************************
+ etot  = -2.70602766E+02 abs_ev   =  4.23E-06 rel_ev   =  1.33E-07
+ ediff =        1.25E-05 abs_dens =  5.65E-06 rel_dens =  1.28E-07
+Matrix vector products:   2142
+Converged eigenvectors:     60
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    dn       -2.449275    1.000000   ( 5.7E-08)
+      1       4    up       -2.449275    1.000000   ( 5.3E-08)
+      1       2    dn       -2.449275    1.000000   ( 5.6E-08)
+      1       2    up       -2.449275    1.000000   ( 5.1E-08)
+      1       3    dn       -2.449019    1.000000   ( 5.9E-08)
+      1       3    up       -2.449019    1.000000   ( 5.4E-08)
+      1       1    dn       -2.449018    1.000000   ( 5.9E-08)
+      1       1    up       -2.449018    1.000000   ( 5.4E-08)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.6E-06]
+
+     22       4    up        0.082815    1.000000   ( 5.6E-08)
+     21       2    dn        0.083179    1.000000   ( 2.4E-07)
+     21       2    up        0.083179    1.000000   ( 3.3E-07)
+     22       2    dn        0.088515    1.000000   ( 3.6E-07)
+     22       2    up        0.088516    1.000000   ( 3.6E-07)
+     21       3    dn        0.094515    1.000000   ( 9.2E-08)
+     21       3    up        0.094515    1.000000   ( 8.2E-08)
+     22       3    dn        0.095975    1.000000   ( 9.3E-08)
+     22       3    up        0.095975    1.000000   ( 8.3E-08)
+     23       1    dn        0.158086    0.000000   ( 8.8E-08)
+     23       1    up        0.158086    0.000000   ( 8.2E-08)
+     23       3    up        0.258780    0.000000   ( 2.0E-06)
+     23       3    dn        0.258780    0.000000   ( 2.0E-06)
+     24       3    dn        0.264269    0.000000   ( 1.2E-06)
+     24       3    up        0.264269    0.000000   ( 1.2E-06)
+     23       4    up        0.268081    0.000000   ( 2.0E-07)
+     23       4    dn        0.268081    0.000000   ( 2.0E-07)
+
+  [output of 8 eigenvalues skipped: maximum error = 2.1E-06]
+
+     23       2    dn        0.278061    0.000000   ( 2.5E-07)
+     23       2    up        0.278061    0.000000   ( 2.8E-07)
+     24       2    up        0.279703    0.000000   ( 9.7E-08)
+     24       2    dn        0.279703    0.000000   ( 1.1E-07)
+     25       2    dn        0.295845    0.000000   ( 7.5E-08)
+     25       2    up        0.295845    0.000000   ( 8.0E-08)
+     25       4    dn        0.372050    0.000000   ( 7.3E-07)
+     25       4    up        0.372050    0.000000   ( 6.8E-07)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698445
+   2       Ni2      -1.698445
+   3         O       0.000000
+   4         O       0.000000
+
+Elapsed time for SCF step    28:          2.11
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   29 ************************
+ etot  = -2.70602766E+02 abs_ev   =  3.24E-07 rel_ev   =  1.02E-08
+ ediff =        4.76E-08 abs_dens =  9.62E-06 rel_dens =  2.19E-07
+Matrix vector products:   3018
+Converged eigenvectors:      0
+
+#  State  KPoint  Spin  Eigenvalue [H]  Occupation    Error
+      1       4    dn       -2.449275    1.000000   ( 3.3E-07)
+      1       4    up       -2.449275    1.000000   ( 3.2E-07)
+      1       2    dn       -2.449275    1.000000   ( 3.4E-07)
+      1       2    up       -2.449275    1.000000   ( 3.2E-07)
+      1       3    dn       -2.449019    1.000000   ( 3.5E-07)
+      1       3    up       -2.449019    1.000000   ( 3.3E-07)
+      1       1    dn       -2.449018    1.000000   ( 3.5E-07)
+      1       1    up       -2.449018    1.000000   ( 3.3E-07)
+
+  [output of 159 eigenvalues skipped: maximum error = 1.1E-06]
+
+     22       4    up        0.082815    1.000000   ( 4.6E-08)
+     21       2    dn        0.083179    1.000000   ( 8.4E-08)
+     21       2    up        0.083179    1.000000   ( 1.0E-07)
+     22       2    dn        0.088515    1.000000   ( 2.2E-07)
+     22       2    up        0.088515    1.000000   ( 2.1E-07)
+     21       3    dn        0.094515    1.000000   ( 6.8E-08)
+     21       3    up        0.094515    1.000000   ( 6.3E-08)
+     22       3    dn        0.095975    1.000000   ( 6.9E-08)
+     22       3    up        0.095975    1.000000   ( 6.5E-08)
+     23       1    dn        0.158086    0.000000   ( 4.3E-08)
+     23       1    up        0.158086    0.000000   ( 4.1E-08)
+     23       3    up        0.258780    0.000000   ( 1.4E-06)
+     23       3    dn        0.258780    0.000000   ( 1.3E-06)
+     24       3    dn        0.264269    0.000000   ( 7.7E-07)
+     24       3    up        0.264269    0.000000   ( 7.2E-07)
+     23       4    up        0.268081    0.000000   ( 1.8E-07)
+     23       4    dn        0.268081    0.000000   ( 1.7E-07)
+
+  [output of 8 eigenvalues skipped: maximum error = 1.0E-06]
+
+     23       2    up        0.278061    0.000000   ( 2.1E-07)
+     23       2    dn        0.278061    0.000000   ( 1.6E-07)
+     24       2    up        0.279703    0.000000   ( 7.7E-08)
+     24       2    dn        0.279703    0.000000   ( 8.3E-08)
+     25       2    dn        0.295845    0.000000   ( 8.6E-08)
+     25       2    up        0.295845    0.000000   ( 8.9E-08)
+     25       4    dn        0.372050    0.000000   ( 8.8E-07)
+     25       4    up        0.372050    0.000000   ( 7.6E-07)
+
+Density of states:
+
+------------------------------------------------------------%---------
+%-%---------------------------------------------------------%---------
+%-%------------------------------------------------------%--%---------
+%-%------------------------------------------------------%--%%--------
+%-%------------------------------------------------------%--%%%-------
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%---------%-%%%%----%--
+%-%--------------------------------------------%--------%%%%%%%---%%--
+%-%-------------------------------------------%%-------%%%%%%%%---%%-%
+                                                              ^
+
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] =   1.970):
+ Ion                    mz
+   1       Ni1       1.698444
+   2       Ni2      -1.698445
+   3         O       0.000000
+   4         O       0.000000
+
+Elapsed time for SCF step    29:          2.96
+**********************************************************************
+
+
+             Info: Writing states. 2022/09/12 at 12:13:28
+
+
+        Info: Finished writing states. 2022/09/12 at 12:13:28
+
+Info: SCF converged in   29 iterations
+
+Info: Number of matrix-vector products:      80567
+Info: Writing output to static/
+Info: Finished writing information to 'restart/gs'.
+
+             Calculation ended on 2022/09/12 at 12:13:28
+
+                        Walltime:  01m 27.225s
+
+Octopus emitted 63 warnings.

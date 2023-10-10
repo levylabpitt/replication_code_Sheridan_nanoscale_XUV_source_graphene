@@ -1,0 +1,21 @@
+CalculationMode = gs
+UnitsOutput = ev_angstrom
+ExperimentalFeatures = yes
+
+PeriodicDimensions = 3
+
+Spacing = 0.3*angstrom
+
+Size = 9.0
+%LatticeParameters
+ 3.9986581*angstrom | Size*angstrom | Size*angstrom
+%
+
+%Coordinates
+ "Na" | 0.0 | 0.0 | 0.0
+%
+
+%KPointsGrid
+ 9 | 1 | 1
+%
+KPointsUseSymmetries = yes

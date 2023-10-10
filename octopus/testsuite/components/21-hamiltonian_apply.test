@@ -1,0 +1,16 @@
+# -*- coding: utf-8 mode: shell-script -*-
+
+Test       : Oct-test Hamiltonian_apply
+Program    : octopus
+TestGroups : short-run, components
+Enabled    : Yes
+
+Input: 21-hamiltonian_apply.01-Si.inp
+Precision: 2.50e-04
+match ;   Norm state   1  ; GREPFIELD(out, 'Norm state   1', 4) ; 0.49919
+Precision: 2.48e-05
+match ;   Norm state   2  ; GREPFIELD(out, 'Norm state   2', 4) ; 0.495073
+Precision: 2.47e-05
+match ;   Norm state   3  ; GREPFIELD(out, 'Norm state   3', 4) ; 0.493115
+Precision: 2.46e-05
+match ;   Norm state   4  ; GREPFIELD(out, 'Norm state   4', 4) ; 0.492917

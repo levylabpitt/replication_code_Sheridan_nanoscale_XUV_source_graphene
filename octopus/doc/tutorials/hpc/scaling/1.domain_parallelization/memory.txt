@@ -1,0 +1,11 @@
+****************** Approximate memory requirements *******************
+Mesh
+  global  :       2.9 MiB
+  local   :       7.4 MiB
+  total   :      10.3 MiB
+
+States
+  real    :      47.1 MiB (par_kpoints + par_states + par_domains)
+  complex :      94.1 MiB (par_kpoints + par_states + par_domains)
+
+**********************************************************************

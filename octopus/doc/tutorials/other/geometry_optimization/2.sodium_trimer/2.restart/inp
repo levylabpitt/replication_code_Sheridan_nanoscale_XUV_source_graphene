@@ -1,0 +1,10 @@
+FromScratch = yes
+CalculationMode = go
+UnitsOutput = eV_Angstrom
+
+radius = 6.0*angstrom
+spacing = 0.3*angstrom
+
+XYZCoordinates = "inp.xyz"
+
+GOMethod = cg_bfgs

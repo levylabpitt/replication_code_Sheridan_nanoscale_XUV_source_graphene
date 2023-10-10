@@ -1,0 +1,30 @@
+Currently Loaded Modulefiles:
+ 1) gcc/11   2) openmpi/4  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: davismw(84556)
+Job name:  102-td-gr-TWcm2
+Node list: co[5060-5063,5514,5520,5525,5539]
+Job start: Fri Jul 21 04:21:54 CEST 2023
+Job end:   Fri Jul 21 10:23:52 CEST 2023
+Work dir:  /u/davismw/harmonic-generation/00.graphene/02.td-run/03.broken-symmetry-scan-I0/102.I0-0.2TWcm2-drive+ramp-A0-00.50/./
+Command:   /cobra/u/davismw/harmonic-generation/00.graphene/02.td-run/03.broken-symmetry-scan-I0/102.I0-0.2TWcm2-drive+ramp-A0-00.50/octopus.sbatch
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID           JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+6974947      102-td-gr+      8           640                             06:01:58      0:0 
+6974947.0       octopus      8    320    640      129.78M      119.49M   06:01:54      0:0 
+  
+Maximum memory per node: 5.3156 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 96.2 %
+     

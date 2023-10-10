@@ -1,0 +1,10 @@
+******************************** Grid ********************************
+Simulation Box:
+  Type = parallelepiped
+  Lengths [b] = (   7.198,   7.198,   7.198)
+Main mesh:
+  Spacing [b] = ( 0.514, 0.514, 0.514)    volume/point [b^3] =      0.09612
+  # inner mesh =       2744
+  # total mesh =       9192
+  Grid Cutoff [H] =    18.666387    Grid Cutoff [Ry] =    37.332774
+**********************************************************************

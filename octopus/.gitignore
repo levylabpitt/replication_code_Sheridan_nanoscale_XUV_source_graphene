@@ -1,0 +1,225 @@
+*~
+Makefile.in
+Makefile
+*.o
+*.a
+*.mod
+*.bak
+.deps
+*.log
+*_oct.f90
+*.optrpt
+config.status
+config.guess
+config.sub
+config.h
+stamp-h1
+aclocal.m4
+autom4te.cache
+autogen*
+INSTALL
+configure
+config.h.in
+build
+build-aux
+build-stamp
+semantic.cache
+*.gcno
+*.gcda
+*.la
+*.lo
+
+m4/libtool.m4
+m4/ltoptions.m4
+m4/ltsugar.m4
+m4/ltversion.m4
+m4/lt~obsolete.m4
+
+# new dependencies files
+*.dirstamp
+src/.fortran_dependencies/
+
+# /
+/bin
+/lib
+/man
+/include
+/blds
+
+# /doc/
+/doc/*.1
+/doc/variables.texi
+
+# /doc/doxygen/
+/doc/doxygen/html
+/doc/doxygen/latex
+/doc/doxygen/doxygen*tmp
+
+# /doc/html/
+/doc/html/varsRightFrame.html
+
+# /doc/html/icons/
+/doc/html/icons/texinfo.tex
+/doc/html/icons/*.1
+/doc/html/icons/variables.texi
+/doc/html/icons/*.info
+/doc/html/icons/vars
+
+# /doc/html/js/
+/doc/html/js/texinfo.tex
+/doc/html/js/*.1
+/doc/html/js/variables.texi
+/doc/html/js/*.info
+/doc/html/js/vars
+
+# /doc/html/vars/
+/doc/html/vars/*.html
+/doc/html/vars/alpha.js
+/doc/html/vars/sections.js
+
+# /external_libs/fortrancl/
+/external_libs/fortrancl/config_F90.h
+
+# /external_libs/isf/flib/
+/external_libs/isf/flib/mpif.h
+
+
+# /external_libs/isf/wrappers/
+/external_libs/isf/wrappers/mpif.h
+
+# /external_libs/qshep/
+/external_libs/qshep/*__genmod.*
+
+# /external_libs/dftd3/
+/external_libs/dftd3/Makefile
+/external_libs/dftd3/Makefile.in
+/external_libs/dftd3/*.o
+/external_libs/dftd3/*.a
+/external_libs/dftd3/*.mod
+
+
+# /external_libs/rapidxml/
+/external_libs/rapidxml/Makefile
+/external_libs/rapidxml/Makefile.in
+
+# /liboct_parser/
+/liboct_parser/lib64
+
+# /share/
+/share/varinfo
+/share/varinfo_orig
+/share/variables
+/share/variables.xml
+/share/man
+/share/octopus
+
+# /share/pseudopotentials/
+/share/pseudopotentials/varinfo
+/share/pseudopotentials/varinfo_orig
+/share/pseudopotentials/variables
+/share/pseudopotentials/variables.xml
+
+# /share/pseudopotentials/HGH/
+/share/pseudopotentials/HGH/varinfo
+/share/pseudopotentials/HGH/varinfo_orig
+/share/pseudopotentials/HGH/variables
+/share/pseudopotentials/HGH/variables.xml
+
+# /share/pseudopotentials/PSF/
+/share/pseudopotentials/PSF/varinfo
+/share/pseudopotentials/PSF/varinfo_orig
+/share/pseudopotentials/PSF/variables
+/share/pseudopotentials/PSF/variables.xml
+
+# /share/recipes/
+/share/recipes/varinfo
+/share/recipes/varinfo_orig
+/share/recipes/variables
+/share/recipes/variables.xml
+
+# /share/recipes/da/
+/share/recipes/da/varinfo
+/share/recipes/da/varinfo_orig
+/share/recipes/da/variables
+/share/recipes/da/variables.xml 
+
+# /share/recipes/en/
+/share/recipes/en/varinfo
+/share/recipes/en/varinfo_orig
+/share/recipes/en/variables
+/share/recipes/en/variables.xml
+
+# /share/recipes/es/
+/share/recipes/es/varinfo
+/share/recipes/es/varinfo_orig
+/share/recipes/es/variables
+/share/recipes/es/variables.xml
+
+# /share/recipes/it/
+/share/recipes/it/varinfo
+/share/recipes/it/varinfo_orig
+/share/recipes/it/variables
+/share/recipes/it/variables.xml
+
+# /share/util/
+/share/util/varinfo
+/share/util/varinfo_orig
+/share/util/variables
+/share/util/variables.xml
+
+# /src/
+/src/octopus
+/src/oct-*
+/src/octopus_*
+/src/config_F90.h
+/src/debug
+/src/static
+/src/tmp
+/src/inp
+/src/out.oct
+/src/stamp*
+/src/Makefile.local
+/src/messages.std*
+/src/*.pbs
+/src/machinefile*
+/src/inp.*
+/src/.gdb_history
+/src/Doxyfile
+/src/octopus.png
+
+# /src/include/
+/src/include/config_F90.h
+/src/include/defaults.h
+/src/include/options.h
+
+# /src/main/
+/src/main/octopus
+/src/main/oct-test
+/src/main/octopus_mpi
+/src/main/*.dSYM
+
+# /src/utils/
+/src/utils/oct-casida_spectrum
+/src/utils/oct-center-geom
+/src/utils/oct-conductivity
+/src/utils/oct-convert
+/src/utils/oct-dielectric-function
+/src/utils/oct-harmonic-spectrum
+/src/utils/oct-help
+/src/utils/oct-infrared_spectrum
+/src/utils/oct-local_multipoles
+/src/utils/oct-oscillator-strength
+/src/utils/oct-photoelectron_spectrum
+/src/utils/oct-propagation_spectrum
+/src/utils/oct-vibrational_spectrum
+/src/utils/oct-xyz-anim
+/src/utils/oct-floquet
+/src/utils/oct-spin_susceptibility
+/src/utils/*.dSYM
+
+# /testsuite/
+/testsuite/*.test
+/testsuite/oct-run_testsuite.sh
+
+# /testsuite/photo_electron/
+/testsuite/photo_electron/.log

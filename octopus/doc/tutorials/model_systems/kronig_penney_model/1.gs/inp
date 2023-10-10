@@ -1,0 +1,45 @@
+CalculationMode = gs
+ExtraStates = 4
+PeriodicDimensions = 1
+Dimensions = 1
+TheoryLevel = independent_particles
+ 
+a = 5
+b = 1
+V = 3
+ 
+Lsize = (a + b)/2
+
+%LatticeParameters 
+  a + b
+%
+ 
+Spacing = .0075
+ 
+%Species
+ "A" | species_user_defined | potential_formula | "(x>-b)*V*(x<0)" | valence | 1
+%
+ 
+%Coordinates
+ "A" | 0 |
+%
+ 
+%KPointsGrid
+ 11 |
+%
+ 
+%KPointsPath
+  11 |
+ 0.0 |
+ 0.5 |
+%
+ 
+ConvEigenError = true
+
+%Output
+ potential
+ wfs
+%
+OutputFormat = axis_x
+OutputWfsNumber = "1,2"
+

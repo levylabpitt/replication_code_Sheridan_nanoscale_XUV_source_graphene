@@ -1,0 +1,12 @@
+CalculationMode = gs
+FromScratch = yes
+
+XYZCoordinates = "1ala.xyz"
+
+Spacing = 0.2*angstrom
+Radius = 4.0*angstrom
+
+TDPropagator = aetrs
+TDMaxSteps = 20
+TDTimeStep = 0.05
+

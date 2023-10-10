@@ -1,0 +1,19 @@
+Info: Using ParMETIS multilevel k-way algorithm to partition the mesh.
+Info: Mesh Partition restart information will be written to 'restart/partition'.
+Info: Finished writing information to 'restart/partition'.
+Info: Mesh partition:
+
+      Partition quality:    0.924702E-08
+
+                 Neighbours         Ghost points
+      Average  :          1                 7340
+      Minimum  :          1                 7303
+      Maximum  :          1                 7377
+
+      Nodes in domain-group      1
+        Neighbours     :         1        Local points    :     27584
+        Ghost points   :      7377        Boundary points :     14781
+      Nodes in domain-group      2
+        Neighbours     :         1        Local points    :     27657
+        Ghost points   :      7303        Boundary points :     15649
+

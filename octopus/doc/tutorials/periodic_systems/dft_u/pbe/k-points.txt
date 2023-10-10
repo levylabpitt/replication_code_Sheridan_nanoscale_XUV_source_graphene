@@ -1,0 +1,17 @@
+Checking if the generated full k-point grid is symmetric
+
+     4 k-points generated from parameters :
+ ---------------------------------------------------
+    n =    2    2    2
+
+    s1  =  0.00  0.00  0.00
+
+ index |    weight    |             coordinates              |
+       1 |     0.125000 |    0.000000    0.000000    0.000000  |
+       2 |     0.375000 |    0.000000    0.500000    0.000000  |
+       3 |     0.125000 |    0.000000    0.000000    0.500000  |
+       4 |     0.375000 |    0.000000    0.500000    0.500000  |
+
+Input: [SpinComponents = polarized]
+Checking if the real-space grid is symmetric
+Info: states-block size = 0.5 MiB

@@ -1,0 +1,22 @@
+CalculationMode = td
+FromScratch = yes
+UnitsOutput = eV_angstrom
+
+Radius = 3.5*angstrom
+Spacing = 0.18*angstrom
+
+CH = 1.097*angstrom
+%Coordinates
+ "C" |           0 |          0 |           0
+ "H" |  CH/sqrt(3) | CH/sqrt(3) |  CH/sqrt(3)
+ "H" | -CH/sqrt(3) |-CH/sqrt(3) |  CH/sqrt(3)
+ "H" |  CH/sqrt(3) |-CH/sqrt(3) | -CH/sqrt(3)
+ "H" | -CH/sqrt(3) | CH/sqrt(3) | -CH/sqrt(3)
+%
+          
+TDPropagator = aetrs
+TDTimeStep = 0.0023/eV
+TDMaxSteps = 4350  # ~ 10.0/TDTimeStep
+
+TDDeltaStrength = 0.01/angstrom
+TDPolarizationDirection = 3

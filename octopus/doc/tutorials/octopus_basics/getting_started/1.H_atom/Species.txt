@@ -1,0 +1,18 @@
+****************************** Species *******************************
+  Species 'H'
+    type             : pseudopotential
+    file             : '/home/luedersm/Octopus_foss-2020b/share/octopus/pseudopotentials/PSF/H.psf'
+    file format      : PSF
+    valence charge   : 1.0
+    atomic number    :   1
+    form on file     : semilocal
+    orbital origin   : calculated
+    lmax             : 0
+    llocal           : 0
+    projectors per l : 1
+    total projectors : 0
+    application form : local
+    orbitals         : 16
+    bound orbitals   :  1
+
+**********************************************************************

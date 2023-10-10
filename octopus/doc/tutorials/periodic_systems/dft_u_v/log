@@ -1,0 +1,2691 @@
+    <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+                                ___
+                             .-'   `'.
+                            /         \
+                            |         ;
+                            |         |           ___.--,
+                   _.._     |0) ~ (0) |    _.---'`__.-( (_.
+            __.--'`_.. '.__.\    '--. \_.-' ,.--'`     `""`
+           ( ,.--'`   ',__ /./;   ;, '.__.'`    __
+           _`) )  .---.__.' / |   |\   \__..--""  """--.,_
+          `---' .'.''-._.-'`_./  /\ '.  \ _.-~~~````~~~-._`-.__.'
+                | |  .' _.-' |  |  \  \  '.               `~---`
+                 \ \/ .'     \  \   '. '-._)
+                  \/ /        \  \    `=.__`~-.
+             jgs  / /\         `) )    / / `"".`\
+            , _.-'.'\ \        / /    ( (     / /
+             `--~`   ) )    .-'.'      '.'.  | (
+                    (/`    ( (`          ) )  '-;
+                     `      '-;         (-'
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2, or (at your option)
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+
+    <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+                           Running octopus
+
+Version                : maya
+Commit                 : ab6cce78a013c99ccb2784512df020dd9aac3c98
+Build time             : Mon Sep 12 11:18:16 CEST 2022
+Configuration options  : maxdim3 sse2 avx libxc_fxc libxc_kxc
+Optional libraries     :
+Architecture           : x86_64
+C compiler             : gcc
+C compiler flags       : -g -gdwarf -Wall -O2 -march=native -ftest-coverage -fprofile-arcs
+C++ compiler           : g++
+C++ compiler flags     : -g -gdwarf -Wall -O2 -march=native -ftest-coverage -fprofile-arcs
+Fortran compiler       : gfortran (GCC version 10.2.1 20210110)
+Fortran compiler flags : -g -gdwarf -Wall -Wno-maybe-uninitialized -O2 -march=native -fbacktrace -ffpe-trap=invalid
+
+             The octopus is swimming in poppyseed (Linux)
+
+
+            Calculation started on 2022/09/12 at 12:52:12
+
+
+************************** Calculation Mode **************************
+Input: [CalculationMode = gs]
+**********************************************************************
+
+
+******************************* Space ********************************
+Octopus will run in 3 dimension(s).
+Octopus will treat the system as periodic in 3 dimension(s).
+**********************************************************************
+
+Input: [PseudopotentialSet = standard]
+Reading Coordinates from ReducedCoordinates block
+
+****************************** Species *******************************
+  Species 'Si'
+    type             : pseudopotential
+    file             : '/home/luedersm/Octopus_foss-2020b/share/octopus/pseudopotentials/PSF/Si.psf'
+    file format      : PSF
+    valence charge   : 4.0
+    atomic number    :  14
+    form on file     : semilocal
+    orbital origin   : calculated
+    lmax             : 2
+    llocal           : 0
+    projectors per l : 1
+    total projectors : 2
+    application form : kleinman-bylander
+    orbitals         : 16
+    bound orbitals   :  4
+
+**********************************************************************
+
+
+***************************** Symmetries *****************************
+Space group No.  227
+International: Fd-3m
+Schoenflies: Oh^7
+  Index                Rotation matrix                      Fractional translations
+    1 :     1   0   0     0   1   0     0   0   1      0.000000    0.000000    0.000000
+    2 :     0  -1   1     0  -1   0     1  -1   0      0.000000    0.000000    0.000000
+    3 :    -1   0   0    -1   0   1    -1   1   0      0.000000    0.000000    0.000000
+    4 :     0   1  -1     1   0  -1     0   0  -1      0.000000    0.000000    0.000000
+    5 :    -1   1   0    -1   0   0    -1   0   1      0.000000    0.000000    0.000000
+    6 :     0   0   1     1   0   0     0   1   0      0.000000    0.000000    0.000000
+    7 :     1  -1   0     0  -1   1     0  -1   0      0.000000    0.000000    0.000000
+    8 :     0   0  -1     0   1  -1     1   0  -1      0.000000    0.000000    0.000000
+    9 :     0  -1   0     1  -1   0     0  -1   1      0.000000    0.000000    0.000000
+   10 :    -1   0   1    -1   1   0    -1   0   0      0.000000    0.000000    0.000000
+   11 :     0   1   0     0   0   1     1   0   0      0.000000    0.000000    0.000000
+   12 :     1   0  -1     0   0  -1     0   1  -1      0.000000    0.000000    0.000000
+   13 :     0   0  -1     1   0  -1     0   1  -1      0.000000    0.000000    0.000000
+   14 :    -1   1   0    -1   0   1    -1   0   0      0.000000    0.000000    0.000000
+   15 :     1  -1   0     0  -1   0     0  -1   1      0.000000    0.000000    0.000000
+   16 :     0   0   1     0   1   0     1   0   0      0.000000    0.000000    0.000000
+   17 :     1   0  -1     0   1  -1     0   0  -1      0.000000    0.000000    0.000000
+   18 :     0  -1   0     0  -1   1     1  -1   0      0.000000    0.000000    0.000000
+   19 :     0   1   0     1   0   0     0   0   1      0.000000    0.000000    0.000000
+   20 :    -1   0   1    -1   0   0    -1   1   0      0.000000    0.000000    0.000000
+   21 :     0   1  -1     0   0  -1     1   0  -1      0.000000    0.000000    0.000000
+   22 :     1   0   0     0   0   1     0   1   0      0.000000    0.000000    0.000000
+   23 :    -1   0   0    -1   1   0    -1   0   1      0.000000    0.000000    0.000000
+   24 :     0  -1   1     1  -1   0     0  -1   0      0.000000    0.000000    0.000000
+Info: The system has    24 symmetries that can be used.
+**********************************************************************
+
+Input: [CurvMethod = curv_affine]
+Input: [DerivativesStencil = stencil_stargeneral]
+
+****************************** Lattice *******************************
+  Lattice Vectors [b]
+    0.000000    5.090000    5.090000
+    5.090000    0.000000    5.090000
+    5.090000    5.090000    0.000000
+  Cell volume =           263.7445 [b^3]
+  Reciprocal-Lattice Vectors [b^-1]
+   -0.617209    0.617209    0.617209
+    0.617209   -0.617209    0.617209
+    0.617209    0.617209   -0.617209
+  Cell angles [degree]
+    alpha =   60.000
+    beta  =   60.000
+    gamma =   60.000
+**********************************************************************
+
+
+    68 k-points generated from parameters :
+ ---------------------------------------------------
+    n =    2    2    2
+
+    s1  =  0.50  0.50  0.50
+
+    s2  =  0.50  0.00  0.00
+
+    s3  =  0.00  0.50  0.00
+
+    s4  =  0.00  0.00  0.50
+
+ index |    weight    |             coordinates              |
+       1 |     0.031250 |    0.250000    0.000000    0.000000  |
+       2 |     0.031250 |    0.000000    0.250000    0.000000  |
+       3 |     0.031250 |    0.000000    0.000000    0.250000  |
+       4 |     0.031250 |   -0.250000    0.000000    0.000000  |
+       5 |     0.031250 |    0.000000   -0.250000    0.000000  |
+       6 |     0.031250 |    0.000000    0.000000   -0.250000  |
+       7 |     0.031250 |    0.250000    0.250000    0.250000  |
+       8 |     0.031250 |   -0.250000    0.250000    0.250000  |
+       9 |     0.031250 |    0.250000   -0.250000    0.250000  |
+      10 |     0.031250 |    0.250000    0.250000   -0.250000  |
+      11 |     0.031250 |   -0.250000   -0.250000    0.250000  |
+      12 |     0.031250 |   -0.250000    0.250000   -0.250000  |
+      13 |     0.031250 |    0.250000   -0.250000   -0.250000  |
+      14 |     0.031250 |   -0.250000   -0.250000   -0.250000  |
+      15 |     0.031250 |    0.500000    0.250000    0.000000  |
+      16 |     0.031250 |    0.250000    0.500000    0.000000  |
+      17 |     0.031250 |    0.500000    0.000000    0.250000  |
+      18 |     0.031250 |    0.000000    0.500000    0.250000  |
+      19 |     0.031250 |    0.250000    0.000000    0.500000  |
+      20 |     0.031250 |   -0.250000    0.500000    0.000000  |
+      21 |     0.031250 |    0.000000    0.250000    0.500000  |
+      22 |     0.031250 |    0.500000   -0.250000    0.000000  |
+      23 |     0.031250 |   -0.250000    0.000000    0.500000  |
+      24 |     0.031250 |    0.500000    0.000000   -0.250000  |
+      25 |     0.031250 |    0.000000   -0.250000    0.500000  |
+      26 |     0.031250 |    0.000000    0.500000   -0.250000  |
+      27 |     0.031250 |    0.500000    0.500000    0.250000  |
+      28 |     0.031250 |    0.500000    0.250000    0.500000  |
+      29 |     0.031250 |    0.250000    0.500000    0.500000  |
+      30 |     0.031250 |   -0.250000    0.500000    0.500000  |
+      31 |     0.031250 |    0.500000   -0.250000    0.500000  |
+      32 |     0.031250 |    0.500000    0.500000   -0.250000  |
+      33 |     0.000000 |    0.500000    0.000000    0.000000  |
+      34 |     0.000000 |    0.450000    0.000000    0.000000  |
+      35 |     0.000000 |    0.400000    0.000000    0.000000  |
+      36 |     0.000000 |    0.350000    0.000000    0.000000  |
+      37 |     0.000000 |    0.300000    0.000000    0.000000  |
+      38 |     0.000000 |    0.250000    0.000000    0.000000  |
+      39 |     0.000000 |    0.200000    0.000000    0.000000  |
+      40 |     0.000000 |    0.150000    0.000000    0.000000  |
+      41 |     0.000000 |    0.100000    0.000000    0.000000  |
+      42 |     0.000000 |    0.050000    0.000000    0.000000  |
+      43 |     0.000000 |    0.000000    0.000000    0.000000  |
+      44 |     0.000000 |    0.000000    0.050000    0.050000  |
+      45 |     0.000000 |    0.000000    0.100000    0.100000  |
+      46 |     0.000000 |    0.000000    0.150000    0.150000  |
+      47 |     0.000000 |    0.000000    0.200000    0.200000  |
+      48 |     0.000000 |    0.000000    0.250000    0.250000  |
+      49 |     0.000000 |    0.000000    0.300000    0.300000  |
+      50 |     0.000000 |    0.000000    0.350000    0.350000  |
+      51 |     0.000000 |    0.000000    0.400000    0.400000  |
+      52 |     0.000000 |    0.000000    0.450000    0.450000  |
+      53 |     0.000000 |    0.000000    0.500000    0.500000  |
+      54 |     0.000000 |    0.066667    0.533333    0.533333  |
+      55 |     0.000000 |    0.133333    0.566667    0.566667  |
+      56 |     0.000000 |    0.200000    0.600000    0.600000  |
+      57 |     0.000000 |    0.266667    0.633333    0.633333  |
+      58 |     0.000000 |    0.333333    0.666667    0.666667  |
+      59 |     0.000000 |    0.400000    0.700000    0.700000  |
+      60 |     0.000000 |    0.466667    0.733333    0.733333  |
+      61 |     0.000000 |    0.533333    0.766667    0.766667  |
+      62 |     0.000000 |    0.600000    0.800000    0.800000  |
+      63 |     0.000000 |    0.666667    0.833333    0.833333  |
+      64 |     0.000000 |    0.733333    0.866667    0.866667  |
+      65 |     0.000000 |    0.800000    0.900000    0.900000  |
+      66 |     0.000000 |    0.866667    0.933333    0.933333  |
+      67 |     0.000000 |    0.933333    0.966667    0.966667  |
+      68 |     0.000000 |    1.000000    1.000000    1.000000  |
+
+Input: [SpinComponents = unpolarized]
+Input: [SmearingFunction = semiconducting]
+Input: [SymmetrizeDensity = no]
+
+******************************* States *******************************
+Total electronic charge  =        8.000
+Number of states         =        8
+States block-size        =        4
+**********************************************************************
+
+
+************************** Parallelization ***************************
+Info: Octopus will run in *serial*
+**********************************************************************
+
+Info: Generating weights for finite-difference discretization of x-gradient
+Info: Generating weights for finite-difference discretization of y-gradient
+Info: Generating weights for finite-difference discretization of z-gradient
+Info: Generating weights for finite-difference discretization of Laplacian
+
+******************************** Grid ********************************
+Simulation Box:
+  Type = parallelepiped
+  Lengths [b] = (   7.198,   7.198,   7.198)
+Main mesh:
+  Spacing [b] = ( 0.514, 0.514, 0.514)    volume/point [b^3] =      0.09612
+  # inner mesh =       2744
+  # total mesh =       9192
+  Grid Cutoff [H] =    18.666387    Grid Cutoff [Ry] =    37.332774
+**********************************************************************
+
+Info: states-block size = 0.3 MiB
+Input: [StatesPack = yes]
+Input: [StatesOrthogonalization = cholesky_serial]
+Info: the XCFunctional has been selected to match the pseudopotentials
+      used in the calculation.
+
+**************************** Theory Level ****************************
+Input: [TheoryLevel = kohn_sham]
+
+Exchange-correlation:
+  Exchange
+    Slater exchange (LDA)
+    [1] P. A. M. Dirac, Math. Proc. Cambridge Philos. Soc. 26, 376 (1930)
+    [2] F. Bloch, Z. Phys. 57, 545 (1929)
+  Correlation
+    Perdew & Zunger (Modified) (LDA)
+    [1] J. P. Perdew and A. Zunger, Phys. Rev. B 23, 5048 (1981), modified to improve the matching between the low- and high-rs
+
+Input: [SICCorrection = sic_none]
+**********************************************************************
+
+
+****************************** Hartree *******************************
+Input: [DressedOrbitals = no]
+The chosen Poisson solver is 'fast Fourier transform'
+Input: [PoissonFFTKernel = fft_nocut]
+**********************************************************************
+
+Info: FFT grid dimensions       = 14 x 14 x 14
+      Total grid size           = 2744 (      0.0 MiB )
+Input: [FilterPotentials = filter_TS]
+Info: Pseudopotential for Si
+  Radii for localized parts:
+    local part     =  2.9 b
+    non-local part =  2.6 b
+    orbitals       = 10.8 b
+
+Input: [RelativisticCorrection = non_relativistic]
+Input: [DFTULevel = dft_u_acbn0]
+
+******************************* DFT+U ********************************
+Input: [DFTUDoubleCounting = dft_u_fll]
+Input: [DFTUPoissonSolver = dft_u_poisson_fft]
+Input: [ACBN0Screening = 1.000]
+Input: [ACBN0RotationallyInvariant = yes]
+Input: [ACBN0IntersiteInteraction = yes]
+
+Method:
+  [1] Tancogne-Dejean, and Rubio, Phys. Rev. B 102, 155117 (2020)
+Implementation:
+  [1] Tancogne-Dejean, Oliveira, and Rubio, Phys. Rev. B 69, 245133 (2017)
+
+Input: [AOTruncation = ao_full]
+Input: [AOThreshold = 0.1000E-01]
+Input: [AONormalize = yes]
+Input: [AOSubmesh = no]
+Input: [AOLoewdin = yes]
+Building the LDA+U localized orbital basis.
+Found   4 orbital sets.
+Orbital set  1 has a value of U of  0.00000 Ha.
+It contains  1 orbitals.
+The radius is  5.78000 Bohr,  with   8391 grid points.
+Orbital set  2 has a value of U of  0.00000 Ha.
+It contains  3 orbitals.
+The radius is  7.34000 Bohr,  with  17309 grid points.
+Orbital set  3 has a value of U of  0.00000 Ha.
+It contains  1 orbitals.
+The radius is  5.78000 Bohr,  with   8440 grid points.
+Orbital set  4 has a value of U of  0.00000 Ha.
+It contains  3 orbitals.
+The radius is  7.34000 Bohr,  with  17148 grid points.
+Computing the Coulomb integrals of the localized basis.
+ETA: .Info: FFT grid dimensions       = 57 x 57 x 57
+      Total grid size           = 185193 (      1.4 MiB )
+      Inefficient FFT grid. A better grid would be: 60 60 60
+Info: Poisson Cutoff Radius     =  17.9 b
+Info: FFT grid dimensions       = 73 x 73 x 73
+      Total grid size           = 389017 (      3.0 MiB )
+      Inefficient FFT grid. A better grid would be: 78 78 78
+Info: Poisson Cutoff Radius     =  23.0 b
+......1......2.......3......4......Info: FFT grid dimensions       = 57 x 57 x 57
+      Total grid size           = 185193 (      1.4 MiB )
+      Inefficient FFT grid. A better grid would be: 60 60 60
+Info: Poisson Cutoff Radius     =  17.9 b
+5.Info: FFT grid dimensions       = 69 x 69 x 69
+      Total grid size           = 328509 (      2.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 70 70
+Info: Poisson Cutoff Radius     =  21.7 b
+......6......7.......8......9......0
+**********************************************************************
+
+Input: [MagneticConstrain = 0]
+
+****************** Approximate memory requirements *******************
+Mesh
+  global  :       0.1 MiB
+  local   :       0.4 MiB
+  total   :       0.5 MiB
+
+States
+  real    :      38.2 MiB (par_kpoints + par_states + par_domains)
+  complex :      76.3 MiB (par_kpoints + par_states + par_domains)
+
+**********************************************************************
+
+Info: Generating external potential
+
+******************** Intersite Coulomb integrals *********************
+Intersite interaction will be computed for   9 neighboring atoms.
+Neighbor   1 is located at  0.000 Bohr and has 17309 grid points.
+Info: FFT grid dimensions       = 73 x 73 x 73
+      Total grid size           = 389017 (      3.0 MiB )
+      Inefficient FFT grid. A better grid would be: 78 78 78
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   2 is located at  4.408 Bohr and has 13006 grid points.
+Info: FFT grid dimensions       = 97 x 69 x 69
+      Total grid size           = 461817 (      3.5 MiB )
+      Inefficient FFT grid. A better grid would be: 98 70 70
+Info: Poisson Cutoff Radius     =  21.7 b
+Neighbor   3 is located at  4.408 Bohr and has 13006 grid points.
+Info: FFT grid dimensions       = 69 x 97 x 69
+      Total grid size           = 461817 (      3.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 98 70
+Info: Poisson Cutoff Radius     =  21.7 b
+Neighbor   4 is located at  4.408 Bohr and has 13006 grid points.
+Info: FFT grid dimensions       = 69 x 69 x 97
+      Total grid size           = 461817 (      3.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 70 98
+Info: Poisson Cutoff Radius     =  21.7 b
+Neighbor   5 is located at  4.408 Bohr and has 13006 grid points.
+Info: FFT grid dimensions       = 69 x 69 x 69
+      Total grid size           = 328509 (      2.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 70 70
+Info: Poisson Cutoff Radius     =  21.7 b
+Neighbor   6 is located at  4.408 Bohr and has 19577 grid points.
+Info: FFT grid dimensions       = 97 x 69 x 69
+      Total grid size           = 461817 (      3.5 MiB )
+      Inefficient FFT grid. A better grid would be: 98 70 70
+Info: Poisson Cutoff Radius     =  21.7 b
+Neighbor   7 is located at  4.408 Bohr and has 19577 grid points.
+Info: FFT grid dimensions       = 69 x 97 x 69
+      Total grid size           = 461817 (      3.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 98 70
+Info: Poisson Cutoff Radius     =  21.7 b
+Neighbor   8 is located at  4.408 Bohr and has 19577 grid points.
+Info: FFT grid dimensions       = 69 x 69 x 97
+      Total grid size           = 461817 (      3.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 70 98
+Info: Poisson Cutoff Radius     =  21.7 b
+Neighbor   9 is located at  4.408 Bohr and has 19577 grid points.
+Info: FFT grid dimensions       = 69 x 69 x 69
+      Total grid size           = 328509 (      2.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 70 70
+Info: Poisson Cutoff Radius     =  21.7 b
+**********************************************************************
+
+
+******************** Intersite Coulomb integrals *********************
+Intersite interaction will be computed for   9 neighboring atoms.
+Neighbor   1 is located at  0.000 Bohr and has 17309 grid points.
+Info: FFT grid dimensions       = 73 x 73 x 73
+      Total grid size           = 389017 (      3.0 MiB )
+      Inefficient FFT grid. A better grid would be: 78 78 78
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   2 is located at  4.408 Bohr and has 19733 grid points.
+Info: FFT grid dimensions       = 113 x 85 x 85
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 120 88 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   3 is located at  4.408 Bohr and has 19733 grid points.
+Info: FFT grid dimensions       = 85 x 113 x 85
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 88 120 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   4 is located at  4.408 Bohr and has 19733 grid points.
+Info: FFT grid dimensions       = 85 x 85 x 113
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 88 88 120
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   5 is located at  4.408 Bohr and has 19733 grid points.
+Info: FFT grid dimensions       = 85 x 85 x 85
+      Total grid size           = 614125 (      4.7 MiB )
+      Inefficient FFT grid. A better grid would be: 88 88 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   6 is located at  4.408 Bohr and has 24768 grid points.
+Info: FFT grid dimensions       = 113 x 85 x 85
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 120 88 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   7 is located at  4.408 Bohr and has 24768 grid points.
+Info: FFT grid dimensions       = 85 x 113 x 85
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 88 120 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   8 is located at  4.408 Bohr and has 24768 grid points.
+Info: FFT grid dimensions       = 85 x 85 x 113
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 88 88 120
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   9 is located at  4.408 Bohr and has 24768 grid points.
+Info: FFT grid dimensions       = 85 x 85 x 85
+      Total grid size           = 614125 (      4.7 MiB )
+      Inefficient FFT grid. A better grid would be: 88 88 88
+Info: Poisson Cutoff Radius     =  26.8 b
+**********************************************************************
+
+
+******************** Intersite Coulomb integrals *********************
+Intersite interaction will be computed for   9 neighboring atoms.
+Neighbor   1 is located at  4.408 Bohr and has 13006 grid points.
+Info: FFT grid dimensions       = 73 x 73 x 73
+      Total grid size           = 389017 (      3.0 MiB )
+      Inefficient FFT grid. A better grid would be: 78 78 78
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   2 is located at  4.408 Bohr and has 13006 grid points.
+Info: FFT grid dimensions       = 73 x 73 x 101
+      Total grid size           = 538229 (      4.1 MiB )
+      Inefficient FFT grid. A better grid would be: 78 78 104
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   3 is located at  4.408 Bohr and has 13006 grid points.
+Info: FFT grid dimensions       = 73 x 101 x 73
+      Total grid size           = 538229 (      4.1 MiB )
+      Inefficient FFT grid. A better grid would be: 78 104 78
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   4 is located at  4.408 Bohr and has 13006 grid points.
+Info: FFT grid dimensions       = 101 x 73 x 73
+      Total grid size           = 538229 (      4.1 MiB )
+      Inefficient FFT grid. A better grid would be: 104 78 78
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   5 is located at  4.408 Bohr and has 19733 grid points.
+Info: FFT grid dimensions       = 73 x 73 x 73
+      Total grid size           = 389017 (      3.0 MiB )
+      Inefficient FFT grid. A better grid would be: 78 78 78
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   6 is located at  4.408 Bohr and has 19733 grid points.
+Info: FFT grid dimensions       = 73 x 73 x 101
+      Total grid size           = 538229 (      4.1 MiB )
+      Inefficient FFT grid. A better grid would be: 78 78 104
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   7 is located at  4.408 Bohr and has 19733 grid points.
+Info: FFT grid dimensions       = 73 x 101 x 73
+      Total grid size           = 538229 (      4.1 MiB )
+      Inefficient FFT grid. A better grid would be: 78 104 78
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   8 is located at  4.408 Bohr and has 19733 grid points.
+Info: FFT grid dimensions       = 101 x 73 x 73
+      Total grid size           = 538229 (      4.1 MiB )
+      Inefficient FFT grid. A better grid would be: 104 78 78
+Info: Poisson Cutoff Radius     =  23.0 b
+Neighbor   9 is located at  0.000 Bohr and has 17148 grid points.
+Info: FFT grid dimensions       = 69 x 69 x 69
+      Total grid size           = 328509 (      2.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 70 70
+Info: Poisson Cutoff Radius     =  21.7 b
+**********************************************************************
+
+
+******************** Intersite Coulomb integrals *********************
+Intersite interaction will be computed for   9 neighboring atoms.
+Neighbor   1 is located at  4.408 Bohr and has 19577 grid points.
+Info: FFT grid dimensions       = 85 x 85 x 85
+      Total grid size           = 614125 (      4.7 MiB )
+      Inefficient FFT grid. A better grid would be: 88 88 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   2 is located at  4.408 Bohr and has 19577 grid points.
+Info: FFT grid dimensions       = 85 x 85 x 113
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 88 88 120
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   3 is located at  4.408 Bohr and has 19577 grid points.
+Info: FFT grid dimensions       = 85 x 113 x 85
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 88 120 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   4 is located at  4.408 Bohr and has 19577 grid points.
+Info: FFT grid dimensions       = 113 x 85 x 85
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 120 88 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   5 is located at  4.408 Bohr and has 24768 grid points.
+Info: FFT grid dimensions       = 85 x 85 x 85
+      Total grid size           = 614125 (      4.7 MiB )
+      Inefficient FFT grid. A better grid would be: 88 88 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   6 is located at  4.408 Bohr and has 24768 grid points.
+Info: FFT grid dimensions       = 85 x 85 x 113
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 88 88 120
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   7 is located at  4.408 Bohr and has 24768 grid points.
+Info: FFT grid dimensions       = 85 x 113 x 85
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 88 120 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   8 is located at  4.408 Bohr and has 24768 grid points.
+Info: FFT grid dimensions       = 113 x 85 x 85
+      Total grid size           = 816425 (      6.2 MiB )
+      Inefficient FFT grid. A better grid would be: 120 88 88
+Info: Poisson Cutoff Radius     =  26.8 b
+Neighbor   9 is located at  0.000 Bohr and has 17148 grid points.
+Info: FFT grid dimensions       = 69 x 69 x 69
+      Total grid size           = 328509 (      2.5 MiB )
+      Inefficient FFT grid. A better grid would be: 70 70 70
+Info: Poisson Cutoff Radius     =  21.7 b
+**********************************************************************
+
+      done.
+Info: Octopus initialization completed.
+Info: Starting calculation mode.
+Info: Allocating ground state wave-functions
+Info: Blocks of states
+      Block       1 contains       4 states:       1 -       4
+      Block       2 contains       4 states:       5 -       8
+Info: Ground-state allocation done.
+Input: [MixField = potential] (what to mix during SCF cycles)
+Input: [MixingScheme = broyden]
+Info: Mixing uses    4 steps and restarts after   20 steps.
+
+**************************** Eigensolver *****************************
+Input: [Eigensolver = cg]
+Input: [Preconditioner = pre_filter]
+Info: Generating weights for finite-difference discretization of Preconditioner
+Input: [PreconditionerFilterFactor = 0.6000]
+Input: [SubspaceDiagonalization = standard]
+**********************************************************************
+
+Input: [EigensolverSkipKpoints = no]
+Input: [LCAOStart = lcao_states]
+Input: [LCAOScaleFactor = 1.000]
+Input: [LCAOMaximumOrbitalRadius = 20.00 b]
+Info: Unnormalized total charge =      8.032723
+Info: Renormalized total charge =      8.000000
+Info: Setting up Hamiltonian.
+Info: Performing initial LCAO calculation with      8 orbitals.
+Info: Getting Hamiltonian matrix elements.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+Eigenvalues [H]
+ #st  Spin   Eigenvalue      Occupation
+#k =       1, k = (  0.250000,  0.000000,  0.000000)
+   1   --    -0.261250       2.000000
+   2   --     0.049248       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162987       2.000000
+   5   --     0.310336       1.333333
+   6   --     0.329682       0.000000
+   7   --     0.329687       0.000000
+   8   --     0.455091       0.000000
+#k =       2, k = (  0.000000,  0.250000,  0.000000)
+   1   --    -0.261250       2.000000
+   2   --     0.049248       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162987       2.000000
+   5   --     0.310336       1.333333
+   6   --     0.329682       0.000000
+   7   --     0.329687       0.000000
+   8   --     0.455091       0.000000
+#k =       3, k = (  0.000000,  0.000000,  0.250000)
+   1   --    -0.261250       2.000000
+   2   --     0.049248       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162987       2.000000
+   5   --     0.310336       1.333333
+   6   --     0.329682       0.000000
+   7   --     0.329687       0.000000
+   8   --     0.455091       0.000000
+#k =       4, k = ( -0.250000,  0.000000,  0.000000)
+   1   --    -0.261250       2.000000
+   2   --     0.049248       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162987       2.000000
+   5   --     0.310336       1.333333
+   6   --     0.329682       0.000000
+   7   --     0.329687       0.000000
+   8   --     0.455091       0.000000
+#k =       5, k = (  0.000000, -0.250000,  0.000000)
+   1   --    -0.261250       2.000000
+   2   --     0.049248       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162987       2.000000
+   5   --     0.310336       1.333333
+   6   --     0.329682       0.000000
+   7   --     0.329687       0.000000
+   8   --     0.455091       0.000000
+#k =       6, k = (  0.000000,  0.000000, -0.250000)
+   1   --    -0.261250       2.000000
+   2   --     0.049248       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162987       2.000000
+   5   --     0.310336       1.333333
+   6   --     0.329682       0.000000
+   7   --     0.329687       0.000000
+   8   --     0.455091       0.000000
+#k =       7, k = (  0.250000,  0.250000,  0.250000)
+   1   --    -0.261250       2.000000
+   2   --     0.049258       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162977       2.000000
+   5   --     0.310332       2.000000
+   6   --     0.329682       0.000000
+   7   --     0.329682       0.000000
+   8   --     0.455099       0.000000
+#k =       8, k = ( -0.250000,  0.250000,  0.250000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000605       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193169       2.000000
+   5   --     0.388210       0.000000
+   6   --     0.482091       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680323       0.000000
+#k =       9, k = (  0.250000, -0.250000,  0.250000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000605       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193169       2.000000
+   5   --     0.388210       0.000000
+   6   --     0.482091       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680323       0.000000
+#k =      10, k = (  0.250000,  0.250000, -0.250000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000605       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193169       2.000000
+   5   --     0.388210       0.000000
+   6   --     0.482091       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680323       0.000000
+#k =      11, k = ( -0.250000, -0.250000,  0.250000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000605       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193169       2.000000
+   5   --     0.388210       0.000000
+   6   --     0.482091       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680323       0.000000
+#k =      12, k = ( -0.250000,  0.250000, -0.250000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000605       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193169       2.000000
+   5   --     0.388210       0.000000
+   6   --     0.482091       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680323       0.000000
+#k =      13, k = (  0.250000, -0.250000, -0.250000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000605       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193169       2.000000
+   5   --     0.388210       0.000000
+   6   --     0.482091       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680323       0.000000
+#k =      14, k = ( -0.250000, -0.250000, -0.250000)
+   1   --    -0.261250       2.000000
+   2   --     0.049258       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162977       2.000000
+   5   --     0.310332       2.000000
+   6   --     0.329682       0.000000
+   7   --     0.329682       0.000000
+   8   --     0.455099       0.000000
+#k =      15, k = (  0.500000,  0.250000,  0.000000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000604       2.000000
+   3   --     0.135251       2.000000
+   4   --     0.193163       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482087       0.000000
+   7   --     0.529711       0.000000
+   8   --     0.680324       0.000000
+#k =      16, k = (  0.250000,  0.500000,  0.000000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000604       2.000000
+   3   --     0.135251       2.000000
+   4   --     0.193163       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482087       0.000000
+   7   --     0.529711       0.000000
+   8   --     0.680324       0.000000
+#k =      17, k = (  0.500000,  0.000000,  0.250000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000604       2.000000
+   3   --     0.135251       2.000000
+   4   --     0.193163       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482087       0.000000
+   7   --     0.529711       0.000000
+   8   --     0.680324       0.000000
+#k =      18, k = (  0.000000,  0.500000,  0.250000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000604       2.000000
+   3   --     0.135251       2.000000
+   4   --     0.193163       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482087       0.000000
+   7   --     0.529711       0.000000
+   8   --     0.680324       0.000000
+#k =      19, k = (  0.250000,  0.000000,  0.500000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000604       2.000000
+   3   --     0.135251       2.000000
+   4   --     0.193163       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482087       0.000000
+   7   --     0.529711       0.000000
+   8   --     0.680324       0.000000
+#k =      20, k = ( -0.250000,  0.500000,  0.000000)
+   1   --    -0.089420       2.000000
+   2   --    -0.036939       2.000000
+   3   --     0.164930       2.000000
+   4   --     0.335372       0.000000
+   5   --     0.487485       0.000000
+   6   --     0.502249       0.000000
+   7   --     0.678291       0.000000
+   8   --     0.895954       0.000000
+#k =      21, k = (  0.000000,  0.250000,  0.500000)
+   1   --    -0.171674       2.000000
+   2   --    -0.000604       2.000000
+   3   --     0.135251       2.000000
+   4   --     0.193163       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482087       0.000000
+   7   --     0.529711       0.000000
+   8   --     0.680324       0.000000
+#k =      22, k = (  0.500000, -0.250000,  0.000000)
+   1   --    -0.089420       2.000000
+   2   --    -0.036939       2.000000
+   3   --     0.164930       2.000000
+   4   --     0.335372       0.000000
+   5   --     0.487485       0.000000
+   6   --     0.502249       0.000000
+   7   --     0.678291       0.000000
+   8   --     0.895954       0.000000
+#k =      23, k = ( -0.250000,  0.000000,  0.500000)
+   1   --    -0.089420       2.000000
+   2   --    -0.036939       2.000000
+   3   --     0.164930       2.000000
+   4   --     0.335372       0.000000
+   5   --     0.487485       0.000000
+   6   --     0.502249       0.000000
+   7   --     0.678291       0.000000
+   8   --     0.895954       0.000000
+#k =      24, k = (  0.500000,  0.000000, -0.250000)
+   1   --    -0.089420       2.000000
+   2   --    -0.036939       2.000000
+   3   --     0.164930       2.000000
+   4   --     0.335372       0.000000
+   5   --     0.487485       0.000000
+   6   --     0.502249       0.000000
+   7   --     0.678291       0.000000
+   8   --     0.895954       0.000000
+#k =      25, k = (  0.000000, -0.250000,  0.500000)
+   1   --    -0.089420       2.000000
+   2   --    -0.036939       2.000000
+   3   --     0.164930       2.000000
+   4   --     0.335371       0.000000
+   5   --     0.487485       0.000000
+   6   --     0.502249       0.000000
+   7   --     0.678291       0.000000
+   8   --     0.895954       0.000000
+#k =      26, k = (  0.000000,  0.500000, -0.250000)
+   1   --    -0.089420       2.000000
+   2   --    -0.036939       2.000000
+   3   --     0.164930       2.000000
+   4   --     0.335371       0.000000
+   5   --     0.487485       0.000000
+   6   --     0.502249       0.000000
+   7   --     0.678291       0.000000
+   8   --     0.895954       0.000000
+#k =      27, k = (  0.500000,  0.500000,  0.250000)
+   1   --    -0.171675       2.000000
+   2   --    -0.000595       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193161       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482085       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680331       0.000000
+#k =      28, k = (  0.500000,  0.250000,  0.500000)
+   1   --    -0.171675       2.000000
+   2   --    -0.000595       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193161       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482085       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680331       0.000000
+#k =      29, k = (  0.250000,  0.500000,  0.500000)
+   1   --    -0.171675       2.000000
+   2   --    -0.000595       2.000000
+   3   --     0.135245       2.000000
+   4   --     0.193161       2.000000
+   5   --     0.388206       0.000000
+   6   --     0.482085       0.000000
+   7   --     0.529707       0.000000
+   8   --     0.680331       0.000000
+#k =      30, k = ( -0.250000,  0.500000,  0.500000)
+   1   --     0.002740       2.000000
+   2   --     0.034955       2.000000
+   3   --     0.184126       2.000000
+   4   --     0.244105       2.000000
+   5   --     0.564766       0.000000
+   6   --     0.780995       0.000000
+   7   --     0.828479       0.000000
+   8   --     1.002910       0.000000
+#k =      31, k = (  0.500000, -0.250000,  0.500000)
+   1   --     0.002740       2.000000
+   2   --     0.034955       2.000000
+   3   --     0.184126       2.000000
+   4   --     0.244105       2.000000
+   5   --     0.564766       0.000000
+   6   --     0.780995       0.000000
+   7   --     0.828479       0.000000
+   8   --     1.002910       0.000000
+#k =      32, k = (  0.500000,  0.500000, -0.250000)
+   1   --     0.002740       2.000000
+   2   --     0.034955       2.000000
+   3   --     0.184126       2.000000
+   4   --     0.244105       2.000000
+   5   --     0.564766       0.000000
+   6   --     0.780995       0.000000
+   7   --     0.828479       0.000000
+   8   --     1.002910       0.000000
+#k =      33, k = (  0.500000,  0.000000,  0.000000)
+   1   --    -0.162615       2.000000
+   2   --    -0.037634       2.000000
+   3   --     0.205516       2.000000
+   4   --     0.205524       2.000000
+   5   --     0.412095       0.000000
+   6   --     0.480786       0.000000
+   7   --     0.480791       0.000000
+   8   --     0.739473       0.000000
+#k =      34, k = (  0.450000,  0.000000,  0.000000)
+   1   --    -0.186926       2.000000
+   2   --    -0.026200       2.000000
+   3   --     0.192501       2.000000
+   4   --     0.192509       2.000000
+   5   --     0.386332       0.000000
+   6   --     0.444618       0.000000
+   7   --     0.444623       0.000000
+   8   --     0.677110       0.000000
+#k =      35, k = (  0.400000,  0.000000,  0.000000)
+   1   --    -0.209196       2.000000
+   2   --    -0.011451       2.000000
+   3   --     0.181844       2.000000
+   4   --     0.181853       2.000000
+   5   --     0.363284       0.000000
+   6   --     0.411341       0.000000
+   7   --     0.411346       0.000000
+   8   --     0.617424       0.000000
+#k =      36, k = (  0.350000,  0.000000,  0.000000)
+   1   --    -0.229097       2.000000
+   2   --     0.006210       2.000000
+   3   --     0.173459       2.000000
+   4   --     0.173468       2.000000
+   5   --     0.342944       0.000000
+   6   --     0.381019       0.000000
+   7   --     0.381024       0.000000
+   8   --     0.560459       0.000000
+#k =      37, k = (  0.300000,  0.000000,  0.000000)
+   1   --    -0.246474       2.000000
+   2   --     0.026525       2.000000
+   3   --     0.167226       2.000000
+   4   --     0.167235       2.000000
+   5   --     0.325300       0.000000
+   6   --     0.353750       0.000000
+   7   --     0.353754       0.000000
+   8   --     0.506296       0.000000
+#k =      38, k = (  0.250000,  0.000000,  0.000000)
+   1   --    -0.261250       2.000000
+   2   --     0.049248       2.000000
+   3   --     0.162977       2.000000
+   4   --     0.162987       2.000000
+   5   --     0.310336       1.333333
+   6   --     0.329682       0.000000
+   7   --     0.329687       0.000000
+   8   --     0.455091       0.000000
+#k =      39, k = (  0.200000,  0.000000,  0.000000)
+   1   --    -0.273377       2.000000
+   2   --     0.074043       2.000000
+   3   --     0.160473       2.000000
+   4   --     0.160483       2.000000
+   5   --     0.298013       2.000000
+   6   --     0.309041       2.000000
+   7   --     0.309045       2.000000
+   8   --     0.407146       0.000000
+#k =      40, k = (  0.150000,  0.000000,  0.000000)
+   1   --    -0.282830       2.000000
+   2   --     0.100299       2.000000
+   3   --     0.159372       2.000000
+   4   --     0.159382       2.000000
+   5   --     0.288232       2.000000
+   6   --     0.292153       2.000000
+   7   --     0.292157       2.000000
+   8   --     0.363124       0.000000
+#k =      41, k = (  0.100000,  0.000000,  0.000000)
+   1   --    -0.289592       2.000000
+   2   --     0.126642       2.000000
+   3   --     0.159214       2.000000
+   4   --     0.159224       2.000000
+   5   --     0.279470       2.000000
+   6   --     0.279473       2.000000
+   7   --     0.280646       2.000000
+   8   --     0.324712       0.000000
+#k =      42, k = (  0.050000,  0.000000,  0.000000)
+   1   --    -0.293653       2.000000
+   2   --     0.149410       2.000000
+   3   --     0.159453       2.000000
+   4   --     0.159463       2.000000
+   5   --     0.271530       2.000000
+   6   --     0.271532       2.000000
+   7   --     0.273871       2.000000
+   8   --     0.296934       2.000000
+#k =      43, k = (  0.000000,  0.000000,  0.000000)
+   1   --    -0.295007       2.000000
+   2   --     0.159600       2.000000
+   3   --     0.159600       2.000000
+   4   --     0.159612       2.000000
+   5   --     0.268815       2.000000
+   6   --     0.268815       2.000000
+   7   --     0.268819       2.000000
+   8   --     0.287871       2.000000
+#k =      44, k = (  0.000000,  0.050000,  0.050000)
+   1   --    -0.293201       2.000000
+   2   --     0.152840       2.000000
+   3   --     0.155789       2.000000
+   4   --     0.155797       2.000000
+   5   --     0.270542       2.000000
+   6   --     0.276053       2.000000
+   7   --     0.276056       2.000000
+   8   --     0.298136       2.000000
+#k =      45, k = (  0.000000,  0.100000,  0.100000)
+   1   --    -0.287784       2.000000
+   2   --     0.137114       2.000000
+   3   --     0.146778       2.000000
+   4   --     0.146785       2.000000
+   5   --     0.275722       2.000000
+   6   --     0.295349       2.000000
+   7   --     0.295352       2.000000
+   8   --     0.324364       0.000000
+#k =      46, k = (  0.000000,  0.150000,  0.150000)
+   1   --    -0.278756       2.000000
+   2   --     0.118826       2.000000
+   3   --     0.136408       2.000000
+   4   --     0.136414       2.000000
+   5   --     0.284366       2.000000
+   6   --     0.322869       0.000000
+   7   --     0.322872       0.000000
+   8   --     0.360161       0.000000
+#k =      47, k = (  0.000000,  0.200000,  0.200000)
+   1   --    -0.266117       2.000000
+   2   --     0.101303       2.000000
+   3   --     0.127018       2.000000
+   4   --     0.127025       2.000000
+   5   --     0.296488       2.000000
+   6   --     0.356286       0.000000
+   7   --     0.356290       0.000000
+   8   --     0.402206       0.000000
+#k =      48, k = (  0.000000,  0.250000,  0.250000)
+   1   --    -0.249868       2.000000
+   2   --     0.085996       2.000000
+   3   --     0.119741       2.000000
+   4   --     0.119748       2.000000
+   5   --     0.312107       0.000000
+   6   --     0.394486       0.000000
+   7   --     0.394490       0.000000
+   8   --     0.449060       0.000000
+#k =      49, k = (  0.000000,  0.300000,  0.300000)
+   1   --    -0.230009       2.000000
+   2   --     0.073584       2.000000
+   3   --     0.115131       2.000000
+   4   --     0.115137       2.000000
+   5   --     0.331249       0.000000
+   6   --     0.436939       0.000000
+   7   --     0.436944       0.000000
+   8   --     0.500058       0.000000
+#k =      50, k = (  0.000000,  0.350000,  0.350000)
+   1   --    -0.206541       2.000000
+   2   --     0.064425       2.000000
+   3   --     0.113479       2.000000
+   4   --     0.113485       2.000000
+   5   --     0.353944       0.000000
+   6   --     0.483381       0.000000
+   7   --     0.483385       0.000000
+   8   --     0.554859       0.000000
+#k =      51, k = (  0.000000,  0.400000,  0.400000)
+   1   --    -0.179465       2.000000
+   2   --     0.058729       2.000000
+   3   --     0.114954       2.000000
+   4   --     0.114959       2.000000
+   5   --     0.380227       0.000000
+   6   --     0.533674       0.000000
+   7   --     0.533678       0.000000
+   8   --     0.613271       0.000000
+#k =      52, k = (  0.000000,  0.450000,  0.450000)
+   1   --    -0.148784       2.000000
+   2   --     0.056632       2.000000
+   3   --     0.119662       2.000000
+   4   --     0.119668       2.000000
+   5   --     0.410137       0.000000
+   6   --     0.587749       0.000000
+   7   --     0.587753       0.000000
+   8   --     0.675181       0.000000
+#k =      53, k = (  0.000000,  0.500000,  0.500000)
+   1   --    -0.114498       2.000000
+   2   --     0.058227       2.000000
+   3   --     0.127677       2.000000
+   4   --     0.127683       2.000000
+   5   --     0.443719       0.000000
+   6   --     0.645573       0.000000
+   7   --     0.645577       0.000000
+   8   --     0.740521       0.000000
+#k =      54, k = (  0.066667,  0.533333,  0.533333)
+   1   --    -0.112977       2.000000
+   2   --     0.050253       2.000000
+   3   --     0.129205       2.000000
+   4   --     0.137681       2.000000
+   5   --     0.445185       0.000000
+   6   --     0.641207       0.000000
+   7   --     0.647123       0.000000
+   8   --     0.749281       0.000000
+#k =      55, k = (  0.133333,  0.566667,  0.566667)
+   1   --    -0.108446       2.000000
+   2   --     0.033812       2.000000
+   3   --     0.133789       2.000000
+   4   --     0.160143       2.000000
+   5   --     0.449600       0.000000
+   6   --     0.631929       0.000000
+   7   --     0.651773       0.000000
+   8   --     0.771801       0.000000
+#k =      56, k = (  0.200000,  0.600000,  0.600000)
+   1   --    -0.101031       2.000000
+   2   --     0.016327       2.000000
+   3   --     0.141432       2.000000
+   4   --     0.187517       2.000000
+   5   --     0.457025       0.000000
+   6   --     0.623117       0.000000
+   7   --     0.659527       0.000000
+   8   --     0.802915       0.000000
+#k =      57, k = (  0.266667,  0.633333,  0.633333)
+   1   --    -0.091046       2.000000
+   2   --     0.000587       2.000000
+   3   --     0.152140       2.000000
+   4   --     0.216886       2.000000
+   5   --     0.467589       0.000000
+   6   --     0.617743       0.000000
+   7   --     0.670390       0.000000
+   8   --     0.839989       0.000000
+#k =      58, k = (  0.333333,  0.666667,  0.666667)
+   1   --    -0.079335       2.000000
+   2   --    -0.011685       2.000000
+   3   --     0.165920       2.000000
+   4   --     0.246729       2.000000
+   5   --     0.481533       0.000000
+   6   --     0.617395       0.000000
+   7   --     0.684367       0.000000
+   8   --     0.881873       0.000000
+#k =      59, k = (  0.400000,  0.700000,  0.700000)
+   1   --    -0.068316       2.000000
+   2   --    -0.017674       2.000000
+   3   --     0.182779       2.000000
+   4   --     0.275848       2.000000
+   5   --     0.499218       0.000000
+   6   --     0.623098       0.000000
+   7   --     0.701467       0.000000
+   8   --     0.928021       0.000000
+#k =      60, k = (  0.466667,  0.733333,  0.733333)
+   1   --    -0.062695       2.000000
+   2   --    -0.012457       2.000000
+   3   --     0.202730       2.000000
+   4   --     0.303227       2.000000
+   5   --     0.521034       0.000000
+   6   --     0.635601       0.000000
+   7   --     0.721700       0.000000
+   8   --     0.978147       0.000000
+#k =      61, k = (  0.533333,  0.766667,  0.766667)
+   1   --    -0.062977       2.000000
+   2   --     0.004614       2.000000
+   3   --     0.225785       2.000000
+   4   --     0.328209       0.000000
+   5   --     0.547178       0.000000
+   6   --     0.655453       0.000000
+   7   --     0.745078       0.000000
+   8   --     1.032083       0.000000
+#k =      62, k = (  0.600000,  0.800000,  0.800000)
+   1   --    -0.064620       2.000000
+   2   --     0.029091       2.000000
+   3   --     0.251958       2.000000
+   4   --     0.350721       0.000000
+   5   --     0.577427       0.000000
+   6   --     0.683023       0.000000
+   7   --     0.771614       0.000000
+   8   --     1.089729       0.000000
+#k =      63, k = (  0.666667,  0.833333,  0.833333)
+   1   --    -0.064975       2.000000
+   2   --     0.058396       2.000000
+   3   --     0.281266       2.000000
+   4   --     0.371285       0.000000
+   5   --     0.611187       0.000000
+   6   --     0.718453       0.000000
+   7   --     0.801324       0.000000
+   8   --     1.151020       0.000000
+#k =      64, k = (  0.733333,  0.866667,  0.866667)
+   1   --    -0.063062       2.000000
+   2   --     0.091603       2.000000
+   3   --     0.313725       0.000000
+   4   --     0.390786       0.000000
+   5   --     0.647833       0.000000
+   6   --     0.761550       0.000000
+   7   --     0.834222       0.000000
+   8   --     1.215918       0.000000
+#k =      65, k = (  0.800000,  0.900000,  0.900000)
+   1   --    -0.058474       2.000000
+   2   --     0.128345       2.000000
+   3   --     0.349355       0.000000
+   4   --     0.410183       0.000000
+   5   --     0.687020       0.000000
+   6   --     0.811775       0.000000
+   7   --     0.870327       0.000000
+   8   --     1.284400       0.000000
+#k =      66, k = (  0.866667,  0.933333,  0.933333)
+   1   --    -0.051008       2.000000
+   2   --     0.168442       2.000000
+   3   --     0.388176       0.000000
+   4   --     0.430328       0.000000
+   5   --     0.728704       0.000000
+   6   --     0.868397       0.000000
+   7   --     0.909657       0.000000
+   8   --     1.356458       0.000000
+#k =      67, k = (  0.933333,  0.966667,  0.966667)
+   1   --    -0.040543       2.000000
+   2   --     0.211787       2.000000
+   3   --     0.430210       0.000000
+   4   --     0.451912       0.000000
+   5   --     0.773003       0.000000
+   6   --     0.930694       0.000000
+   7   --     0.952233       0.000000
+   8   --     1.432089       0.000000
+#k =      68, k = (  1.000000,  1.000000,  1.000000)
+   1   --    -0.027000       2.000000
+   2   --     0.258296       2.000000
+   3   --     0.475479       0.000000
+   4   --     0.475479       0.000000
+   5   --     0.820064       0.000000
+   6   --     0.998074       0.000000
+   7   --     0.998074       0.000000
+   8   --     1.511303       0.000000
+Info: Ground-state restart information will be written to 'restart/gs'.
+Info: SCF using complex wavefunctions.
+Info: Starting SCF iteration.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    1 ************************
+ etot  = -7.83859090E+00 abs_ev   =  8.62E-01 rel_ev   =  1.96E+00
+ ediff =        7.84E+00 abs_dens =  1.69E+00 rel_dens =  2.11E-01
+Matrix vector products:   5159
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.317828    2.000000   ( 3.7E-02)
+      1      42       -0.316416    2.000000   ( 3.8E-02)
+      1      44       -0.315939    2.000000   ( 3.8E-02)
+      1      68       -0.314669    2.000000   ( 1.7E-01)
+      1      67       -0.312835    2.000000   ( 1.7E-01)
+      1      41       -0.312236    2.000000   ( 4.0E-02)
+      1      45       -0.310289    2.000000   ( 4.2E-02)
+      1      66       -0.307588    2.000000   ( 1.8E-01)
+
+  [output of 228 eigenvalues skipped: maximum error = 2.7E-01]
+
+      4       5        0.109751    2.000000   ( 8.3E-02)
+      4       6        0.109751    2.000000   ( 8.3E-02)
+      4       4        0.109751    2.000000   ( 8.3E-02)
+      3      39        0.110737    2.000000   ( 7.4E-02)
+      3      45        0.112524    2.000000   ( 6.0E-02)
+      4       2        0.113584    2.000000   ( 8.3E-02)
+      4       3        0.113584    2.000000   ( 8.3E-02)
+      4      38        0.113584    2.000000   ( 8.3E-02)
+      4       1        0.113584    2.000000   ( 8.3E-02)
+      3      40        0.117755    0.000000   ( 6.6E-02)
+      4      45        0.118507    0.000000   ( 6.0E-02)
+      2      42        0.119169    0.000000   ( 5.2E-02)
+      4      62        0.119586    0.000000   ( 1.5E-01)
+      4      39        0.119940    0.000000   ( 7.5E-02)
+      2      44        0.121267    0.000000   ( 5.4E-02)
+      3      66        0.121674    0.000000   ( 1.6E-01)
+      3      41        0.124359    0.000000   ( 5.7E-02)
+
+  [output of 283 eigenvalues skipped: maximum error = 3.3E-01]
+
+      7      52        0.509755    0.000000   ( 8.4E-02)
+      8      52        0.510272    0.000000   ( 8.4E-02)
+      7      55        0.511791    0.000000   ( 1.2E-01)
+      7      54        0.539467    0.000000   ( 1.1E-01)
+      7      53        0.544676    0.000000   ( 9.0E-02)
+      8      53        0.545003    0.000000   ( 9.0E-02)
+      8      54        0.647694    0.000000   ( 1.5E-01)
+      8      55        0.674858    0.000000   ( 1.7E-01)
+
+Density of states:
+
+-------------------------------------------------%--------------------
+-------%-----------------------------------------%--------------------
+-------%-------%---------------------------------%--------------------
+-------%-------%---------------------%-----------%--------------------
+-------%-------%------%---%----------%-----%----%%--------------------
+-------%-------%------%---%----------%%----%----%%--------------------
+-------%-------%------%---%--%-------%%----%----%%--------------------
+--%----%-------%-----%%%-%%--%-------%%----%-%%-%%%-------------------
+--%----%-------%-----%%%-%%--%%------%%----%%%%-%%%%------------------
+--%----%------%%-----%%%-%%--%%------%%----%%%%-%%%%------------------
+                              ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.137588
+   2        Si  3p       0.127962
+   3        Si  3s       0.136953
+   4        Si  3p       0.127837
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044068
+   1        Si  3s   3 3s  4.408       0.035535
+   1        Si  3s   3 3s  4.408       0.035535
+   1        Si  3s   3 3s  4.408       0.035535
+   1        Si  3s   3 3s  4.408       0.035545
+   1        Si  3s   4 3p  4.408       0.026202
+   1        Si  3s   4 3p  4.408       0.026202
+   1        Si  3s   4 3p  4.408       0.026202
+   1        Si  3s   4 3p  4.408       0.026203
+   2        Si  3p   1 3s  0.000       0.044068
+   2        Si  3p   3 3s  4.408       0.026203
+   2        Si  3p   3 3s  4.408       0.026203
+   2        Si  3p   3 3s  4.408       0.026203
+   2        Si  3p   3 3s  4.408       0.026203
+   2        Si  3p   4 3p  4.408       0.068064
+   2        Si  3p   4 3p  4.408       0.068064
+   2        Si  3p   4 3p  4.408       0.068064
+   2        Si  3p   4 3p  4.408       0.068057
+   3        Si  3s   1 3s  4.408       0.035545
+   3        Si  3s   1 3s  4.408       0.035535
+   3        Si  3s   1 3s  4.408       0.035535
+   3        Si  3s   1 3s  4.408       0.035535
+   3        Si  3s   2 3p  4.408       0.026203
+   3        Si  3s   2 3p  4.408       0.026203
+   3        Si  3s   2 3p  4.408       0.026203
+   3        Si  3s   2 3p  4.408       0.026203
+   3        Si  3s   4 3p  0.000       0.044065
+   4        Si  3p   1 3s  4.408       0.026203
+   4        Si  3p   1 3s  4.408       0.026202
+   4        Si  3p   1 3s  4.408       0.026202
+   4        Si  3p   1 3s  4.408       0.026202
+   4        Si  3p   2 3p  4.408       0.068057
+   4        Si  3p   2 3p  4.408       0.068064
+   4        Si  3p   2 3p  4.408       0.068064
+   4        Si  3p   2 3p  4.408       0.068064
+   4        Si  3p   3 3s  0.000       0.044065
+
+Elapsed time for SCF step     1:          2.15
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    2 ************************
+ etot  = -7.81546569E+00 abs_ev   =  4.82E-03 rel_ev   =  1.08E-02
+ ediff =        2.31E-02 abs_dens =  1.39E-01 rel_dens =  1.74E-02
+Matrix vector products:   4480
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.314003    2.000000   ( 4.4E-03)
+      1      68       -0.313927    2.000000   ( 2.0E-02)
+      1      42       -0.312514    2.000000   ( 4.4E-03)
+      1      44       -0.312016    2.000000   ( 4.4E-03)
+      1      67       -0.311988    2.000000   ( 2.1E-02)
+      1      41       -0.308146    2.000000   ( 4.5E-03)
+      1      66       -0.306632    2.000000   ( 2.1E-02)
+      1      45       -0.306110    2.000000   ( 5.4E-03)
+
+  [output of 229 eigenvalues skipped: maximum error = 3.1E-02]
+
+      4       5        0.108129    2.000000   ( 1.2E-02)
+      4       6        0.108129    2.000000   ( 1.2E-02)
+      4       4        0.108129    2.000000   ( 1.2E-02)
+      3      39        0.110137    2.000000   ( 1.1E-02)
+      4      63        0.110881    2.000000   ( 3.0E-02)
+      4       2        0.111838    2.000000   ( 1.3E-02)
+      4       3        0.111838    2.000000   ( 1.3E-02)
+      4      38        0.111838    2.000000   ( 1.3E-02)
+      4       1        0.111838    2.000000   ( 1.3E-02)
+      3      45        0.113236    0.000000   ( 9.8E-03)
+      3      66        0.113711    0.000000   ( 2.8E-02)
+      3      40        0.118225    0.000000   ( 1.3E-02)
+      4      45        0.119052    0.000000   ( 1.0E-02)
+      4      39        0.119151    0.000000   ( 1.2E-02)
+      4      64        0.119869    0.000000   ( 2.7E-02)
+      2      42        0.121196    0.000000   ( 1.0E-02)
+      2      67        0.122925    0.000000   ( 3.0E-02)
+
+  [output of 282 eigenvalues skipped: maximum error = 6.4E-02]
+
+      7      55        0.508984    0.000000   ( 2.2E-02)
+      7      52        0.518967    0.000000   ( 1.4E-02)
+      8      52        0.519747    0.000000   ( 1.4E-02)
+      7      54        0.538285    0.000000   ( 2.2E-02)
+      8      55        0.539826    0.000000   ( 1.4E-01)
+      7      53        0.553039    0.000000   ( 1.3E-02)
+      8      53        0.553650    0.000000   ( 1.3E-02)
+      8      54        0.600522    0.000000   ( 1.8E-01)
+
+Density of states:
+
+--------%-------%-----------------------%-------%---%%----------------
+--------%-------%-----------------------%-------%---%%----------------
+--------%-------%------%---%------------%-------%---%%----------------
+--------%-------%------%---%------------%-------%---%%----------------
+--------%-------%------%---%------------%-------%---%%----------------
+--------%-------%------%%--%------------%------%%---%%----------------
+--------%-------%------%%--%----%-------%------%%---%%----------------
+--%-----%-------%------%%--%%--%%-------%%-----%%---%%-%--------------
+--%-----%-------%------%%--%%--%%-------%%----%%%---%%-%--------------
+--%-----%-------%------%%--%%--%%-------%%----%%%---%%-%--------------
+                                ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.133431
+   2        Si  3p       0.128729
+   3        Si  3s       0.133161
+   4        Si  3p       0.128727
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044331
+   1        Si  3s   3 3s  4.408       0.034396
+   1        Si  3s   3 3s  4.408       0.034396
+   1        Si  3s   3 3s  4.408       0.034396
+   1        Si  3s   3 3s  4.408       0.034416
+   1        Si  3s   4 3p  4.408       0.026358
+   1        Si  3s   4 3p  4.408       0.026358
+   1        Si  3s   4 3p  4.408       0.026358
+   1        Si  3s   4 3p  4.408       0.026358
+   2        Si  3p   1 3s  0.000       0.044331
+   2        Si  3p   3 3s  4.408       0.026360
+   2        Si  3p   3 3s  4.408       0.026360
+   2        Si  3p   3 3s  4.408       0.026360
+   2        Si  3p   3 3s  4.408       0.026360
+   2        Si  3p   4 3p  4.408       0.068541
+   2        Si  3p   4 3p  4.408       0.068541
+   2        Si  3p   4 3p  4.408       0.068541
+   2        Si  3p   4 3p  4.408       0.068515
+   3        Si  3s   1 3s  4.408       0.034416
+   3        Si  3s   1 3s  4.408       0.034396
+   3        Si  3s   1 3s  4.408       0.034396
+   3        Si  3s   1 3s  4.408       0.034396
+   3        Si  3s   2 3p  4.408       0.026360
+   3        Si  3s   2 3p  4.408       0.026360
+   3        Si  3s   2 3p  4.408       0.026360
+   3        Si  3s   2 3p  4.408       0.026360
+   3        Si  3s   4 3p  0.000       0.044329
+   4        Si  3p   1 3s  4.408       0.026358
+   4        Si  3p   1 3s  4.408       0.026358
+   4        Si  3p   1 3s  4.408       0.026358
+   4        Si  3p   1 3s  4.408       0.026358
+   4        Si  3p   2 3p  4.408       0.068515
+   4        Si  3p   2 3p  4.408       0.068541
+   4        Si  3p   2 3p  4.408       0.068541
+   4        Si  3p   2 3p  4.408       0.068541
+   4        Si  3p   3 3s  0.000       0.044329
+
+Elapsed time for SCF step     2:          1.87
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    3 ************************
+ etot  = -7.74660678E+00 abs_ev   =  4.02E-02 rel_ev   =  9.93E-02
+ ediff =        6.89E-02 abs_dens =  1.62E-01 rel_dens =  2.03E-02
+Matrix vector products:   6149
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.307346    2.000000   ( 1.7E-03)
+      1      68       -0.307343    2.000000   ( 3.5E-03)
+      1      42       -0.305786    2.000000   ( 1.8E-03)
+      1      67       -0.305469    2.000000   ( 3.7E-03)
+      1      44       -0.305260    2.000000   ( 1.8E-03)
+      1      41       -0.301282    2.000000   ( 1.9E-03)
+      1      66       -0.300112    2.000000   ( 3.7E-03)
+      1      45       -0.299227    2.000000   ( 2.4E-03)
+
+  [output of 227 eigenvalues skipped: maximum error = 6.5E-03]
+
+      3       7        0.111385    2.000000   ( 4.0E-03)
+      4       7        0.111385    2.000000   ( 4.0E-03)
+      4       5        0.112764    2.000000   ( 4.4E-03)
+      4       6        0.112764    2.000000   ( 4.4E-03)
+      4       4        0.112764    2.000000   ( 4.4E-03)
+      4       2        0.113696    2.000000   ( 4.5E-03)
+      4       3        0.113696    2.000000   ( 4.5E-03)
+      4      38        0.113696    2.000000   ( 4.5E-03)
+      4       1        0.113696    2.000000   ( 4.5E-03)
+      4      63        0.118146    0.000000   ( 4.4E-03)
+      3      39        0.118662    0.000000   ( 4.1E-03)
+      3      45        0.120561    0.000000   ( 2.6E-03)
+      3      66        0.120777    0.000000   ( 4.9E-03)
+      4      39        0.121649    0.000000   ( 4.4E-03)
+      4      45        0.122441    0.000000   ( 3.4E-03)
+      3      40        0.127117    0.000000   ( 3.7E-03)
+      4      64        0.127917    0.000000   ( 3.8E-03)
+
+  [output of 284 eigenvalues skipped: maximum error = 3.3E-02]
+
+      7      55        0.518021    0.000000   ( 4.9E-03)
+      8      55        0.527057    0.000000   ( 2.3E-02)
+      7      52        0.530417    0.000000   ( 4.4E-03)
+      8      52        0.530546    0.000000   ( 4.3E-03)
+      7      54        0.544582    0.000000   ( 2.7E-02)
+      8      54        0.547650    0.000000   ( 5.0E-03)
+      7      53        0.564057    0.000000   ( 9.9E-03)
+      8      53        0.564121    0.000000   ( 1.1E-02)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+------------------------%---%-------------%-------%----%%-------------
+------------------------%---%-------------%-------%----%%-------------
+----------------%-------%---%-------------%-------%----%%-------------
+----------------%-------%---%----%--------%------%%----%%-------------
+--------%%------%-------%---%----%--------%------%%----%%-------------
+---%----%%------%-------%---%----%--------%%-----%%----%%-%-----------
+---%----%%------%%------%---%----%--------%%-----%%----%%-%-----------
+---%----%%------%%------%---%----%--------%%-----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.126785
+   2        Si  3p       0.128808
+   3        Si  3s       0.126912
+   4        Si  3p       0.128904
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044488
+   1        Si  3s   3 3s  4.408       0.032614
+   1        Si  3s   3 3s  4.408       0.032614
+   1        Si  3s   3 3s  4.408       0.032614
+   1        Si  3s   3 3s  4.408       0.032627
+   1        Si  3s   4 3p  4.408       0.026452
+   1        Si  3s   4 3p  4.408       0.026452
+   1        Si  3s   4 3p  4.408       0.026452
+   1        Si  3s   4 3p  4.408       0.026452
+   2        Si  3p   1 3s  0.000       0.044488
+   2        Si  3p   3 3s  4.408       0.026454
+   2        Si  3p   3 3s  4.408       0.026454
+   2        Si  3p   3 3s  4.408       0.026454
+   2        Si  3p   3 3s  4.408       0.026454
+   2        Si  3p   4 3p  4.408       0.068645
+   2        Si  3p   4 3p  4.408       0.068645
+   2        Si  3p   4 3p  4.408       0.068645
+   2        Si  3p   4 3p  4.408       0.068634
+   3        Si  3s   1 3s  4.408       0.032627
+   3        Si  3s   1 3s  4.408       0.032614
+   3        Si  3s   1 3s  4.408       0.032614
+   3        Si  3s   1 3s  4.408       0.032614
+   3        Si  3s   2 3p  4.408       0.026454
+   3        Si  3s   2 3p  4.408       0.026454
+   3        Si  3s   2 3p  4.408       0.026454
+   3        Si  3s   2 3p  4.408       0.026454
+   3        Si  3s   4 3p  0.000       0.044486
+   4        Si  3p   1 3s  4.408       0.026452
+   4        Si  3p   1 3s  4.408       0.026452
+   4        Si  3p   1 3s  4.408       0.026452
+   4        Si  3p   1 3s  4.408       0.026452
+   4        Si  3p   2 3p  4.408       0.068634
+   4        Si  3p   2 3p  4.408       0.068645
+   4        Si  3p   2 3p  4.408       0.068645
+   4        Si  3p   2 3p  4.408       0.068645
+   4        Si  3p   3 3s  0.000       0.044486
+
+Elapsed time for SCF step     3:          2.49
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    4 ************************
+ etot  = -7.75142117E+00 abs_ev   =  6.51E-03 rel_ev   =  1.58E-02
+ ediff =        4.81E-03 abs_dens =  1.43E-02 rel_dens =  1.79E-03
+Matrix vector products:   6033
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.306228    2.000000   ( 3.7E-04)
+      1      68       -0.306228    2.000000   ( 5.0E-04)
+      1      42       -0.304690    2.000000   ( 4.0E-04)
+      1      67       -0.304402    2.000000   ( 5.3E-04)
+      1      44       -0.304174    2.000000   ( 4.4E-04)
+      1      41       -0.300255    2.000000   ( 4.7E-04)
+      1      66       -0.299154    2.000000   ( 5.8E-04)
+      1      45       -0.298242    2.000000   ( 5.3E-04)
+
+  [output of 227 eigenvalues skipped: maximum error = 1.1E-03]
+
+      3       7        0.110466    2.000000   ( 7.3E-04)
+      4       7        0.110466    2.000000   ( 7.3E-04)
+      4       5        0.111063    2.000000   ( 5.8E-04)
+      4       6        0.111063    2.000000   ( 5.8E-04)
+      4       4        0.111063    2.000000   ( 5.8E-04)
+      4       2        0.111377    2.000000   ( 7.9E-04)
+      4       3        0.111377    2.000000   ( 7.9E-04)
+      4      38        0.111377    2.000000   ( 7.9E-04)
+      4       1        0.111377    2.000000   ( 7.9E-04)
+      4      63        0.117514    0.000000   ( 7.0E-04)
+      3      39        0.118262    0.000000   ( 5.9E-04)
+      4      39        0.119482    0.000000   ( 6.4E-04)
+      3      45        0.119886    0.000000   ( 3.9E-04)
+      3      66        0.119974    0.000000   ( 8.2E-04)
+      4      45        0.120622    0.000000   ( 5.5E-04)
+      3      40        0.126795    0.000000   ( 5.8E-04)
+      4      64        0.127421    0.000000   ( 6.4E-04)
+
+  [output of 284 eigenvalues skipped: maximum error = 8.8E-03]
+
+      7      55        0.518518    0.000000   ( 2.2E-03)
+      8      55        0.524322    0.000000   ( 2.2E-02)
+      7      52        0.531069    0.000000   ( 8.1E-04)
+      8      52        0.531120    0.000000   ( 8.4E-04)
+      7      54        0.544097    0.000000   ( 1.1E-02)
+      8      54        0.548103    0.000000   ( 3.7E-03)
+      7      53        0.563268    0.000000   ( 8.8E-03)
+      8      53        0.563276    0.000000   ( 8.1E-03)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.125190
+   2        Si  3p       0.128814
+   3        Si  3s       0.125229
+   4        Si  3p       0.128895
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044502
+   1        Si  3s   3 3s  4.408       0.032168
+   1        Si  3s   3 3s  4.408       0.032168
+   1        Si  3s   3 3s  4.408       0.032168
+   1        Si  3s   3 3s  4.408       0.032173
+   1        Si  3s   4 3p  4.408       0.026461
+   1        Si  3s   4 3p  4.408       0.026461
+   1        Si  3s   4 3p  4.408       0.026461
+   1        Si  3s   4 3p  4.408       0.026461
+   2        Si  3p   1 3s  0.000       0.044502
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068652
+   2        Si  3p   4 3p  4.408       0.068652
+   2        Si  3p   4 3p  4.408       0.068652
+   2        Si  3p   4 3p  4.408       0.068647
+   3        Si  3s   1 3s  4.408       0.032173
+   3        Si  3s   1 3s  4.408       0.032168
+   3        Si  3s   1 3s  4.408       0.032168
+   3        Si  3s   1 3s  4.408       0.032168
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044500
+   4        Si  3p   1 3s  4.408       0.026461
+   4        Si  3p   1 3s  4.408       0.026461
+   4        Si  3p   1 3s  4.408       0.026461
+   4        Si  3p   1 3s  4.408       0.026461
+   4        Si  3p   2 3p  4.408       0.068647
+   4        Si  3p   2 3p  4.408       0.068652
+   4        Si  3p   2 3p  4.408       0.068652
+   4        Si  3p   2 3p  4.408       0.068652
+   4        Si  3p   3 3s  0.000       0.044500
+
+Elapsed time for SCF step     4:          2.48
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    5 ************************
+ etot  = -7.76574077E+00 abs_ev   =  1.28E-02 rel_ev   =  3.01E-02
+ ediff =        1.43E-02 abs_dens =  4.94E-03 rel_dens =  6.17E-04
+Matrix vector products:   6757
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.306134    2.000000   ( 2.1E-04)
+      1      68       -0.306134    2.000000   ( 2.4E-04)
+      1      42       -0.304624    2.000000   ( 2.3E-04)
+      1      67       -0.304347    2.000000   ( 2.4E-04)
+      1      44       -0.304119    2.000000   ( 2.4E-04)
+      1      41       -0.300259    2.000000   ( 2.6E-04)
+      1      66       -0.299196    2.000000   ( 2.2E-04)
+      1      45       -0.298288    2.000000   ( 2.7E-04)
+
+  [output of 226 eigenvalues skipped: maximum error = 8.3E-04]
+
+      4       1        0.108438    2.000000   ( 2.7E-04)
+      4      38        0.108438    2.000000   ( 2.7E-04)
+      4       5        0.108462    2.000000   ( 2.6E-04)
+      4       6        0.108462    2.000000   ( 2.6E-04)
+      4       4        0.108462    2.000000   ( 2.6E-04)
+      3       7        0.108462    2.000000   ( 3.5E-04)
+      4       7        0.108462    2.000000   ( 3.5E-04)
+      3      14        0.108463    2.000000   ( 2.7E-04)
+      4      14        0.108463    2.000000   ( 2.7E-04)
+      2      45        0.108912    0.000000   ( 7.4E-04)
+      4      63        0.115765    0.000000   ( 3.4E-04)
+      3      39        0.116630    0.000000   ( 3.8E-04)
+      4      39        0.116652    0.000000   ( 2.7E-04)
+      3      45        0.118074    0.000000   ( 3.8E-04)
+      3      66        0.118084    0.000000   ( 2.9E-04)
+      4      45        0.118098    0.000000   ( 2.7E-04)
+      3      40        0.125199    0.000000   ( 3.2E-04)
+
+  [output of 285 eigenvalues skipped: maximum error = 6.0E-03]
+
+      7      55        0.510540    0.000000   ( 4.7E-03)
+      8      55        0.517871    0.000000   ( 2.3E-03)
+      7      52        0.530369    0.000000   ( 3.5E-04)
+      8      52        0.530374    0.000000   ( 4.2E-04)
+      7      54        0.542941    0.000000   ( 5.7E-03)
+      8      54        0.547364    0.000000   ( 3.5E-03)
+      7      53        0.561940    0.000000   ( 7.3E-03)
+      8      53        0.561958    0.000000   ( 7.4E-03)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.124130
+   2        Si  3p       0.128820
+   3        Si  3s       0.124045
+   4        Si  3p       0.128877
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044500
+   1        Si  3s   3 3s  4.408       0.031862
+   1        Si  3s   3 3s  4.408       0.031862
+   1        Si  3s   3 3s  4.408       0.031862
+   1        Si  3s   3 3s  4.408       0.031861
+   1        Si  3s   4 3p  4.408       0.026459
+   1        Si  3s   4 3p  4.408       0.026459
+   1        Si  3s   4 3p  4.408       0.026459
+   1        Si  3s   4 3p  4.408       0.026459
+   2        Si  3p   1 3s  0.000       0.044500
+   2        Si  3p   3 3s  4.408       0.026461
+   2        Si  3p   3 3s  4.408       0.026461
+   2        Si  3p   3 3s  4.408       0.026461
+   2        Si  3p   3 3s  4.408       0.026461
+   2        Si  3p   4 3p  4.408       0.068653
+   2        Si  3p   4 3p  4.408       0.068653
+   2        Si  3p   4 3p  4.408       0.068653
+   2        Si  3p   4 3p  4.408       0.068653
+   3        Si  3s   1 3s  4.408       0.031861
+   3        Si  3s   1 3s  4.408       0.031862
+   3        Si  3s   1 3s  4.408       0.031862
+   3        Si  3s   1 3s  4.408       0.031862
+   3        Si  3s   2 3p  4.408       0.026461
+   3        Si  3s   2 3p  4.408       0.026461
+   3        Si  3s   2 3p  4.408       0.026461
+   3        Si  3s   2 3p  4.408       0.026461
+   3        Si  3s   4 3p  0.000       0.044498
+   4        Si  3p   1 3s  4.408       0.026459
+   4        Si  3p   1 3s  4.408       0.026459
+   4        Si  3p   1 3s  4.408       0.026459
+   4        Si  3p   1 3s  4.408       0.026459
+   4        Si  3p   2 3p  4.408       0.068653
+   4        Si  3p   2 3p  4.408       0.068653
+   4        Si  3p   2 3p  4.408       0.068653
+   4        Si  3p   2 3p  4.408       0.068653
+   4        Si  3p   3 3s  0.000       0.044498
+
+Elapsed time for SCF step     5:          2.85
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    6 ************************
+ etot  = -7.76557757E+00 abs_ev   =  1.23E-04 rel_ev   =  2.89E-04
+ ediff =        1.63E-04 abs_dens =  9.36E-04 rel_dens =  1.17E-04
+Matrix vector products:   4963
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.305826    2.000000   ( 2.6E-05)
+      1      68       -0.305826    2.000000   ( 4.1E-05)
+      1      42       -0.304322    2.000000   ( 3.0E-05)
+      1      67       -0.304046    2.000000   ( 2.9E-05)
+      1      44       -0.303820    2.000000   ( 3.1E-05)
+      1      41       -0.299973    2.000000   ( 4.1E-05)
+      1      66       -0.298913    2.000000   ( 3.3E-05)
+      1      45       -0.298010    2.000000   ( 3.7E-05)
+
+  [output of 226 eigenvalues skipped: maximum error = 1.2E-04]
+
+      4       1        0.108374    2.000000   ( 5.4E-05)
+      4      38        0.108374    2.000000   ( 5.4E-05)
+      3       7        0.108386    2.000000   ( 6.4E-05)
+      4       7        0.108386    2.000000   ( 6.4E-05)
+      3      14        0.108388    2.000000   ( 4.4E-05)
+      4      14        0.108388    2.000000   ( 4.4E-05)
+      4       5        0.108394    2.000000   ( 4.9E-05)
+      4       6        0.108394    2.000000   ( 4.9E-05)
+      4       4        0.108394    2.000000   ( 4.9E-05)
+      2      45        0.108904    0.000000   ( 8.3E-05)
+      4      63        0.115702    0.000000   ( 4.8E-05)
+      3      39        0.116584    0.000000   ( 5.7E-05)
+      4      39        0.116589    0.000000   ( 5.4E-05)
+      3      66        0.118015    0.000000   ( 5.4E-05)
+      3      45        0.118025    0.000000   ( 5.2E-05)
+      4      45        0.118033    0.000000   ( 4.3E-05)
+      3      40        0.125158    0.000000   ( 3.3E-05)
+
+  [output of 285 eigenvalues skipped: maximum error = 1.1E-03]
+
+      7      55        0.510509    0.000000   ( 3.2E-03)
+      8      55        0.517373    0.000000   ( 1.6E-03)
+      7      52        0.530350    0.000000   ( 7.1E-05)
+      8      52        0.530350    0.000000   ( 5.8E-05)
+      7      54        0.542657    0.000000   ( 7.1E-04)
+      8      54        0.546216    0.000000   ( 1.1E-03)
+      7      53        0.560664    0.000000   ( 1.0E-03)
+      8      53        0.560669    0.000000   ( 8.3E-04)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.123962
+   2        Si  3p       0.128817
+   3        Si  3s       0.123909
+   4        Si  3p       0.128882
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044501
+   1        Si  3s   3 3s  4.408       0.031821
+   1        Si  3s   3 3s  4.408       0.031821
+   1        Si  3s   3 3s  4.408       0.031821
+   1        Si  3s   3 3s  4.408       0.031820
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   2        Si  3p   1 3s  0.000       0.044501
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068654
+   2        Si  3p   4 3p  4.408       0.068654
+   2        Si  3p   4 3p  4.408       0.068654
+   2        Si  3p   4 3p  4.408       0.068654
+   3        Si  3s   1 3s  4.408       0.031820
+   3        Si  3s   1 3s  4.408       0.031821
+   3        Si  3s   1 3s  4.408       0.031821
+   3        Si  3s   1 3s  4.408       0.031821
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044499
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   2 3p  4.408       0.068654
+   4        Si  3p   2 3p  4.408       0.068654
+   4        Si  3p   2 3p  4.408       0.068654
+   4        Si  3p   2 3p  4.408       0.068654
+   4        Si  3p   3 3s  0.000       0.044499
+
+Elapsed time for SCF step     6:          2.29
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    7 ************************
+ etot  = -7.76559786E+00 abs_ev   =  9.80E-06 rel_ev   =  2.31E-05
+ ediff =        2.03E-05 abs_dens =  2.48E-04 rel_dens =  3.10E-05
+Matrix vector products:   6881
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.305722    2.000000   ( 5.7E-06)
+      1      68       -0.305722    2.000000   ( 7.2E-06)
+      1      42       -0.304220    2.000000   ( 7.9E-06)
+      1      67       -0.303944    2.000000   ( 7.5E-06)
+      1      44       -0.303718    2.000000   ( 7.9E-06)
+      1      41       -0.299877    2.000000   ( 1.3E-05)
+      1      66       -0.298817    2.000000   ( 9.5E-06)
+      1      45       -0.297915    2.000000   ( 1.1E-05)
+
+  [output of 226 eigenvalues skipped: maximum error = 3.4E-05]
+
+      4       1        0.108340    2.000000   ( 1.2E-05)
+      4      38        0.108340    2.000000   ( 1.2E-05)
+      3       7        0.108342    2.000000   ( 9.3E-06)
+      4       7        0.108342    2.000000   ( 9.3E-06)
+      3      14        0.108344    2.000000   ( 8.1E-06)
+      4      14        0.108344    2.000000   ( 8.1E-06)
+      4       5        0.108350    2.000000   ( 9.0E-06)
+      4       6        0.108350    2.000000   ( 9.0E-06)
+      4       4        0.108350    2.000000   ( 9.0E-06)
+      2      45        0.108895    0.000000   ( 2.4E-05)
+      4      63        0.115663    0.000000   ( 1.1E-05)
+      3      39        0.116550    0.000000   ( 8.0E-06)
+      4      39        0.116552    0.000000   ( 9.6E-06)
+      3      66        0.117972    0.000000   ( 9.4E-06)
+      3      45        0.117993    0.000000   ( 8.1E-06)
+      4      45        0.117993    0.000000   ( 6.8E-06)
+      3      40        0.125128    0.000000   ( 9.2E-06)
+
+  [output of 285 eigenvalues skipped: maximum error = 5.2E-04]
+
+      7      55        0.510481    0.000000   ( 4.6E-04)
+      8      55        0.517303    0.000000   ( 9.7E-04)
+      7      52        0.530326    0.000000   ( 1.1E-05)
+      8      52        0.530327    0.000000   ( 1.0E-05)
+      7      54        0.542649    0.000000   ( 3.0E-04)
+      8      54        0.546163    0.000000   ( 1.1E-03)
+      7      53        0.560655    0.000000   ( 4.4E-04)
+      8      53        0.560656    0.000000   ( 3.0E-04)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.123895
+   2        Si  3p       0.128818
+   3        Si  3s       0.123847
+   4        Si  3p       0.128884
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044501
+   1        Si  3s   3 3s  4.408       0.031803
+   1        Si  3s   3 3s  4.408       0.031803
+   1        Si  3s   3 3s  4.408       0.031803
+   1        Si  3s   3 3s  4.408       0.031803
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   2        Si  3p   1 3s  0.000       0.044501
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068655
+   2        Si  3p   4 3p  4.408       0.068655
+   2        Si  3p   4 3p  4.408       0.068655
+   2        Si  3p   4 3p  4.408       0.068655
+   3        Si  3s   1 3s  4.408       0.031803
+   3        Si  3s   1 3s  4.408       0.031803
+   3        Si  3s   1 3s  4.408       0.031803
+   3        Si  3s   1 3s  4.408       0.031803
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044499
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   2 3p  4.408       0.068655
+   4        Si  3p   2 3p  4.408       0.068655
+   4        Si  3p   2 3p  4.408       0.068655
+   4        Si  3p   2 3p  4.408       0.068655
+   4        Si  3p   3 3s  0.000       0.044499
+
+Elapsed time for SCF step     7:          2.91
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    8 ************************
+ etot  = -7.76559006E+00 abs_ev   =  1.14E-05 rel_ev   =  2.69E-05
+ ediff =        7.80E-06 abs_dens =  3.10E-04 rel_dens =  3.87E-05
+Matrix vector products:   5593
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.305604    2.000000   ( 4.6E-06)
+      1      68       -0.305604    2.000000   ( 4.2E-06)
+      1      42       -0.304104    2.000000   ( 7.7E-06)
+      1      67       -0.303828    2.000000   ( 1.2E-05)
+      1      44       -0.303603    2.000000   ( 7.9E-06)
+      1      41       -0.299767    2.000000   ( 1.3E-05)
+      1      66       -0.298709    2.000000   ( 2.0E-05)
+      1      45       -0.297808    2.000000   ( 1.7E-05)
+
+  [output of 226 eigenvalues skipped: maximum error = 7.0E-05]
+
+      3      14        0.108296    2.000000   ( 4.6E-06)
+      4      14        0.108296    2.000000   ( 4.6E-06)
+      4       2        0.108297    2.000000   ( 5.9E-06)
+      4       3        0.108297    2.000000   ( 5.9E-06)
+      4      38        0.108297    2.000000   ( 5.9E-06)
+      4       1        0.108297    2.000000   ( 5.9E-06)
+      4       5        0.108298    2.000000   ( 4.2E-06)
+      4       6        0.108298    2.000000   ( 4.2E-06)
+      4       4        0.108298    2.000000   ( 4.2E-06)
+      2      45        0.108888    0.000000   ( 3.1E-05)
+      4      63        0.115621    0.000000   ( 4.1E-06)
+      3      39        0.116509    0.000000   ( 3.8E-06)
+      4      39        0.116512    0.000000   ( 3.8E-06)
+      3      66        0.117925    0.000000   ( 5.0E-06)
+      3      45        0.117952    0.000000   ( 4.9E-06)
+      4      45        0.117954    0.000000   ( 5.0E-06)
+      3      40        0.125087    0.000000   ( 4.1E-06)
+
+  [output of 285 eigenvalues skipped: maximum error = 1.1E-02]
+
+      7      55        0.510476    0.000000   ( 3.6E-04)
+      8      55        0.517247    0.000000   ( 1.0E-03)
+      7      52        0.530301    0.000000   ( 5.4E-06)
+      8      52        0.530301    0.000000   ( 9.3E-06)
+      7      54        0.542643    0.000000   ( 6.9E-05)
+      8      54        0.546141    0.000000   ( 1.2E-03)
+      7      53        0.560645    0.000000   ( 1.9E-04)
+      8      53        0.560645    0.000000   ( 2.3E-04)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.123820
+   2        Si  3p       0.128820
+   3        Si  3s       0.123770
+   4        Si  3p       0.128886
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044501
+   1        Si  3s   3 3s  4.408       0.031783
+   1        Si  3s   3 3s  4.408       0.031783
+   1        Si  3s   3 3s  4.408       0.031783
+   1        Si  3s   3 3s  4.408       0.031783
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   2        Si  3p   1 3s  0.000       0.044501
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068656
+   2        Si  3p   4 3p  4.408       0.068656
+   2        Si  3p   4 3p  4.408       0.068656
+   2        Si  3p   4 3p  4.408       0.068656
+   3        Si  3s   1 3s  4.408       0.031783
+   3        Si  3s   1 3s  4.408       0.031783
+   3        Si  3s   1 3s  4.408       0.031783
+   3        Si  3s   1 3s  4.408       0.031783
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044499
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   2 3p  4.408       0.068656
+   4        Si  3p   2 3p  4.408       0.068656
+   4        Si  3p   2 3p  4.408       0.068656
+   4        Si  3p   2 3p  4.408       0.068656
+   4        Si  3p   3 3s  0.000       0.044499
+
+Elapsed time for SCF step     8:          2.29
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    9 ************************
+ etot  = -7.76558732E+00 abs_ev   =  3.54E-06 rel_ev   =  8.34E-06
+ ediff =        2.74E-06 abs_dens =  4.95E-05 rel_dens =  6.19E-06
+Matrix vector products:   6179
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.305579    2.000000   ( 1.1E-06)
+      1      68       -0.305579    2.000000   ( 9.5E-07)
+      1      42       -0.304080    2.000000   ( 1.6E-06)
+      1      67       -0.303804    2.000000   ( 2.0E-06)
+      1      44       -0.303579    2.000000   ( 1.8E-06)
+      1      41       -0.299744    2.000000   ( 2.5E-06)
+      1      66       -0.298686    2.000000   ( 3.0E-06)
+      1      45       -0.297786    2.000000   ( 3.4E-06)
+
+  [output of 226 eigenvalues skipped: maximum error = 1.2E-05]
+
+      3      14        0.108289    2.000000   ( 8.4E-07)
+      4       2        0.108289    2.000000   ( 4.9E-07)
+      4       3        0.108289    2.000000   ( 4.9E-07)
+      4      14        0.108289    2.000000   ( 8.4E-07)
+      4      38        0.108289    2.000000   ( 4.9E-07)
+      4       1        0.108289    2.000000   ( 4.9E-07)
+      4       5        0.108290    2.000000   ( 6.1E-07)
+      4       6        0.108290    2.000000   ( 6.1E-07)
+      4       4        0.108290    2.000000   ( 6.1E-07)
+      2      45        0.108886    0.000000   ( 8.0E-06)
+      4      63        0.115615    0.000000   ( 7.7E-07)
+      3      39        0.116503    0.000000   ( 9.5E-07)
+      4      39        0.116504    0.000000   ( 5.8E-07)
+      3      66        0.117918    0.000000   ( 6.0E-07)
+      3      45        0.117946    0.000000   ( 7.5E-07)
+      4      45        0.117946    0.000000   ( 7.7E-07)
+      3      40        0.125081    0.000000   ( 8.5E-07)
+
+  [output of 285 eigenvalues skipped: maximum error = 2.0E-02]
+
+      7      55        0.510475    0.000000   ( 4.0E-05)
+      8      55        0.517223    0.000000   ( 9.9E-04)
+      7      52        0.530298    0.000000   ( 2.1E-06)
+      8      52        0.530298    0.000000   ( 2.7E-06)
+      7      54        0.542642    0.000000   ( 2.5E-05)
+      8      54        0.546132    0.000000   ( 9.0E-04)
+      7      53        0.560644    0.000000   ( 9.6E-05)
+      8      53        0.560644    0.000000   ( 9.7E-05)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.123809
+   2        Si  3p       0.128820
+   3        Si  3s       0.123758
+   4        Si  3p       0.128886
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044501
+   1        Si  3s   3 3s  4.408       0.031780
+   1        Si  3s   3 3s  4.408       0.031780
+   1        Si  3s   3 3s  4.408       0.031780
+   1        Si  3s   3 3s  4.408       0.031780
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   2        Si  3p   1 3s  0.000       0.044501
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068656
+   2        Si  3p   4 3p  4.408       0.068656
+   2        Si  3p   4 3p  4.408       0.068656
+   2        Si  3p   4 3p  4.408       0.068656
+   3        Si  3s   1 3s  4.408       0.031780
+   3        Si  3s   1 3s  4.408       0.031780
+   3        Si  3s   1 3s  4.408       0.031780
+   3        Si  3s   1 3s  4.408       0.031780
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044499
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   2 3p  4.408       0.068656
+   4        Si  3p   2 3p  4.408       0.068656
+   4        Si  3p   2 3p  4.408       0.068656
+   4        Si  3p   2 3p  4.408       0.068656
+   4        Si  3p   3 3s  0.000       0.044499
+
+Elapsed time for SCF step     9:          2.56
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   10 ************************
+ etot  = -7.76558487E+00 abs_ev   =  2.74E-06 rel_ev   =  6.47E-06
+ ediff =        2.45E-06 abs_dens =  5.30E-05 rel_dens =  6.62E-06
+Matrix vector products:   5623
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      43       -0.305557    2.000000   ( 5.7E-07)
+      1      68       -0.305557    2.000000   ( 5.5E-07)
+      1      42       -0.304058    2.000000   ( 1.4E-06)
+      1      67       -0.303782    2.000000   ( 1.7E-06)
+      1      44       -0.303558    2.000000   ( 1.6E-06)
+      1      41       -0.299724    2.000000   ( 3.2E-06)
+      1      66       -0.298666    2.000000   ( 3.2E-06)
+      1      45       -0.297766    2.000000   ( 2.8E-06)
+
+  [output of 226 eigenvalues skipped: maximum error = 9.2E-06]
+
+      4       4        0.108281    2.000000   ( 7.8E-07)
+      3       7        0.108281    2.000000   ( 8.2E-07)
+      4       7        0.108281    2.000000   ( 8.2E-07)
+      3      14        0.108281    2.000000   ( 7.7E-07)
+      4      14        0.108281    2.000000   ( 7.7E-07)
+      4       2        0.108281    2.000000   ( 8.3E-07)
+      4       3        0.108281    2.000000   ( 8.3E-07)
+      4      38        0.108281    2.000000   ( 8.3E-07)
+      4       1        0.108281    2.000000   ( 8.3E-07)
+      2      45        0.108885    0.000000   ( 5.4E-06)
+      4      63        0.115607    0.000000   ( 8.7E-07)
+      3      39        0.116495    0.000000   ( 6.2E-07)
+      4      39        0.116496    0.000000   ( 7.6E-07)
+      3      66        0.117910    0.000000   ( 9.5E-07)
+      3      45        0.117938    0.000000   ( 8.1E-07)
+      4      45        0.117939    0.000000   ( 8.4E-07)
+      3      40        0.125074    0.000000   ( 6.9E-07)
+
+  [output of 285 eigenvalues skipped: maximum error = 1.9E-02]
+
+      7      55        0.510475    0.000000   ( 3.1E-05)
+      8      55        0.517200    0.000000   ( 4.5E-04)
+      7      52        0.530294    0.000000   ( 2.4E-06)
+      8      52        0.530294    0.000000   ( 2.4E-06)
+      7      54        0.542641    0.000000   ( 2.4E-05)
+      8      54        0.546111    0.000000   ( 5.1E-04)
+      7      53        0.560643    0.000000   ( 4.6E-05)
+      8      53        0.560643    0.000000   ( 1.0E-04)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.123796
+   2        Si  3p       0.128821
+   3        Si  3s       0.123744
+   4        Si  3p       0.128886
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044501
+   1        Si  3s   3 3s  4.408       0.031776
+   1        Si  3s   3 3s  4.408       0.031776
+   1        Si  3s   3 3s  4.408       0.031776
+   1        Si  3s   3 3s  4.408       0.031776
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   2        Si  3p   1 3s  0.000       0.044501
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   3        Si  3s   1 3s  4.408       0.031776
+   3        Si  3s   1 3s  4.408       0.031776
+   3        Si  3s   1 3s  4.408       0.031776
+   3        Si  3s   1 3s  4.408       0.031776
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044499
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   3 3s  0.000       0.044499
+
+Elapsed time for SCF step    10:          2.32
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   11 ************************
+ etot  = -7.76558302E+00 abs_ev   =  2.12E-06 rel_ev   =  4.99E-06
+ ediff =        1.85E-06 abs_dens =  2.48E-05 rel_dens =  3.10E-06
+Matrix vector products:   6691
+Converged eigenvectors:      0
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      68       -0.305545    2.000000   ( 3.2E-07)
+      1      43       -0.305545    2.000000   ( 3.2E-07)
+      1      42       -0.304046    2.000000   ( 5.8E-07)
+      1      67       -0.303771    2.000000   ( 6.2E-07)
+      1      44       -0.303546    2.000000   ( 6.2E-07)
+      1      41       -0.299713    2.000000   ( 1.5E-06)
+      1      66       -0.298655    2.000000   ( 8.8E-07)
+      1      45       -0.297755    2.000000   ( 1.5E-06)
+
+  [output of 226 eigenvalues skipped: maximum error = 3.6E-06]
+
+      3       7        0.108277    2.000000   ( 3.5E-07)
+      4       7        0.108277    2.000000   ( 3.5E-07)
+      4       3        0.108277    2.000000   ( 3.8E-07)
+      4       2        0.108277    2.000000   ( 3.8E-07)
+      4      38        0.108277    2.000000   ( 3.8E-07)
+      4       1        0.108277    2.000000   ( 3.8E-07)
+      4       6        0.108277    2.000000   ( 5.0E-07)
+      4       5        0.108277    2.000000   ( 5.0E-07)
+      4       4        0.108277    2.000000   ( 5.1E-07)
+      2      45        0.108884    0.000000   ( 2.7E-06)
+      4      63        0.115603    0.000000   ( 4.2E-07)
+      3      39        0.116491    0.000000   ( 3.3E-07)
+      4      39        0.116492    0.000000   ( 4.7E-07)
+      3      66        0.117906    0.000000   ( 3.6E-07)
+      3      45        0.117934    0.000000   ( 3.0E-07)
+      4      45        0.117934    0.000000   ( 4.5E-07)
+      3      40        0.125070    0.000000   ( 3.9E-07)
+
+  [output of 285 eigenvalues skipped: maximum error = 2.0E-02]
+
+      7      55        0.510475    0.000000   ( 4.7E-06)
+      8      55        0.517193    0.000000   ( 6.5E-04)
+      7      52        0.530292    0.000000   ( 1.3E-06)
+      8      52        0.530292    0.000000   ( 1.5E-06)
+      7      54        0.542641    0.000000   ( 6.2E-06)
+      8      54        0.546110    0.000000   ( 4.6E-04)
+      7      53        0.560642    0.000000   ( 4.3E-05)
+      8      53        0.560642    0.000000   ( 3.3E-05)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.123789
+   2        Si  3p       0.128821
+   3        Si  3s       0.123737
+   4        Si  3p       0.128886
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044501
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   2        Si  3p   1 3s  0.000       0.044501
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044499
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   3 3s  0.000       0.044499
+
+Elapsed time for SCF step    11:          2.79
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   12 ************************
+ etot  = -7.76558322E+00 abs_ev   =  6.67E-08 rel_ev   =  1.57E-07
+ ediff =        2.00E-07 abs_dens =  8.79E-07 rel_dens =  1.10E-07
+Matrix vector products:   5315
+Converged eigenvectors:      6
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      68       -0.305544    2.000000   ( 7.1E-08)
+      1      43       -0.305544    2.000000   ( 7.2E-08)
+      1      42       -0.304045    2.000000   ( 6.4E-08)
+      1      67       -0.303769    2.000000   ( 4.7E-08)
+      1      44       -0.303545    2.000000   ( 7.4E-08)
+      1      41       -0.299712    2.000000   ( 9.7E-08)
+      1      66       -0.298654    2.000000   ( 1.2E-07)
+      1      45       -0.297754    2.000000   ( 2.8E-07)
+
+  [output of 226 eigenvalues skipped: maximum error = 4.8E-07]
+
+      3       7        0.108276    2.000000   ( 8.8E-08)
+      4       7        0.108276    2.000000   ( 8.8E-08)
+      4       3        0.108276    2.000000   ( 7.3E-08)
+      4       2        0.108276    2.000000   ( 7.3E-08)
+      4      38        0.108276    2.000000   ( 8.0E-08)
+      4       1        0.108276    2.000000   ( 8.0E-08)
+      4       6        0.108276    2.000000   ( 9.2E-08)
+      4       5        0.108276    2.000000   ( 9.2E-08)
+      4       4        0.108276    2.000000   ( 1.1E-07)
+      2      45        0.108883    0.000000   ( 2.0E-07)
+      4      63        0.115602    0.000000   ( 5.4E-08)
+      3      39        0.116491    0.000000   ( 9.3E-08)
+      4      39        0.116491    0.000000   ( 8.7E-08)
+      3      66        0.117906    0.000000   ( 1.3E-07)
+      3      45        0.117934    0.000000   ( 1.5E-07)
+      4      45        0.117934    0.000000   ( 1.2E-07)
+      3      40        0.125069    0.000000   ( 9.2E-08)
+
+  [output of 285 eigenvalues skipped: maximum error = 5.9E-03]
+
+      7      55        0.510475    0.000000   ( 4.0E-06)
+      8      55        0.517182    0.000000   ( 4.1E-04)
+      7      52        0.530292    0.000000   ( 2.5E-07)
+      8      52        0.530292    0.000000   ( 2.7E-07)
+      7      54        0.542641    0.000000   ( 2.6E-06)
+      8      54        0.546109    0.000000   ( 3.4E-04)
+      7      53        0.560642    0.000000   ( 1.8E-05)
+      8      53        0.560642    0.000000   ( 2.0E-05)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.123789
+   2        Si  3p       0.128821
+   3        Si  3s       0.123737
+   4        Si  3p       0.128886
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044501
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   2        Si  3p   1 3s  0.000       0.044501
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044499
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   3 3s  0.000       0.044499
+
+Elapsed time for SCF step    12:          2.20
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   13 ************************
+ etot  = -7.76558348E+00 abs_ev   =  2.14E-07 rel_ev   =  5.06E-07
+ ediff =        2.56E-07 abs_dens =  3.27E-06 rel_dens =  4.09E-07
+Matrix vector products:   5527
+Converged eigenvectors:     18
+
+#  State  KPoint  Eigenvalue [H]  Occupation    Error
+      1      68       -0.305545    2.000000   ( 6.1E-08)
+      1      43       -0.305545    2.000000   ( 6.0E-08)
+      1      42       -0.304046    2.000000   ( 6.7E-08)
+      1      67       -0.303771    2.000000   ( 1.2E-07)
+      1      44       -0.303546    2.000000   ( 7.8E-08)
+      1      41       -0.299713    2.000000   ( 1.5E-07)
+      1      66       -0.298655    2.000000   ( 2.0E-07)
+      1      45       -0.297755    2.000000   ( 1.4E-07)
+
+  [output of 226 eigenvalues skipped: maximum error = 8.2E-07]
+
+      4      14        0.108277    2.000000   ( 7.3E-08)
+      4       7        0.108277    2.000000   ( 6.5E-08)
+      4       4        0.108277    2.000000   ( 5.9E-08)
+      4       6        0.108277    2.000000   ( 5.7E-08)
+      4       5        0.108277    2.000000   ( 5.7E-08)
+      4      38        0.108277    2.000000   ( 8.8E-08)
+      4       1        0.108277    2.000000   ( 8.8E-08)
+      4       3        0.108277    2.000000   ( 7.8E-08)
+      4       2        0.108277    2.000000   ( 7.8E-08)
+      2      45        0.108883    0.000000   ( 3.6E-07)
+      4      63        0.115603    0.000000   ( 7.3E-08)
+      3      39        0.116491    0.000000   ( 6.9E-08)
+      4      39        0.116492    0.000000   ( 7.5E-08)
+      3      66        0.117906    0.000000   ( 5.0E-08)
+      3      45        0.117934    0.000000   ( 7.4E-08)
+      4      45        0.117934    0.000000   ( 7.2E-08)
+      3      40        0.125070    0.000000   ( 7.6E-08)
+
+  [output of 285 eigenvalues skipped: maximum error = 1.1E-02]
+
+      7      55        0.510475    0.000000   ( 5.0E-07)
+      8      55        0.517181    0.000000   ( 2.2E-04)
+      7      52        0.530292    0.000000   ( 9.6E-08)
+      8      52        0.530292    0.000000   ( 9.9E-08)
+      7      54        0.542641    0.000000   ( 8.5E-07)
+      8      54        0.546107    0.000000   ( 1.4E-04)
+      7      53        0.560642    0.000000   ( 9.9E-06)
+      8      53        0.560642    0.000000   ( 1.7E-05)
+
+Density of states:
+
+------------------------%---------------------------------------------
+------------------------%---------------------------------------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%-------------%-------%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+--------%-------%-------%---%----%--------%------%%----%%-------------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+---%----%-------%-------%---%----%--------%-%----%%----%%-%-----------
+                                 ^
+
+Effective Hubbard U [H]:
+ Orbital                    U
+   1        Si  3s       0.123790
+   2        Si  3p       0.128821
+   3        Si  3s       0.123738
+   4        Si  3p       0.128886
+Effective intersite V [H]:
+ Orbital              V
+   1        Si  3s   2 3p  0.000       0.044501
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   3 3s  4.408       0.031774
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   1        Si  3s   4 3p  4.408       0.026460
+   2        Si  3p   1 3s  0.000       0.044501
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   3 3s  4.408       0.026462
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   2        Si  3p   4 3p  4.408       0.068657
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   1 3s  4.408       0.031774
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   2 3p  4.408       0.026462
+   3        Si  3s   4 3p  0.000       0.044499
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   1 3s  4.408       0.026460
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   2 3p  4.408       0.068657
+   4        Si  3p   3 3s  0.000       0.044499
+
+Elapsed time for SCF step    13:          2.39
+**********************************************************************
+
+
+             Info: Writing states. 2022/09/12 at 12:53:11
+
+
+        Info: Finished writing states. 2022/09/12 at 12:53:11
+
+Info: SCF converged in   13 iterations
+
+Info: Number of matrix-vector products:      75350
+Info: Finished writing information to 'restart/gs'.
+
+             Calculation ended on 2022/09/12 at 12:53:12
+
+                          Walltime:  59.905s
+
+Octopus emitted 68 warnings.
+
+Octopus used 4 experimental features:
+
+  Since you used one or more experimental features, results are likely
+  wrong and should not  be considered as valid scientific data.  Check
+
+  http://octopus-code.org/experimental_features
+
+  or contact the octopus developers for details.
+

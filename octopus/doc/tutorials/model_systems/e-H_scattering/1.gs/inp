@@ -1,0 +1,24 @@
+FromScratch = yes
+CalculationMode = gs
+
+Dimensions = 1 
+ 
+Radius = 50
+Spacing = 0.15
+ 
+%Species
+ "H" | species_soft_coulomb | softening | 1 | valence | 1
+%
+ 
+%Coordinates
+ "H" | -10
+%
+ 
+SpinComponents = polarized
+ 
+ExtraStates = 1
+ 
+%Occupations
+ 1 | 0
+ 0 | 0
+%

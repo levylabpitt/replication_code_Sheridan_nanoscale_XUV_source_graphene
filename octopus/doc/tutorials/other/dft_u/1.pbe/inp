@@ -1,0 +1,44 @@
+#ExperimentalFeatures = yes
+CalculationMode = gs
+PeriodicDimensions = 3 
+FromScratch = yes
+
+Spacing = 0.4
+
+a = 7.8809
+%LatticeParameters
+  a | a | a
+%
+%LatticeVectors
+ 0.0 | 1/2 | 1/2
+ 1/2 | 0.0 | 1/2
+ 1.0 | 1.0 | 0.0
+%
+
+%Species
+"Ni1" | species_pseudo | set | hscv_pbe
+"Ni2" | species_pseudo | set | hscv_pbe
+%
+
+%ReducedCoordinates
+ "Ni1" | 0.0 | 0.0 | 0.0
+ "Ni2" | 0.0 | 0.0 | 0.5
+ "O"  | 0.5 | 0.5 | 0.25
+ "O"  | 0.5 | 0.5 | 0.75
+%
+%KPointsGrid
+2 | 2 | 2
+%
+KPointsUseSymmetries = yes
+KPointsUseTimeReversal = no
+
+ExtraStates = 3
+
+SpinComponents = polarized
+GuessMagnetDensity = user_defined
+%AtomsMagnetDirection
+ 8.0
+-8.0
+ 0.0
+ 0.0
+%

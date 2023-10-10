@@ -1,0 +1,11 @@
+*********************** SCF CYCLE ITER #   14 ************************
+ etot  =  1.00000000E+00 abs_ev   =  1.21E-10 rel_ev   =  1.21E-10
+ ediff =        1.21E-10 abs_dens =  1.09E-06 rel_dens =  5.45E-07
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 1.9E-04)
+
+Elapsed time for SCF step    14:          0.00
+**********************************************************************

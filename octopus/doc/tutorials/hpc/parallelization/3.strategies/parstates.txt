@@ -1,0 +1,32 @@
+Info: Parallelization in atoms
+Info: Node in group    0 will manage      3 atoms:     1 -      3
+Info: Node in group    1 will manage      2 atoms:     4 -      5
+Info: Parallelization in Ions
+Info: Node in group    0 will manage      2 Ions:     1 -      2
+Info: Node in group    1 will manage      1 Ions:     3 -      3
+Info: Node in group    2 will manage      1 Ions:     4 -      4
+Info: Node in group    3 will manage      1 Ions:     5 -      5
+Info: Parallelization in states
+Info: Node in group    0 will manage      2 states:     1 -      2
+Info: Node in group    1 will manage      2 states:     3 -      4
+Info: Mesh Partition restart information will be read from 'restart/partition'.
+Info: Finished reading information from 'restart/partition'.
+Info: Using ParMETIS multilevel k-way algorithm to partition the mesh.
+Info: Mesh Partition restart information will be written to 'restart/partition'.
+Info: Finished writing information to 'restart/partition'.
+Info: Mesh partition:
+
+      Partition quality:    0.924702E-08
+
+                 Neighbours         Ghost points
+      Average  :          1                 7340
+      Minimum  :          1                 7303
+      Maximum  :          1                 7377
+
+      Nodes in domain-group      1
+        Neighbours     :         1        Local points    :     27584
+        Ghost points   :      7377        Boundary points :     14781
+      Nodes in domain-group      2
+        Neighbours     :         1        Local points    :     27657
+        Ghost points   :      7303        Boundary points :     15649
+

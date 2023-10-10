@@ -1,0 +1,50 @@
+# -*- coding: utf-8 mode: shell-script -*-
+
+Test       : Photoelectron linear regime (flux 3D)
+Program    : octopus
+TestGroups : long-run, photo_electron
+Enabled    : Yes
+
+
+# Na sphere groundstate
+Processors : 2
+Input      : 09-flux_3d.01-Na_gs_sph.inp
+if(available cuda); then
+  match ; Error match ; GREPCOUNT(err, 'Calculation will not be continued.') ; 1
+endif
+
+
+# Na sphere photoemission
+# Processors : 2
+Precision  : 2.0e-11
+Input      : 09-flux_3d.02-Na_td_sph.inp
+if(available cuda); then
+  match ; Error match ; GREPCOUNT(err, 'Calculation will not be continued.') ; 1
+else
+  Precision: 5.70e-12
+  match ;  PES [val  1]  ; LINEFIELD(td.general/PES_flux.power.sum, 143, 2) ; 7.826921096e-08
+  Precision: 6.02e-12
+  match ;  PES [val  2]  ; LINEFIELD(td.general/PES_flux.power.sum, 145, 2) ; 2.982875715e-07
+  Precision: 5.65e-12
+  match ;  PES [val  3]  ; LINEFIELD(td.general/PES_flux.power.sum, 148, 2) ; 2.571687274e-07
+endif
+
+
+# Na cube groundstate
+Processors : 2
+Input      : 09-flux_3d.03-Na_gs_cub.inp
+
+# Na cube photoemission
+# Processors : 2
+Precision  : 5.0e-8
+Input      : 09-flux_3d.04-Na_td_cub.inp
+if(available cuda); then
+  match ; Error match ; GREPCOUNT(err, 'Calculation will not be continued.') ; 1
+else
+  Precision: 3.61e-09
+  match ;  PES [val  1]  ; LINEFIELD(td.general/PES_flux.distribution.out, 9435, 4) ; 4.46524335e-05
+  Precision: 2.59e-09
+  match ;  PES [val  2]  ; LINEFIELD(td.general/PES_flux.distribution.out, 9437, 4) ; 1.7068056575e-05
+  Precision: 3.61e-09
+  match ;  PES [val  3]  ; LINEFIELD(td.general/PES_flux.distribution.out, 9439, 4) ; 4.46524335e-05
+endif

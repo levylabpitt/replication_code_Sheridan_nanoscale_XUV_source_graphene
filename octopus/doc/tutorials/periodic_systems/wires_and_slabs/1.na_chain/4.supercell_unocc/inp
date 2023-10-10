@@ -1,0 +1,25 @@
+CalculationMode = unocc
+UnitsOutput = ev_angstrom
+ExperimentalFeatures = yes
+
+PeriodicDimensions = 3
+
+Spacing = 0.3*angstrom
+
+%LatticeParameters
+ 3.9986581*angstrom | 10.58*angstrom | 10.58*angstrom
+%
+
+%Coordinates
+ "Na" | 0.0 | 0.0 | 0.0
+%
+
+ExtraStates = 6
+ExtraStatesToConverge = 4
+
+%KPointsPath
+ 14
+ 0.0 | 0.0 | 0.0
+ 0.5 | 0.0 | 0.0
+%  
+KPointsUseSymmetries = no

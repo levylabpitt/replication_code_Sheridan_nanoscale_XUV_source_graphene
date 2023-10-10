@@ -1,0 +1,30 @@
+# -*- coding: utf-8 mode: shell-script -*-
+
+Test       : Free Maxwell propagation through a linear medium (defined in a file)
+Program    : octopus
+TestGroups : long-run, maxwell
+Enabled    : Yes
+
+
+# Cosinoidal pulse polarized in z-direction passing through medium box read from file
+ExtraFile  : 09-drude-medium-from-file.01-gold-np-r80nm.off
+Input      : 09-drude-medium-from-file.01-gold-np.inp
+
+if(available cgal); then
+Precision: 0.1
+match ;   Tot. Maxwell energy [step 10]   ; LINEFIELD(Maxwell/td.general/maxwell_energy, 16, 3) ; 1.059352490964e+10
+match ;   Tot. Maxwell energy [step 30]   ; LINEFIELD(Maxwell/td.general/maxwell_energy, 36, 3) ; 2.022692404146e+10
+
+Precision: 4e-17
+match ;   Ey  (x=  -60 nm,y=  0,z= 0) [step 30]   ; LINEFIELD(Maxwell/output_iter/td.0000030/e_field-y\.y=0\,z=0, 40, 2) ; 9.91546613124025E-011
+Precision: 2.0e-16
+match ;   Ez  (x=  80 nm, y=  0,z=  0) [step 30]   ; LINEFIELD(Maxwell/output_iter/td.0000030/e_field-z\.y=0\,z=0, 47, 2) ; 3.62796228058479E-002
+Precision: 3.39e-17
+match ;    Jz  (x=  -160 nm,y=  0,z= 0) [step 10]    ; LINEFIELD(NP/td.general/current_at_points, 17, 5) ; 0.00678264819329046
+Precision: 4.18e-20
+match ;    Jy  (x=  -80 nm,y=  0,z= 0)  [step 20]    ; LINEFIELD(NP/td.general/current_at_points, 27, 7) ; 4.0687247458889905e-15
+Precision: 7.13e-16
+match ;    Jz  (x=  -80 nm,y=  0,z= 0)  [step 20]    ; LINEFIELD(NP/td.general/current_at_points, 27, 8) ; 0.0014253120068781
+else
+  match ; Error cgal_not_linked        ; GREPCOUNT(err, 'CGAL'); 1.0
+endif

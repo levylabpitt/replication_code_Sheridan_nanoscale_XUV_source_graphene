@@ -1,0 +1,14 @@
+CalculationMode = test
+testmode = helmholtz_decomposition
+
+%Coordinates
+"Na" | 0.0 | 0.0 |  0.0	
+%
+
+BoxShape = sphere
+Radius  = 10
+Spacing = 0.2
+
+DerivativesOrder = 8
+
+PoissonSolver = fft

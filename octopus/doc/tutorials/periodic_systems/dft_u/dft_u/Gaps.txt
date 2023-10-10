@@ -1,0 +1,3 @@
+Direct gap at ik=    2 of  0.0828 H
+Indirect gap between ik=    5 and ik=    2 of  0.0621 H
+

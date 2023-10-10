@@ -1,0 +1,10 @@
+******************************** Grid ********************************
+Simulation Box:
+  Type = minimum
+  Radius  [b] =   7.559
+Main mesh:
+  Spacing [b] = ( 0.472, 0.472, 0.472)    volume/point [b^3] =      0.10544
+  # inner mesh =      17077
+  # total mesh =      30461
+  Grid Cutoff [H] =    22.110166    Grid Cutoff [Ry] =    44.220331
+**********************************************************************

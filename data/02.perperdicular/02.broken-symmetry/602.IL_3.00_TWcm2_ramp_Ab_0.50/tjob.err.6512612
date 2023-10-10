@@ -1,0 +1,29 @@
+
+** Warning:
+**   Support for mixed periodicity systems is under development.
+**   It might not work or produce wrong results.
+
+
+** Warning:
+**   The spacing has been modified to make it commensurate with the periodicity of the system.
+
+
+** Warning:
+**   Could not find 'restart/td' directory for restart.
+**   No restart information will be read.
+
+
+** Warning:
+**   Unable to read time-dependent restart information: Starting from scratch
+
+
+** Warning:
+**   Occupations do not integrate to total charge.
+**           7.99944439 !=   8.00000000
+
+
+Parser warning: possible mistakes in input file.
+List of variable assignments not used by parser:
+tpulse_dc = 2206.401174
+tsimul = 1875.440998
+

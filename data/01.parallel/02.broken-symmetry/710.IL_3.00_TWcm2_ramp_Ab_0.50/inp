@@ -1,0 +1,107 @@
+CalculationMode = td 
+#UnitsOutput = ev_angstrom
+ExperimentalFeatures = yes
+
+ConvRelDens = 1e-8
+
+EigenSolver = cg
+EigenSolverMaxIter = 100
+EigenSolverTolerance = 1e-10
+
+LCAOStart = lcao_states
+PseudopotentialSet = hgh_lda
+SpinComponents = unpolarized
+
+PeriodicDimensions = 2
+Spacing = 0.20*angstrom
+BoxShape = parallelepiped
+
+# remember to comment out during td
+#Smearing = 0.025*eV
+#SmearingFunction = fermi_dirac
+#ExtraStates = 2 # leave this
+
+BNlength = 1.413*angstrom
+ax = sqrt(3)*BNlength
+ay = ax
+Lmin = 17
+LL = 20
+Lz = 2*LL
+
+%LatticeParameters
+ ax | ay | Lz
+%
+
+%LatticeVectors
+  1.0 | 0.0       | 0.0
+ -1/2 | sqrt(3)/2 | 0.0
+  0.0 | 0.0       | 1.0
+%
+
+%ReducedCoordinates
+ 'C' | 0.0 | 0.0 | 0.0
+ 'C' | 1/3 | 2/3 | 0.0
+%
+
+# use only for td
+AbsorbingBoundaries = cap
+ABCapHeight = -1.0
+%ABShape
+ Lmin | LL | "abs(z)"
+% 
+
+%KPointsGrid
+ 60 | 60  | 1
+%
+
+#%Output
+# geometry | xcrysden
+#%
+
+RestartFixedOccupations = yes 
+
+KPointsUseSymmetries = yes
+%SymmetryBreakDir
+ 0 | 1 | 0
+%
+
+
+lambda = 800 #in nm
+omega = 4.13566733e-15*299792458/(lambda*1.0e-9)*0.0367493  # in Ha
+period = 2*pi/omega
+Tpulse = 15*period
+Tsimul = 17*period
+
+c0 = 137.03604
+I0_au = 3.0*10^12 # W/cm^2
+A0_au = ((sqrt(I0_au)/sqrt(3.509470*10^16))*c0)/omega
+
+n_u = 2
+n_c = 20
+Tpulse_dc = n_c*period
+tStart = (n_c+2*n_u)*period/5.6
+
+A0_dc_au = 0.5
+omega_dc = 0.0
+
+%TDExternalFields
+ vector_potential | 0 | 1 | 0 | omega_dc | "ramp"
+ vector_potential | 0 | 1 | 0 | omega | "envelope_function"
+%
+
+%TDFunctions
+ "ramp" | tdf_trapezoidal | A0_dc_au | n_c*period | (n_c+2*n_u)*period/2 | n_u*period
+ "envelope_function" | tdf_from_expr | "A0_au*sin(pi*(t-tStart)/Tpulse)^2*step(t-tStart)*step(Tpulse+tStart-t)"
+%
+
+TDExpOrder = 20
+TDTimeStep = 0.2
+TDPropagator = aetrs
+TDPropagationTime = (n_c+2*n_u)*period
+TDExponentialMethod = lanczos
+
+%TDOutput
+ laser
+ energy
+ total_current
+%

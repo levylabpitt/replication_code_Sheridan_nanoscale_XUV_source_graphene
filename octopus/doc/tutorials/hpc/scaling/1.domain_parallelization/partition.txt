@@ -1,0 +1,15 @@
+      Partition quality:    0.244738E-08
+
+                 Neighbours         Ghost points
+      Average  :          1                14293
+      Minimum  :          1                14150
+      Maximum  :          1                14435
+
+      Nodes in domain-group      1
+        Neighbours     :         1        Local points    :     70175
+        Ghost points   :     14435        Boundary points :     27217
+      Nodes in domain-group      2
+        Neighbours     :         1        Local points    :     70154
+        Ghost points   :     14150        Boundary points :     27859
+
+

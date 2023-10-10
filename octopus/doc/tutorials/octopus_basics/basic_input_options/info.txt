@@ -1,0 +1,27 @@
+Eigenvalues [eV]
+ #st  Spin   Eigenvalue      Occupation
+   1   --   -18.286197       2.000000
+   2   --    -7.290481       1.000000
+   3   --    -7.290481       1.000000
+   4   --    -7.290481       1.000000
+
+Energy [eV]:
+      Total       =      -262.19592153
+      Free        =      -262.19592153
+      -----------
+      Ion-ion     =         0.00000000
+      Eigenvalues =       -58.44383620
+      Hartree     =       221.89085491
+      Int[n*v_xc] =       -76.98143114
+      Exchange    =       -51.55648964
+      Correlation =        -7.28617192
+      vanderWaals =         0.00000000
+      Delta XC    =         0.00000000
+      Entropy     =         4.15888308
+      -TS         =        -0.00000000
+      Photon ex.  =         0.00000000
+      Kinetic     =       170.61004429
+      External    =      -595.85415556
+      Non-local   =       -69.72576188
+      Int[n*v_E]  =         0.00000000
+

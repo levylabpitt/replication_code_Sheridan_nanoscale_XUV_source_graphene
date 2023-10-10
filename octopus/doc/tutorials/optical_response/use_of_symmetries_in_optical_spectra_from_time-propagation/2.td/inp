@@ -1,0 +1,34 @@
+CalculationMode = td
+UnitsOutput = eV_angstrom
+
+Radius = 6.5*angstrom
+Spacing = 0.24*angstrom
+
+CH = 1.097*angstrom
+%Coordinates
+ "C" |           0 |          0 |           0
+ "H" |  CH/sqrt(3) | CH/sqrt(3) |  CH/sqrt(3)
+ "H" | -CH/sqrt(3) |-CH/sqrt(3) |  CH/sqrt(3)
+ "H" |  CH/sqrt(3) |-CH/sqrt(3) | -CH/sqrt(3)
+ "H" | -CH/sqrt(3) | CH/sqrt(3) | -CH/sqrt(3)
+%
+
+TDPropagator = aetrs
+TDTimeStep = 0.004/eV
+TDMaxSteps = 2500  # ~ 10.0/TDTimeStep
+
+TDDeltaStrength = 0.01/angstrom
+
+#snippet_start polarization
+%TDPolarization
+ 1 | 0 | 0
+ 0 | 1 | 0
+ 0 | 0 | 1
+%
+TDPolarizationDirection = 1
+TDPolarizationEquivAxes = 3
+%TDPolarizationWprime
+ 0 | 0 | 1
+%
+#snippet_end
+

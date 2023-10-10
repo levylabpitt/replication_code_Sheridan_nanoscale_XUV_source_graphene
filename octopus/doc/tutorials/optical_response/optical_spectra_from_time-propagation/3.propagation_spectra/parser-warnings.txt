@@ -1,0 +1,24 @@
+Parser warning: possible mistakes in input file.
+List of variable assignments not used by parser:
+test_njobs = 8.000000
+coordinates[4][3] = -1.196864
+coordinates[4][2] = 1.196864
+coordinates[4][1] = -1.196864
+coordinates[4][0] = "H"
+coordinates[3][3] = -1.196864
+coordinates[3][2] = -1.196864
+coordinates[3][1] = 1.196864
+coordinates[3][0] = "H"
+coordinates[2][3] = 1.196864
+coordinates[2][2] = -1.196864
+coordinates[2][1] = -1.196864
+coordinates[2][0] = "H"
+coordinates[1][3] = 1.196864
+coordinates[1][2] = 1.196864
+coordinates[1][1] = 1.196864
+coordinates[1][0] = "H"
+coordinates[0][3] = 0.000000
+coordinates[0][2] = 0.000000
+coordinates[0][1] = 0.000000
+coordinates[0][0] = "C"
+

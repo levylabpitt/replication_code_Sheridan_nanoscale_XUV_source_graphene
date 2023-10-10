@@ -1,0 +1,28 @@
+# -*- coding: utf-8 mode: shell-script -*-
+#
+
+CalculationMode = gs
+
+FromScratch = yes
+
+%Coordinates
+"C" | 20.0 | 0 | 0
+%
+
+spacing = 10.0
+radius = 180.0
+
+ExtraStates = 2
+
+EigensolverTolerance = 1e-10
+
+SpinComponents = spin_polarized
+
+%Occupations
+ 2/3 | 2/3 | 2/3
+ 0   | 0   | 0
+%
+
+ParKpoints = no
+
+PoissonSolver = isf

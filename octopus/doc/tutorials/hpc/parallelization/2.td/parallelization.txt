@@ -1,0 +1,9 @@
+************************** Parallelization ***************************
+Info: Octopus will run in *parallel*
+
+      Number of processes           :       2
+      Number of threads per process :       1
+
+Info: Number of nodes in ParStates   group:     2 (           4)
+Info: Octopus will waste at least  0.00% of computer time.
+**********************************************************************

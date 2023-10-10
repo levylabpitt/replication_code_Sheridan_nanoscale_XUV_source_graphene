@@ -1,0 +1,17 @@
+%Coordinates
+ 'C_f' | 0 | 0 | 0
+%
+
+%Species
+ 'C_f' | species_full_delta | valence | 6
+%
+
+BoxShape = sphere
+Radius = 9.0
+Spacing = 0.2
+
+ExtraStates = 2
+
+%Occupations
+ 2/3 | 2/3 | 2/3
+%

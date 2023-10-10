@@ -1,0 +1,7 @@
+************************** Parallelization ***************************
+Info: Octopus will run in *parallel*
+
+      Number of processes           :       1
+      Number of threads per process :       2
+
+**********************************************************************
